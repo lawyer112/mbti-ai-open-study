@@ -1,67 +1,49 @@
 # 发布检查记录 / Publication verification
 
-检查日期 / Date: 2026-10-26。方案 / Protocol: 0.3.0；中文试填问卷 / Chinese pilot instrument: 0.2。
+检查日期 / Checked: **2026-10-27**。设计说明 / Guide: **0.4.0**；趣味问卷 / Instrument: **0.3**，修订 / revision `2026-10-26.fun.1`。
 
-## 本地检查
+本记录描述内部技术和内容核对。检查与翻译由 Codex 辅助完成，不代表母语者审查、独立同行评审或心理测量验证。所有填答测试均使用 `TEST_ONLY` 内容，未作为真人参与或研究样本提交。
 
-检查由 Codex 辅助完成，属于内部技术与内容核对，不是独立同行评审，也不代表问卷已经完成心理测量验证。
+## 当前版本
 
-- 已逐项核对研究问题、题号、编码和可支持的结论。全文未报告真实参与者结果，也未预设哪种人格最好。正式收集前还须根据试填情况冻结分析模型并规划样本量。
-- 选择题共 49 题、文字题共 34 题；包括两版共享的 21 题。均可填写并导出 JSON 和可读 Markdown。测试使用明确标注 `TEST_ONLY` 的虚拟内容，不属于研究样本。
-- 已验证参与确认、适用必答题、互斥选项、条件跳题及隐藏旧答案不导出；切换两版保留共同背景和同一 `case_id`，仅导出当前版内容。
-- 已验证草稿保存、清空和恢复；错误草稿不会覆盖现有内容；每题设计目的可展开，暴露记录仅对应实际适用并展开的题目。
-- 本地 HTML 可直接打开、恢复草稿和导出；没有自动上传或外部请求，未发现浏览器脚本错误。
-- 中英文主页及完整方案、语言切换、下载入口已检查；五个网页在桌面与 390 像素宽度下没有页面整体横向溢出。英文宽表使用表内滚动。
-- HTML 与 PDF 来自同一份各语言源文件。本地中文 PDF 为 4 页、英文为 6 页；逐页查看排版并检查文本可提取，未发现空白页或缺字。英文表格行跨页断裂已经修复。
-- 已检查公开文件范围、相对链接、三类 Issue 表单及 PR 模板。构建、发布流程分离；发布需要手动启动，检查流程不会部署。
-- 发布源文件设为 LF 换行，核对暂存版本与文件字节一致，避免跨平台哈希失配。方案审阅记录及问卷锁定文件保存对应源文件哈希。
+- 项目围绕真实的日常 AI 用法、聊天习惯、评价、吐槽与故事展开。介绍写明调查目的、参与方式及计划产出，不预设获胜人格，也不声称已有参与者统计结果。
+- 提供简体中文、英语、日语、韩语、西班牙语、法语、德语、葡萄牙语、俄语、阿拉伯语、印地语、印度尼西亚语的完整问卷、题目目的、回传入口、主页、设计说明和同源 PDF。
+- 选择版共 19 项、故事版共 11 项，共享 7 项，共 23 个不同题项。总数包含条件与可选题；近期非使用者及 MBTI 不确定者可以参加。
+- 旧 v0.2 单任务问卷保留在独立入口，回传与新 v0.3 日常习惯记录分开。旧技术记录中的 49/34 题、`case_id` 和“尚无英文问卷”仅适用于旧版。
 
-Quarto/Pandoc 会提示 `zh-CN` 翻译资源和 Abstract 术语警告；实际中文页面与 PDF 的“摘要”已核对显示正常。原始检查材料保存在被忽略的 `output/` 中，不提交为研究数据；公开的技术回传测试单独标记，见下文。
+## 本地核对
 
-## 线上检查
+- 完成 12 语言 × 两种问卷 × 近期使用/未使用两条路线，共 48 次填答与导出检查。已知 MBTI 的测试路线实际导出 18/10/8/7 项，其余记录为不适用，符合总题数。
+- 完成 12 次草稿保存和恢复，核对切换语言保留回答并重新确认参与条款、切换形式保留同一 `response_id`、隐藏旧答案不导出。
+- 核对必答校验、不确定类型跳题、互斥选项、设计目的展开记录、错误草稿保留原内容、文字按普通文本显示。离线填写、导出未产生答案上传请求。
+- 24 个主页/设计说明页面在 390 与 1440 像素宽度下无整体横向溢出，相对链接可访问；各语言具有对应 canonical 和 12 个 hreflang。
+- 本地 12 份 PDF 共 34 页，全部渲染并逐页查看；文字可提取，无空页、替换字形或越界文本。已修正重复参考资料标题、阿拉伯语数字范围及英文/印度尼西亚语参考资料标题分页。
+- 发布检查、完整构建、脚本语法和 diff 检查通过；公开范围不包含测试回答、缓存、凭据或工作区其他论文。问卷锁定记录和设计说明审阅指纹对应受检文件。
 
-- 公开仓库：[lawyer112/mbti-ai-open-study](https://github.com/lawyer112/mbti-ai-open-study)，公开署名 `lawyer112`，默认分支 `main`，Issue 已启用。
-- 网站：[研究主页](https://lawyer112.github.io/mbti-ai-open-study/)。Pages 使用 Actions 部署并强制 HTTPS；部署源提交为 `2a946a83d6e98a59b956939491eb93cfb918c6dd`。
-- [源文件检查](https://github.com/lawyer112/mbti-ai-open-study/actions/runs/40335735945)与[部署运行](https://github.com/lawyer112/mbti-ai-open-study/actions/runs/40335772881)均成功。
-- 已实际访问两种语言的主页、全文、PDF，以及 HTML 问卷与两份可读问卷，共 9 个网址，均返回 HTTP 200。线上 HTML 问卷与受检源文件字节完全相同。
-- 线上五个网页分别以 1440 和 390 像素宽度打开，10 次检查均无整体横向溢出或脚本错误。
-- 已在浏览器点击主页语言切换并往返成功；点击“下载独立 HTML 问卷”得到的文件与受检源文件完全一致。
-- 自动化浏览器从线上问卷逐步填写两种模式，成功下载两份 JSON 和两份 Markdown；同一任务编号保持一致。此次每版各有一个不适用的条件题，实际导出 48/33 项，并分别保留在 `not_applicable`，符合 49/34 的总题数。
-- 线上下载的两个 PDF 仍为中文 4 页、英文 6 页；逐页查看、文本可提取检查均通过。Linux 与 Windows 字体可能造成换行位置差异。
-- 已通过真实仓库创建并回读[测试 Issue #1](https://github.com/lawyer112/mbti-ai-open-study/issues/1)，核对报告正文一致后关闭。该记录明确标为 `TEST_ONLY`，具有 `test-only` 和 `excluded` 标签；不是参与者提交或真实同意，不得进入任何研究统计。
+Quarto 仍提示 `zh-CN` 翻译资源警告；已检查实际中文摘要标签与正文显示。原始截图和测试文件保存在忽略的 `output/`，不是研究数据。
 
-回传验证使用 GitHub 命令行提交完整测试报告，验证了仓库接收和回读；未模拟网页登录后上传附件，也未专门创建测试 PR。两条贡献路径及其操作说明已经公开。
+## 线上核对
 
-未完成：真实参与者试填、手机实机下载、信度与效度、正式样本量和独立方法审查。文字问卷不是已验证量表；英文参与说明与研究方案已提供，英文问卷尚未发布。
+- 仓库：[lawyer112/mbti-ai-open-study](https://github.com/lawyer112/mbti-ai-open-study)；网站：[调查主页](https://lawyer112.github.io/mbti-ai-open-study/)。公开署名 `lawyer112`。
+- 问卷与完整改版提交：`1a47d18d17dec42aa17c68a9c58cc42ec7d7957b`。[检查](https://github.com/lawyer112/mbti-ai-open-study/actions/runs/40358339321)与[部署](https://github.com/lawyer112/mbti-ai-open-study/actions/runs/40358369013)成功。
+- 最终英文 PDF 分页修正提交：`d57d0780c7d5bdfc6028e83b90117b10d789429c`。[检查](https://github.com/lawyer112/mbti-ai-open-study/actions/runs/40360093294)与[部署](https://github.com/lawyer112/mbti-ai-open-study/actions/runs/40360142294)成功。修正后重新下载并查看英文 PDF；参考资料标题与正文在同一页。
+- 实际访问 62 个线上资源：新版与旧版 HTML 问卷，以及各语言主页、设计说明、PDF 和两份可读问卷，均返回 HTTP 200。线上新版 HTML 问卷与受检源文件字节相同。
+- 在线上中文、英文、日文、韩文、阿拉伯文、印地文各完成选择版与故事版，下载 JSON 和 Markdown；确认报告编号一致、语言正确、无浏览器脚本错误，移动宽度无整体横向溢出。
+- 下载并查看 12 份线上 PDF，共 33 页，文本提取和边界检查通过。Linux 与本地 Windows 字体造成页数或换行差异，内容来自同一份各语言源文件。
+- 初次发布时曾创建、回读并关闭[旧版技术测试 Issue #1](https://github.com/lawyer112/mbti-ai-open-study/issues/1)，标签为 `test-only` 和 `excluded`。它验证仓库接收与回读，不是真实参与或同意；本次没有把自动化填答重新提交为参与者数据。
 
-## Local checks
+未验证：真实参与者试填、手机实机下载、12 种译文的母语认知访谈、跨文化可比性、信效度或因果结论。网页登录后的附件上传和测试 PR 未专门执行。先分别报告语言、版本及自愿样本；任何正式推断另需适用的研究设计。
 
-These are Codex-assisted internal content and technical checks, not independent peer review or psychometric validation.
+## English verification record
 
-- Research questions, item IDs, coding and supported conclusions were checked together. No real participant results or preferred personality type are claimed. Formal models and sample-size planning must be frozen after the pilot and before formal collection.
-- The choice form has 49 items and the narrative form 34, including 21 shared items. Both export JSON and readable Markdown. All fixtures are explicitly `TEST_ONLY` and are excluded from research data.
-- Consent, applicable required fields, exclusive choices, conditional routing and removal of hidden answers were checked. Switching forms preserves shared context and the same `case_id`; exports include only the active form.
-- Draft saving, clearing and restoring work; invalid imports preserve existing responses. Item purposes are expandable, and exposure records only include applicable purposes actually opened.
-- The standalone HTML works locally, including draft restoration and export, without automatic uploads, external requests or observed browser errors.
-- Both homepages, full protocols, language switches and download links were checked. Five webpages passed desktop and 390-pixel viewport checks without whole-page horizontal overflow; wide English tables scroll within their own container.
-- Each language's HTML and PDF are built from the same source. Local PDFs contain 4 Chinese pages and 6 English pages. Every page was visually inspected and text extraction checked; no blank pages or missing characters were observed. Split English table rows were corrected.
-- Public file scope, relative links, the three Issue forms and PR template were checked. Checks do not deploy; publication is a separate manually triggered workflow.
-- Published text uses LF endings. Staged and working-file bytes were compared. Review fingerprints and the instrument lock identify the reviewed sources.
+These are Codex-assisted internal technical and content checks, not native-speaker review, independent peer review or psychometric validation. All automated responses are `TEST_ONLY` fixtures, excluded from research data and never represented as human participation or consent.
 
-Quarto/Pandoc emits warnings about the `zh-CN` translation resource and the Abstract term. The actual Chinese abstract heading was checked and displays correctly. Raw verification materials remain in ignored `output/`, outside research data. The public technical return test is separately marked below.
+- The informal survey concerns everyday AI use, conversations, opinions, complaints and stories. Its introductions explain the purpose, participation and planned outputs. No preferred personality type or participant findings are claimed.
+- All 12 languages above include complete questionnaires, item purposes, return routes, homepages, guides and matching PDFs. Instrument v0.3 has 19 choice items, 11 story items, 7 shared and 23 distinct; totals include conditional and optional items. Recent nonusers and uncertain types are welcome. Legacy v0.2 single-task records remain separate.
+- Local checks completed 48 language/mode/usage-route export flows and 12 draft roundtrips. Conditional totals, required fields, exclusive options, purpose exposure, invalid-import retention, literal text display, shared response IDs and renewed consent after language changes passed. The offline flow did not upload answers.
+- All 24 home/guide pages passed 390/1440-pixel width and relative-link checks, with language-specific canonical URLs and 12 hreflang links. All 34 pages across 12 local PDFs were rendered and visually inspected; text extraction and page bounds passed. Release checks, full build, script syntax, diff and public-scope checks passed. A Quarto Chinese-resource warning remains, but the visible Chinese abstract label and body were verified.
+- The redesign and final layout commits, checks and deployments are linked above. All 62 live assets returned HTTP 200; the live questionnaire matched the reviewed source byte for byte. Both live modes and Markdown export passed in Chinese, English, Japanese, Korean, Arabic and Hindi, without script errors or whole-page mobile overflow.
+- All 12 downloaded Linux-built PDFs were checked visually and for searchable text/page bounds, totaling 33 pages. Font differences explain local/live pagination differences. The final English reference-heading correction was re-downloaded and visually confirmed.
+- The closed legacy technical Issue #1 only verifies repository receipt/read-back and remains excluded. Browser attachment uploading after sign-in, a test PR, physical-phone downloads, human pilot responses, native-speaker cognitive interviews, cross-cultural comparability, reliability, validity and causal claims have not been validated. Report language, version and volunteer-sample boundaries explicitly; formal inference needs an appropriate additional design.
 
-## Online checks
-
-- Public repository: [lawyer112/mbti-ai-open-study](https://github.com/lawyer112/mbti-ai-open-study), with public byline `lawyer112`, default branch `main`, and Issues enabled.
-- Website: [project home](https://lawyer112.github.io/mbti-ai-open-study/). Pages uses Actions deployment with HTTPS enforced. Deployed source commit: `2a946a83d6e98a59b956939491eb93cfb918c6dd`.
-- Both the [source checks](https://github.com/lawyer112/mbti-ai-open-study/actions/runs/40335735945) and [deployment](https://github.com/lawyer112/mbti-ai-open-study/actions/runs/40335772881) succeeded.
-- Nine URLs returned HTTP 200: both homepages, both complete protocols, both PDFs, the HTML questionnaire, and two readable questionnaires. The online questionnaire matches the checked source byte for byte.
-- Five online webpages were opened at 1440 and 390 pixels: all ten checks passed without whole-page horizontal overflow or script errors.
-- Browser clicks switched the homepages between languages and back. The standalone HTML download matched the checked questionnaire source exactly.
-- An automated browser completed both online modes step by step and downloaded two JSON and two Markdown reports. The task ID remained unchanged. One conditional item was inapplicable in each mode, leaving 48/33 exported items plus `not_applicable`, consistent with the 49/34 totals.
-- The downloaded live PDFs still contain 4 Chinese and 6 English pages. Every page was viewed and text extraction passed. Linux and Windows fonts may produce different line wrapping.
-- [Technical test Issue #1](https://github.com/lawyer112/mbti-ai-open-study/issues/1) was created in the real repository, read back with an identical report body, and closed. It is explicitly `TEST_ONLY` and labeled `test-only` and `excluded`. It is neither a participant submission nor human consent and must never enter research statistics.
-
-The return test submitted a complete fixture through the GitHub CLI and verified repository receipt and read-back. Browser attachment uploading after sign-in and a separate test pull request were not exercised. Both contribution pathways and their instructions are public.
-
-Not completed: real participant pilot responses, downloads on physical phones, reliability, validity, formal sample-size planning or independent methods review. The narrative form is not a validated scale. English participation guidance and the full English protocol are available; an English instrument has not been released.
+The earlier v0.2 verification record remains in [Git history](https://github.com/lawyer112/mbti-ai-open-study/blob/1a47d18d17dec42aa17c68a9c58cc42ec7d7957b/VERIFICATION.md); its former item counts and English-instrument status do not describe this release.
