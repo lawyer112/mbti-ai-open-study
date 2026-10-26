@@ -1,31 +1,70 @@
-# MBTI 与 AI 使用行为开放研究
+# MBTI × AI：你的 AI 搭子，是什么画风？
 
-[English](README.en.md) · [研究网站](https://lawyer112.github.io/mbti-ai-open-study/) · [填写问卷](https://lawyer112.github.io/mbti-ai-open-study/survey/index.html)
+**16 种人格，同样面对 AI，会不会用出完全不同的风格？**
 
-**类型：研究方案｜阶段：试填｜方案版本：0.3.0｜中文问卷：v0.2｜未经外部同行评审。** 本版本不报告真人样本结果，也不预定哪种人格最适合 AI。
+[English](README.en.md) · [进入调查](https://lawyer112.github.io/mbti-ai-open-study/survey/index.html) · [项目网站](https://lawyer112.github.io/mbti-ai-open-study/)
 
-研究问题：自报的 MBTI 类型或偏好标签，是否与 AI 使用中的提问、交互、核验、采用及体验有关？正式阶段以外部核验为主要探索指标，其余过程分别分析。客观工作绩效与 AI 增益需要后续统一任务研究。
+有人打开 AI 是为了赶紧把工作做完，有人想找个随时能讨论的搭子；有人写下一整页背景和要求，有人只丢一句“你怎么看”；有人喜欢它不断给出新点子，也有人最受不了它一本正经地胡说。
 
-## 参与
+这些不同只是任务不同、经验不同，还是也和我们熟悉的 MBTI 标签有些关系？
 
-1. 选最近30天内最近一次已结束或暂停的真实 AI 任务；首轮面向18岁及以上、能够理解中文问卷的使用者。
-2. 打开[问卷网页](https://lawyer112.github.io/mbti-ai-open-study/survey/index.html)，选择题版与文字版任选其一。也可下载[survey/index.html](survey/index.html)后在浏览器离线填写。
-3. 检查后导出 JSON 与 Markdown，提交到[个人问卷回传 Issue](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=01-individual-report.yml)，或通过 PR 上传。
+**这就是我们发起这个趣味调查的原因：收集真实的 AI 使用习惯、评价和故事，看看不同人格的人，究竟怎样与 AI 相处。** 你不需要懂研究方法，也不用交一篇论文。你的日常用法、喜欢的地方、最想吐槽的瞬间，就是这个项目想了解的内容。
 
-页面不自动上传答案。公开投稿关联 GitHub 账号，研究代号不等于匿名；请先移除私人和机密内容。参见[参与与贡献规则](CONTRIBUTING.md)。未核验、失败或未完成均可如实报告。两版补填同一次任务时沿用同一报告编号，不重复计人或计任务。
+## 我们到底想看什么
 
-选择题版有28道过程与体验题、共49个题项；文字版有13道开放问题、共34个题项，含共同背景、可选与条件题。首轮20至30人用于改进问卷，不保证能够比较16类型。当前没有经过验证的英文问卷，英文全文是研究方案与参与说明。
+我们关心三件很日常的事。
 
-## 阅读与协作
+**你拿 AI 来做什么？** 是写东西、改代码、学习、做计划，还是脑洞讨论、聊天和陪伴？它在你这里更像工具、助手、老师，还是讨论伙伴？
 
-- [中文研究方案](https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/zh.html) · [中文PDF](https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/zh.pdf)
-- [English protocol](https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/en.html) · [English PDF](https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/en.pdf)
-- [选择题全文及目的](survey/choice-questionnaire.md) · [文字题全文及目的](survey/text-questionnaire.md)
-- [操作与设计说明](QUESTIONNAIRE_DESIGN.md) · [数据规则](data/README.md)
-- [提交独立调研](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=02-study-report.yml) · [讨论研究设计](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=03-research-discussion.yml)
+**你怎样和 AI 打交道？** 开口就直奔答案，还是先把背景讲清楚？第一轮不满意时，你会补充要求、换一种问法、换个模型，还是干脆自己来？你喜欢一份能直接用的答案，还是几种方案摆在一起选？
 
-项目署名为lawyer112。Codex辅助起草、翻译、实现和检查；未声称完成独立或外部同行评审。材料使用范围见[PERMISSIONS.md](PERMISSIONS.md)，不对参与者记录作整体再授权。
+**你怎么看待 AI？** 它最大的帮助是什么，最让你烦的又是什么？你有多满意、会不会核验重要信息，以及你是期待、好奇、谨慎，还是期待与担忧并存？
 
-## 构建与验收
+最后再把这些回答放在一起，看不同 MBTI 类型之间是否出现一些有趣的倾向，也看同一类型的人能有多不一样。我们也会保留使用频率、经验等背景，免得把“用得多”误当成“某种人格天生更会用”。
 
-使用Python 3.12或更新版本、Quarto 1.10.19及中文字体，安装requirements.txt后运行 `python scripts/build_site.py`。网页与两个PDF从同一组中英源稿生成。详情见[复现说明](protocol/20261026-mbti-ai-use-protocol/reproduce.md)和[核验记录](VERIFICATION.md)。检查工作流不部署；Pages发布只通过手动工作流触发。
+## 哪些问题值得一起围观
+
+- 大家到底把 AI 当工具、老师，还是聊天搭子？不同类型的分布会一样吗？
+- 有人喜欢直接交代任务，有人喜欢边聊边想。这种差异和 MBTI 有多大关系？
+- 最受欢迎的 AI 帮助是什么？最常见的吐槽又是什么？
+- 对 AI 很满意的人，是否也会认真核验它的回答？
+- 那些“不像自己 MBTI 刻板印象”的用法，会不会反而更有意思？
+
+这些都是**准备拿真实回答来观察的问题**，目前没有预设答案。我们不会先编好“某类型一定怎样”，再让大家的投稿去配合。
+
+## 你可以怎样参与
+
+**喜欢点选，就填选择题；喜欢讲经历，就写一个小故事。两种方式任选其一即可。**
+
+1. [打开问卷](https://lawyer112.github.io/mbti-ai-open-study/survey/index.html)，按自己的真实情况回答。MBTI 不确定也可以说明，不需要为了参加重新做测试。
+2. 检查后导出报告。网页不会自动上传，文件先保存在你自己这里。
+3. 用[个人问卷回传 Issue](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=01-individual-report.yml)附上文件或粘贴完整报告；熟悉 GitHub 的朋友也可以提 PR。
+
+不需要附完整聊天记录，不需要写漂亮的提示词，也不需要证明你“会用 AI”。喜欢它、讨厌它、偶尔才用，甚至用完觉得还是自己来，都有值得分享的东西。
+
+**当前状态：项目已公开，尚无真实参与者统计结果；原问卷正在改成更轻量的日常习惯与故事版本，多语言入口也在同步升级。** 已有旧版记录会保留版本，不与改版后的回答直接混算。
+
+## 收到回答以后，会做成什么
+
+我们希望逐步整理出一份可以读、可以讨论的 **《16 种人格与 AI 相处图鉴》**：
+
+- **使用习惯图表**：大家用 AI 做什么、怎么提问、如何调整与检查。
+- **评价与吐槽分布**：喜欢什么、不喜欢什么，不只收集“AI 真好用”的答案。
+- **有出处的真实小故事**：在得到引用许可后展示典型经验、反差和例外。
+- **一篇持续更新的观察文章**：把数据、发现和还不能下结论的地方一起写清楚。
+
+这些是计划中的产出，不是已经完成的发现。每次展示都会交代有多少人回答、各类型有多少样本；没人填的类型就留空，人数太少的比较就说明不确定。
+
+如果最后发现 MBTI 差异很小，或者工具、任务、经验比人格标签更能解释用法，这同样是值得写出来的结果。
+
+## 有趣，也尊重每个人的真实差异
+
+MBTI 在这里是大家交流和观察的一个入口。这个项目不是 MBTI 测试，也不会用一次趣味问卷给人格排高低、给个人能力下判断。你完全可以“不像你这个类型”，也可以对 AI 同时喜欢又不满意。
+
+参与面向 18 岁及以上的成年人。GitHub 投稿会公开并与账号关联，研究代号不代表匿名；请去掉姓名、联系方式、客户信息、公司机密和访问凭据。是否允许文章逐字引用你的故事，由你单独选择；具体说明见[参与规则](CONTRIBUTING.md)。
+
+## 除了填问卷，还能一起做什么
+
+欢迎指出问题问得别扭的地方、补充遗漏选项、校对译文、建议有趣的比较，也欢迎提交自己的[独立调研](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=02-study-report.yml)。想聊设计可以[开一个讨论 Issue](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=03-research-discussion.yml)。
+
+项目署名：**lawyer112**。AI 协助整理文字、翻译和实现工具；参与者经历必须来自本人，测试内容不计入调查。方法、版本和数据整理细节保留在[设计说明](QUESTIONNAIRE_DESIGN.md)与[数据规则](data/README.md)中，供想进一步核对的人阅读。材料使用范围见[PERMISSIONS.md](PERMISSIONS.md)。

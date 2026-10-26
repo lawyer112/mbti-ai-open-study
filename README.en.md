@@ -1,31 +1,70 @@
-# MBTI and AI Use: An Open Collaborative Study
+# MBTI × AI: What kind of AI companion do you have?
 
-[中文](README.md) · [Research site](https://lawyer112.github.io/mbti-ai-open-study/en/) · [Chinese questionnaire](https://lawyer112.github.io/mbti-ai-open-study/survey/index.html)
+**Sixteen personality types, the same AI tools: do we use them in different ways?**
 
-**Type: research protocol | Stage: pilot | Protocol: 0.3.0 | Chinese instrument: v0.2 | Not externally peer reviewed.** This release reports no human-participant findings and does not presuppose a personality type best suited to AI.
+[中文](README.md) · [Take the survey](https://lawyer112.github.io/mbti-ai-open-study/survey/index.html) · [Project website](https://lawyer112.github.io/mbti-ai-open-study/)
 
-We ask whether reported MBTI types or preference labels are associated with prompting, interaction, verification, adoption, and experience. External verification is the intended primary exploratory outcome for the formal stage; other processes remain separate. Objective work performance and gains from AI require a later standardized-task study.
+Some people open AI to finish a job quickly. Others want someone to bounce ideas off. Some supply a whole page of context and requirements; others start with “What do you think?” Some love the stream of new ideas. Others are most annoyed when AI confidently makes things up.
 
-## Participate
+Are these differences mainly about tasks and experience, or might they also relate to the MBTI labels many of us know?
 
-1. Choose your most recent real AI task that ended or was paused within the past 30 days. The pilot is for users aged 18 or older who can understand the Chinese instrument.
-2. Open the [questionnaire](https://lawyer112.github.io/mbti-ai-open-study/survey/index.html) and choose either the closed-ended or the narrative form. You can also download [survey/index.html](survey/index.html) and open it offline in a browser.
-3. Inspect your answers, export JSON and Markdown, and attach them to a [questionnaire-return Issue](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=01-individual-report.yml), or submit through a pull request.
+**That is why we started this informal survey: to collect real AI habits, opinions and stories, and explore how people with different personality labels relate to AI.** You do not need research expertise or a paper to contribute. Your everyday habits, favorite uses and most frustrating moments are exactly what interests us.
 
-The page does not upload answers automatically. Public submissions are associated with GitHub accounts, so participant codes do not provide anonymity. Remove private and confidential information first and read the [participation/contribution rules](CONTRIBUTING.md). Unchecked, unsuccessful, and incomplete tasks are welcome. When adding the other form for the same task, retain its case ID; it is not another person or task.
+## What we want to learn
 
-The closed-ended form has 28 process/experience questions and 49 items overall. The narrative form has 13 open-ended questions and 34 items overall. Totals include shared background, optional, and conditional items. The initial 20 to 30 volunteers help improve the instrument; they do not guarantee comparisons among 16 types. There is no validated English questionnaire in this release. Complete English texts provide the protocol and participation information.
+Three everyday questions guide the project.
 
-## Read and contribute
+**What do you use AI for?** Writing, coding, learning and planning—or brainstorming, conversation and companionship? Does it feel more like a tool, assistant, teacher or discussion partner?
 
-- [Complete English protocol](https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/en.html) · [English PDF](https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/en.pdf)
-- [中文研究方案](https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/zh.html) · [中文PDF](https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/zh.pdf)
-- [Closed-ended items/rationales in Chinese](survey/choice-questionnaire.md) · [Narrative items/rationales in Chinese](survey/text-questionnaire.md)
-- [Workflow and design](QUESTIONNAIRE_DESIGN.en.md) · [Data rules](data/README.md)
-- [Submit an independent study](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=02-study-report.yml) · [Discuss methods](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=03-research-discussion.yml)
+**How do you work with it?** Do you ask directly or explain the background first? When the first response misses the mark, do you add requirements, rephrase, switch models or do it yourself? Would you prefer one ready-to-use answer or several options to compare?
 
-Project byline: lawyer112. Codex assisted with drafting, translation, implementation, and checking. No independent or external peer review is claimed. [PERMISSIONS.md](PERMISSIONS.md) states the separate scopes for manuscripts, code, third-party sources, and participant materials; reports are not blanket-relicensed.
+**What do you think of AI?** What helps most, and what irritates you most? How satisfied are you, do you check important information, and are you excited, curious, cautious, or hopeful and worried at the same time?
 
-## Build and verification
+We will look for patterns across reported MBTI types and for differences within each type. We will also keep context such as frequency and experience, so frequent use is not mistaken for an innate personality advantage.
 
-Use Python 3.12 or later, Quarto 1.10.19, and Chinese fonts. Install requirements.txt, then run `python scripts/build_site.py`. Both language pages and PDFs are generated from their shared manuscript sources. See [reproduction instructions](protocol/20261026-mbti-ai-use-protocol/reproduce.md) and [verification records](VERIFICATION.md). The check workflow does not deploy; Pages publication requires manually dispatching the publish workflow.
+## Questions worth exploring together
+
+- Is AI mainly a tool, teacher or conversation partner—and do different types show similar distributions?
+- Some people give direct instructions; others think through a conversation. How much does that relate to MBTI?
+- What are the most valued benefits and most common complaints?
+- Do people who are very satisfied with AI also check important answers carefully?
+- Could habits that contradict type stereotypes be the most interesting stories of all?
+
+These are **questions to explore using real responses**, not findings we already have. We will not write personality stereotypes first and fit submissions to them.
+
+## How to participate
+
+**Prefer clicking options? Choose the closed-ended form. Prefer sharing an experience? Tell a short story. Either route is enough.**
+
+1. [Open the questionnaire](https://lawyer112.github.io/mbti-ai-open-study/survey/index.html) and answer honestly. An uncertain MBTI type is welcome; there is no need to take a new test.
+2. Review and export your report. The page does not upload automatically; the files stay with you until you submit them.
+3. Attach the files or paste the complete report in a [questionnaire-return Issue](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=01-individual-report.yml). You can also use a pull request.
+
+You do not need full chat logs, impressive prompts or proof that you are good at AI. Enjoying it, disliking it, using it occasionally or deciding to do something yourself can all make useful contributions.
+
+**Current status: the project is public, with no statistics from real participants yet. The original questionnaire is being redesigned into a lighter everyday-habits and stories survey, alongside multilingual participation routes.** Old records keep their version and will not be silently pooled with redesigned responses.
+
+## What we hope to publish
+
+We want to build a readable, discussable **“Sixteen Personalities and Their Ways of Using AI”** collection:
+
+- **Habit charts:** what people do with AI, how they ask, adjust and check.
+- **Opinions and complaints:** what people appreciate and dislike, including unhelpful experiences.
+- **Traceable real stories:** typical experiences, surprises and exceptions, quoted only with permission.
+- **An evolving observation article:** data, patterns and unresolved questions presented together.
+
+These are planned outputs, not completed findings. Comparisons will state participant counts and numbers in each type. Types without responses stay empty; sparse comparisons will be identified as uncertain.
+
+If MBTI differences are small—or tools, tasks and experience explain more than personality labels—that is also a result worth reporting.
+
+## Room for individual differences
+
+MBTI is an entry point for conversation and observation. This is not a personality test, an ability assessment or a ranking of better and worse types. You can differ from your type stereotype and feel both pleased and dissatisfied with AI.
+
+Participation is for adults aged 18 or older. GitHub submissions are public and linked to accounts; a participant code does not provide anonymity. Remove names, contact details, client information, company secrets and credentials. You separately choose whether your story may be quoted verbatim. See the [participation rules](CONTRIBUTING.md).
+
+## Other ways to help
+
+Point out awkward questions, suggest missing options, review translations, propose interesting comparisons or contribute an [independent study](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=02-study-report.yml). For design ideas, [open a discussion Issue](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=03-research-discussion.yml).
+
+Project byline: **lawyer112**. AI assists with wording, translation and implementation; experiences must come from participants themselves, and test records never count as survey data. Detailed methods, versions and handling rules remain in the [design guide](QUESTIONNAIRE_DESIGN.en.md) and [data rules](data/README.md). Material-use scope is in [PERMISSIONS.md](PERMISSIONS.md).
