@@ -1,0 +1,130 @@
+---
+title: MBTI Personality Preferences and Generative AI Use
+subtitle: Open collaborative research protocol · Pilot preparation · Not externally peer reviewed · 0.3.0
+author:
+- lawyer112
+date: 2026-10-26
+lang: en
+paper-id: 20261026-mbti-ai-use-protocol
+paper-version: 0.3.0
+article-type: protocol
+bibliography: references.bib
+abstract: 'This protocol examines associations between self-reported personality labels and the process of using generative AI, including task initiation, prompting, iteration, verification, adoption, and personal experience. Participants recall their most recent task that ended or was paused within the previous 30 days, complete either a closed-ended or an open-ended questionnaire, and return their report through GitHub. The forms share contextual and personality items but are not treated as equivalent scales. This release provides an executable pilot protocol and questionnaires, not findings from human participants. The initial 20 to 30 participants are intended to assess comprehension and operational feasibility. Formal comparisons require a separately frozen analysis plan and sample-size planning. Objective work performance and gains from AI require a later standardized-task study.
+
+  '
+format:
+  html:
+    include-in-header:
+      text: '<link rel="canonical" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/en.html">
+
+        <link rel="alternate" hreflang="en" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/en.html">
+
+        <link rel="alternate" hreflang="zh-CN" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/zh.html">'
+---
+
+:::: {.content-visible when-format="html"}
+::: {.article-links}
+[中文](zh.qmd) · [Download English PDF](en.pdf) · [Questionnaire in Chinese](../../survey/index.html) · [Project home](../../en/index.qmd)
+:::
+::::
+
+## Research question and publication status {#question}
+
+This project asks whether self-reported MBTI types or preference labels have reproducible associations with prompting, interaction, verification, adoption, and experience during real generative AI use. This release is a research protocol. It contains no analysis of human participants collected by this project and claims no completed psychometric validation, independent methodological review, or external peer review.
+
+The available materials are an original questionnaire, submission tools, an explicit mapping from items to research questions, and a proposed analysis route. There are no objective performance data supporting a claim that one type is best suited to working with AI. If differences are small, highly uncertain, or disappear after accounting for tasks and experience, the eventual paper should report that outcome rather than presuppose a winning type.
+
+## Concepts and design rationale {#background}
+
+This questionnaire does not assess personality afresh or reproduce commercial MBTI test items. Participants voluntarily report a previously known type, its source and timing, and whether repeated assessments agreed. Official MBTI ethical guidance opposes selecting or restricting people on the basis of type. This project likewise does not use labels as hiring criteria or ability judgments. [@mbti-ethics]
+
+16Personalities describes its own framework. Identical four-letter labels therefore do not establish that instruments are equivalent. Formal MBTI assessments, 16Personalities, other tests, self-identification, and unknown sources are recorded separately rather than silently treated as a single personality measure. [@sixteen-framework]
+
+Open-ended versus closed-ended formats and question order can influence responses. The two forms cover the same themes, while preserving form mode and viewing order. Piloting is intended to identify misunderstandings and omitted options. Item purposes can be expanded, and their exposure is recorded; these measures cannot guarantee the removal of response bias. [@pew-questions]
+
+## Sample, task, and participation workflow {#design}
+
+The pilot is for volunteers aged 18 or older who can understand the Chinese questionnaire and have used generative AI within the past 30 days. Each report concerns the most recent real task that ended or was deliberately paused. Successful, unsuccessful, and incomplete tasks are all eligible. This is not random population sampling and does not cover recent nonusers of AI.
+
+Participants open the questionnaire in a browser, choose one form, complete and inspect it, and export a JSON data file and a readable Markdown report. They return these through an Issue or pull request. The downloaded HTML file also works offline. Answers are not uploaded automatically. GitHub Pages provides static hosting; participants must actively submit the report. [@github-pages]
+
+A participant code identifies repeated contributors, case_id links records of one task, and questionnaire mode distinguishes the two forms. Completing the other form does not create another task. Maintainers check account provenance, duplicate records, and corrections before assigning report_id. Codes alone cannot prevent multiple accounts or fabricated reports. Independent studies are stored separately and are not automatically pooled with individual reports.
+
+The instrument in this release is Chinese v0.2; the bilingual protocol content version is 0.3.0. The complete English manuscript supplies research information and participation rules. It does not imply that a validated English questionnaire exists. Additional instrument languages require checks of meaning and applicability, with comparability assessed before pooling.
+
+## Measurement and item coverage {#measures}
+
+The closed-ended form has 28 process and experience items, or 49 items including shared fields. The open-ended form has 13 narrative questions, or 34 items including shared fields. These totals include optional and conditional questions, so the applicable count varies. Completion time has not been measured with human pilot participants.
+
+Shared items B01 through B12 record the participant code, field, cumulative AI experience, recent frequency, task date, recall interval, task category and goal, familiarity, service and model, capabilities, and consequences of error. P01 through P04 record type, source, timing, and consistency. R01 through R05 cover omissions, AI-assisted preparation and its details, permission for verbatim quotation, and links to earlier submissions.
+
+| Research question | Closed-ended items | Narrative items | Intended answer |
+| --- | --- | --- | --- |
+| RQ1 How is the initial request expressed? | C04 to C08 | T03 | Information supplied and the initial request format |
+| RQ2 How is work advanced with AI? | C01 to C03, C09 to C13 | T01 to T06 | Distributions and explanations of motivation, planning, iteration, redirection, and responses to difficulty |
+| RQ3 How are outputs checked and adopted? | C14 to C17 | T07 to T09 | Differences in verification, error repair, and adoption associated with reported labels |
+| RQ4 What are the outcomes and experiences? | C18 to C28 | T10 to T13 | Completion, invested time, helpfulness, trust, control, frustration, understanding, and future intention |
+| RQ5 Who gains more in objective performance? | Insufficient in this instrument | Insufficient in this instrument | Reserved for standardized tasks, independent scoring, and AI versus no-AI comparisons |
+
+Explanations in this table mean participants' accounts and possible mechanisms for discussion, not identified causal mechanisms. Each item has a specific rationale in the complete questionnaire. Rationales do not prescribe favorable or unfavorable judgments about a personality type.
+
+## Coding, inclusion, and quality control {#coding}
+
+C04 through C07 separately record whether the initial prompt included the goal, background, output format, and completion criteria. These remain four binary indicators, not a universal prompt-quality score. Uncertain recall is missing information. Closed-ended answers are self-reports. T03 can enter a separate verbatim coding exercise only when the original wording can be checked; retrospective summaries are not substitutes for original prompts.
+
+C14 retains all reported verification methods. The main exploratory indicator, external verification, means reporting at least one of independent source consultation, actual calculation or execution/testing, or another person's review. Reports limited to no checking, prior impressions, or confirmation by the same AI are coded as no reported external verification. If none of those three methods is reported and an unclassified other method is selected, or the answer is unknown, the indicator remains unresolved. This indicator is not accuracy and does not establish that high-quality checking actually occurred. C17 is a categorical adoption measure; direct adoption is not ranked as better.
+
+C16 appears only after an error is reported, C20 only when a time band is available, and R03 only when AI helped prepare the report. Stale answers to hidden questions are excluded from the response export. Missing, inapplicable, explicit absence, and uncertainty are retained separately. Ordered option codes are not automatically treated as equally spaced continuous scores. Experience outcomes remain separate, without an overall AI-fit score.
+
+Eligibility requires explicit participation confirmations, an in-scope real task, identifiable provenance and version, and a record that is neither a test nor a duplicate of the same task. Incomplete materials first receive a request for clarification; unresolved issues are documented as exclusions or item-level missingness. Lack of verification, low satisfaction, or failure to complete the task are not exclusion reasons. Records with uncertain personality labels may contribute to usage descriptions but not comparisons among known types.
+
+Two coders will independently apply rules fixed after piloting to narrative responses. Initial coding hides personality fields and, where possible, removes type self-descriptions from the narrative; failures to mask them are documented. Evidence, disagreements, and adjudication are retained. AI-assisted organization requires human checking and must not infer personality from writing style. This coding process has not yet been staffed or completed.
+
+## Analysis plan and evidential limits {#analysis}
+
+First report participants, tasks, questionnaire submissions, the inclusion/exclusion flow, and distributions of tasks, models, sources, modes, and types. The pilot evaluates comprehension, omissions, and completion, rather than treating 20 to 30 participants as a performance comparison of 16 types.
+
+The intended primary exploratory outcome for the formal stage is external verification in C14. C04 through C07 are prespecified secondary process indicators; other items support secondary or further exploratory work. Before formal collection, freeze the primary comparison, smallest meaningful difference, covariates, and multiple-comparison procedure, and plan the sample accordingly. Do not choose the primary question after observing significant findings. This release invents neither a power calculation nor a guarantee that a fixed sample will support 16-type comparisons.
+
+The main analysis uses each participant's first task submission that meets the inclusion rules, preventing frequent contributors from dominating the sample. Missing outcomes in that record are not replaced by a later task. Sensitivity analyses using all eligible tasks must account for repeated observations within participants. Personality measurement sources are described separately and assessed through stratification or sensitivity analyses; formal assessments and online tests are not automatically pooled. Sparse types or small samples warrant descriptions and uncertainty rather than forced complex models.
+
+Where the sample permits, examine associations between labels and outcomes while considering AI experience, recent frequency, task category, domain familiarity, error consequences, and model capabilities. Exact models, grouping rules, and the number of covariates must be fixed before formal collection. Report effect sizes and intervals, missingness, and the analysis sample. Nonsignificance does not establish equivalence, and significance alone does not establish practical importance. Retain negative findings rather than displaying only intuitive comparisons.
+
+Narrative coding explains observed patterns and exceptions. Because participants choose the form, differences between forms are not causal effects of questionnaire format. Two forms for one task provide linked, complementary evidence; they are not combined into a single scale or counted as separate people.
+
+## Requirements for a later standardized-task study {#next-stage}
+
+Answering who performs better objectively with AI requires another study: common task materials and available tools, recorded time, and quality/error ratings under predefined criteria by assessors unaware of personality labels. Estimating gains from AI also requires AI and no-AI conditions, with task order and learning effects addressed.
+
+Random allocation of AI conditions can help estimate the tool's effect and differences in that effect across label groups. Personality itself is not randomized, so this still would not show that personality causes the differences. This release does not supply a complete experimental task set, recruitment, or implementation of that stage. It requires its own version and a design made public before execution.
+
+## Materials and participant rights {#availability}
+
+The public repository provides questionnaires, the complete protocol, item rationales, contribution rules, and reproducible build instructions. It currently contains no human participant data or study results. The site offers complete Chinese and English HTML and searchable PDF generated from the corresponding shared sources. Data fields and code use one structure.
+
+Public GitHub Issues, pull requests, and attachments are associated with the submitting account. Attachments are uploaded immediately and public attachments can be accessed without signing in. Credentials, confidential information, and other people's private content must therefore be removed before submission. A participant code does not make a submission anonymous. [@github-attachments]
+
+Participants consent to organization of their report for this project's analysis and aggregate manuscript reporting. Verbatim quotation requires a separate choice. Withdrawal can be requested in the original Issue or linked pull request; the project excludes the record from subsequent analyses but cannot guarantee retrieval of downloaded, cached, or forked copies. Redistribution of individual-level data requires a separate check of purpose and permission. Public submission is not blanket relicensing.
+
+No institutional ethics approval or endorsement by a commercial assessment provider is claimed. Any later institutional phase must establish applicable review requirements before that phase is implemented. Contribution records do not automatically confer authorship; subsequent authorship is discussed according to actual research contributions.
+
+## Limitations and feasibility {#limitations}
+
+The main limitations are volunteer and GitHub recruitment bias, recall and self-report error, inconsistent label sources, sparse types, heterogeneous tasks and models, and response effects associated with form mode or exposure to rationales. People with no recent AI experience, those unable to use the Chinese questionnaire, and those unwilling to post publicly are not adequately covered by this entry point.
+
+A one-task rating of helpfulness, trust, or reduced workload is not experimentally measured performance. Different original tasks also prevent direct ranking of people's ability by time spent. Attachments can improve limited aspects of checkability but cannot remove selection bias or guarantee authenticity.
+
+The current feasibility deliverable is an operational questionnaire, a return pathway, and a public analysis route. Formal sample size, psychometric properties, and standardized-task performance remain future work. Instrument changes require a new version and a retained mapping. Pilot and formal records are separated, and old experience anchors must not be silently combined.
+
+## AI use and verification disclosure {#ai-use}
+
+Codex assisted with drafting, implementation, translation, and checking on October 26, 2026. No unverified model version is supplied. Sources were checked against opened primary methodological or official pages. Questionnaire workflows were checked in a browser and through exported files, and the Chinese and English texts were reviewed section by section for alignment.
+
+These are assisted checks by the same AI assistant, not independent research verification, human cognitive interviews, psychometric validation, or peer review. Automatically prepared test responses are marked TEST_ONLY, retained in an unpublished checking directory, and excluded from research data. The project initiator confirmed the public byline lawyer112. Future revisions and responsibilities follow actual contribution records.
+
+::: {.content-visible when-format="html"}
+## References {#references}
+:::
+
+::: {#refs}
+:::

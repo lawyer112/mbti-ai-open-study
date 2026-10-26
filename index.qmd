@@ -1,0 +1,52 @@
+---
+title: MBTI 与 AI 使用行为开放研究
+subtitle: 研究方案 · 试填问卷 v0.2 · 方案版本 0.3.0 · 未经外部同行评审
+lang: zh-CN
+toc: false
+format:
+  html:
+    include-in-header:
+      text: '<link rel="canonical" href="https://lawyer112.github.io/mbti-ai-open-study/index.html">
+
+        <link rel="alternate" hreflang="zh-CN" href="https://lawyer112.github.io/mbti-ai-open-study/index.html">
+
+        <link rel="alternate" hreflang="en" href="https://lawyer112.github.io/mbti-ai-open-study/en/index.html">'
+---
+
+[English](en/index.qmd)
+
+我们研究不同人格标签与 AI 使用全过程的关系：如何开始、怎样提问、怎样调整、如何核验、最后采用什么，以及获得怎样的体验。本版本公开研究设计和参与工具，不报告人格优劣结论。
+
+## 先从一次真实任务开始
+
+**[打开问卷](survey/index.html)** · [提交完成的报告](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=01-individual-report.yml)
+
+选择最近30天内最近一次已经结束或决定暂停的 AI 任务。选择题版和文字版任选其一，成功、失败、未完成或未核验均可如实记录。
+
+1. 在浏览器填写；每道题都可展开查看设计目的。
+2. 检查答案并导出 JSON 数据文件和 Markdown 可读报告。
+3. 通过个人问卷回传 Issue 附文件，或以 PR 提交。导出不会自动完成投稿。
+
+<a href="survey/index.html" download="mbti-ai-questionnaire-v0.2.html">下载独立 HTML 问卷，离线填写</a>
+
+首轮面向18岁及以上、能够理解中文问卷的近期 AI 使用者。公开投稿关联 GitHub 账号，研究代号不等于匿名。提交前移除私人或机密内容。请先阅读[参与与贡献规则](https://github.com/lawyer112/mbti-ai-open-study/blob/main/CONTRIBUTING.md)。
+
+## 两版问卷的分工
+
+选择题版有28道过程与体验题，共49个题项；文字版有13道开放问题，共34个题项。总数包括共同背景、可选和条件题。前者用于比较行为分布，后者用于理解具体过程与判断依据。两版主题对应，不能直接合成一个总分。
+
+首轮20至30人的目标是试填改进，不足以保证比较16类型。实际填写耗时尚未测定。
+
+## 阅读完整方案
+
+- [中文全文](protocol/20261026-mbti-ai-use-protocol/zh.qmd) · [中文 PDF](protocol/20261026-mbti-ai-use-protocol/zh.pdf)
+- [Complete English protocol](protocol/20261026-mbti-ai-use-protocol/en.qmd) · [English PDF](protocol/20261026-mbti-ai-use-protocol/en.pdf)
+- [全部选择题与目的](survey/choice-questionnaire.md) · [全部文字题与目的](survey/text-questionnaire.md)
+
+方案逐项说明研究问题、对应题号、编码、分析和可得结论。问卷可以研究自报使用行为与人格标签的关联；客观工作绩效和 AI 增益需要后续统一任务研究。
+
+## 共同完善
+
+欢迎提交[独立调研报告](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=02-study-report.yml)、[讨论方法](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=03-research-discussion.yml)，或通过 PR 改进研究材料。个人记录、团队研究和测试材料分别管理，不将自动生成的答案当作真人样本。
+
+项目署名：lawyer112。方案与工具由 Codex 辅助起草、翻译和检查，具体披露见全文。本项目不声称已获得机构伦理审批或测评机构认可。许可与参与者材料范围见[材料使用说明](https://github.com/lawyer112/mbti-ai-open-study/blob/main/PERMISSIONS.md)。

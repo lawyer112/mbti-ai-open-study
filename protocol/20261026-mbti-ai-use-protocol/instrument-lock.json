@@ -1,0 +1,9 @@
+{
+  "questionnaire_version": "0.2",
+  "instrument_language": "zh-CN",
+  "files_sha256": {
+    "scripts/questionnaire_items.py": "4400b11b4fafb147970528aef50c48c83551d4a4849585cde7ca6a5acc72a153",
+    "scripts/build_questionnaires.py": "9e683d085fd31785de30ce9fe0beb46b70592f9c7379ee24faad802635427a40",
+    "survey/page.template.html": "dcfc6eb30b3527280d5d028ff56ba3e6df5e9c45636e64d2dd7cebf0ce8c7458"
+  }
+}

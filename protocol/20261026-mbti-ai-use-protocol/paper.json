@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "paper_id": "20261026-mbti-ai-use-protocol",
+  "type": "protocol",
+  "version": "0.3.0",
+  "status": "ready",
+  "original_language": "zh-CN",
+  "date": "2026-10-26",
+  "authors": [
+    "lawyer112"
+  ],
+  "title": {
+    "zh-CN": "MBTI 人格偏好与生成式 AI 使用行为的关系",
+    "en": "MBTI Personality Preferences and Generative AI Use"
+  },
+  "language_status": {
+    "zh-CN": "reviewed",
+    "en": "reviewed"
+  },
+  "peer_review": "not-peer-reviewed",
+  "license": "No general reuse license granted. Article, code, participant and third-party permissions are separate; see PERMISSIONS.md.",
+  "related_work": []
+}

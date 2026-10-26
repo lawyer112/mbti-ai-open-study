@@ -1,0 +1,18 @@
+name: 研究讨论 / Discuss research
+description: 讨论问卷、证据与分析。Discuss the instrument, evidence and analysis.
+title: '[研究讨论] '
+body:
+- type: textarea
+  id: question
+  attributes:
+    label: 希望讨论的问题 / Question
+  validations:
+    required: true
+- type: textarea
+  id: proposal
+  attributes:
+    label: 建议和依据 / Proposal and evidence
+    description: 可提供论文链接、具体观察或可执行的改法。请区分已有证据与个人假设。 Link sources or observations, propose concrete changes, and distinguish
+      evidence from hypotheses.
+  validations:
+    required: true

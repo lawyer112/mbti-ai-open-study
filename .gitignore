@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+output/
+archive/
+_site/
+.quarto/
+.playwright-mcp/
+protocol/_metadata.yml
+*.typ
+*.log
+
+/.quarto/
+**/*.quarto_ipynb

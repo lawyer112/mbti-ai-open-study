@@ -1,0 +1,52 @@
+---
+title: 'MBTI and AI Use: An Open Collaborative Study'
+subtitle: Research protocol · Pilot questionnaire v0.2 · Protocol 0.3.0 · Not externally peer reviewed
+lang: en
+toc: false
+format:
+  html:
+    include-in-header:
+      text: '<link rel="canonical" href="https://lawyer112.github.io/mbti-ai-open-study/en/index.html">
+
+        <link rel="alternate" hreflang="en" href="https://lawyer112.github.io/mbti-ai-open-study/en/index.html">
+
+        <link rel="alternate" hreflang="zh-CN" href="https://lawyer112.github.io/mbti-ai-open-study/index.html">'
+---
+
+[中文](../index.qmd)
+
+We study how reported personality labels relate to the full process of using AI: initiation, prompting, adjustment, verification, adoption, and experience. This release provides the design and participation tools, not findings that rank personality types.
+
+## Begin with one real task
+
+**[Open the Chinese questionnaire](../survey/index.html)** · [Return a completed report](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=01-individual-report.yml)
+
+Choose your most recent AI task that ended or was deliberately paused within the past 30 days. Complete either the closed-ended or the open-ended form. Successful, unsuccessful, incomplete, and unchecked outcomes are all welcome.
+
+1. Fill in the browser form. Each item has an expandable explanation of its purpose.
+2. Inspect your answers and export the JSON data file and readable Markdown report.
+3. Attach them to a questionnaire-return Issue, or contribute them through a pull request. Exporting does not submit the report automatically.
+
+<a href="../survey/index.html" download="mbti-ai-questionnaire-v0.2.html">Download the standalone HTML questionnaire for offline use</a>
+
+The pilot is for recent AI users aged 18 or older who can understand the Chinese instrument. Public submissions are associated with GitHub accounts, so a participant code does not provide anonymity. Remove private and confidential content before submission. Read the bilingual [participation and contribution rules](https://github.com/lawyer112/mbti-ai-open-study/blob/main/CONTRIBUTING.md).
+
+## Two complementary forms
+
+The closed-ended form has 28 process/experience items and 49 items in total. The narrative form has 13 open-ended questions and 34 items in total. Totals include shared background fields, optional items, and conditional questions. The former supports behavioral comparisons; the latter explores processes and reasons. Matching themes do not justify a combined total score.
+
+The initial 20 to 30 volunteers are for improving usability and comprehension, not for guaranteeing comparisons among 16 types. Completion time has not yet been measured. This release does not include a validated English questionnaire.
+
+## Read the complete protocol
+
+- [English full text](../protocol/20261026-mbti-ai-use-protocol/en.qmd) · [English PDF](../protocol/20261026-mbti-ai-use-protocol/en.pdf)
+- [中文全文](../protocol/20261026-mbti-ai-use-protocol/zh.qmd) · [中文 PDF](../protocol/20261026-mbti-ai-use-protocol/zh.pdf)
+- [Closed-ended items and rationales, in Chinese](../survey/choice-questionnaire.md) · [Narrative items and rationales, in Chinese](../survey/text-questionnaire.md)
+
+The protocol maps research questions to items, coding, analyses, and permissible conclusions. The questionnaire can investigate associations involving self-reported behavior. Objective work performance and gains from AI require a later standardized-task study.
+
+## Contribute
+
+Submit an [independent study](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=02-study-report.yml), [discuss methods](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=03-research-discussion.yml), or improve materials through a pull request. Individual reports, independent studies, and test fixtures are kept separate. Generated answers are never treated as human participants.
+
+Project byline: lawyer112. Codex assisted with drafting, translation, implementation, and checking, as disclosed in the full protocol. No institutional ethics approval or assessment-provider endorsement is claimed. See [permissions and participant-material scope](https://github.com/lawyer112/mbti-ai-open-study/blob/main/PERMISSIONS.md).
