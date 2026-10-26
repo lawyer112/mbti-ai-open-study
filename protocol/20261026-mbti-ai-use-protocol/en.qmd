@@ -90,6 +90,10 @@ Participation is voluntary for adults aged 18 or older who understand their chos
 
 Project byline: lawyer112. Codex assists with drafting, translation, implementation and checks; these are not native-speaker or independent researcher validation. Experiences must be the participant’s own; disclose AI writing help in A06. Exclude all TEST_ONLY fixtures. Real responses, independent studies, translation corrections and design ideas are welcome. Acknowledgement is voluntary, and paper authorship follows actual contributions.
 
+```{=typst}
+#pagebreak()
+```
+
 ## References {#references}
 
 ::: {#refs}

@@ -6,6 +6,8 @@
 
 Reframed as an informal MBTI × AI survey of everyday uses, conversations, praise and complaints. Instrument v0.3 has 19 choice items, 11 story items, 7 shared and 23 distinct, including recent nonusers and uncertain types. Retired the C14 primary-outcome plan and single-task recall requirement. Added 12 complete localized questionnaires, purposes, return forms, introductions, guides and matching PDFs. Preserve language/version and quotation permissions; keep old v0.2 task records separate. No human statistical findings.
 
+线上检查后修正英文 PDF 的参考资料标题分页；问卷题意及编码未变。 / Post-deployment layout checks corrected the English PDF reference-heading pagination; instrument wording and codes are unchanged.
+
 ## 0.3.0 · 2026-10-26
 
 首次公开方案包：补齐完整中英全文、共享参考文献、论断证据、术语表、同源网页/PDF和核验记录。增加研究问题与题目映射，明确正式阶段主要探索指标为外部核验，区分行为关联与客观绩效研究。问卷题意维持中文v0.2；导出补充中文语言和试填阶段标记，并接入真实回传入口。无真人结果发表。
