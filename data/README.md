@@ -16,11 +16,11 @@
 
 保留report_id、participant_code、来源、问卷版本、记录时间、审核状态与更正历史。来源链接本身可能关联GitHub账号，不能称为匿名数据。面向统计的表不直接使用用户名，不携带对话中的联系方式或私人文本。
 
-v0.2另保留case_id、questionnaire_mode、task_protocol、purpose_viewed及浏览问卷顺序。正式导出kind为mbti-ai-response；kind为mbti-ai-draft的草稿不纳入。选择题与文字题针对同一任务时关联同一case_id，共同信息若冲突需核对更正。题库中的字符串选项编号只是编码，不是分数；必须结合版本与标签解释。
+v0.2另保留case_id、questionnaire_mode、task_protocol、purpose_viewed及浏览问卷顺序；公开表单同时标记instrument_language=zh-CN和collection_stage=pilot。正式导出kind为mbti-ai-response；kind为mbti-ai-draft的草稿不纳入。选择题与文字题针对同一任务时关联同一case_id，共同信息若冲突需核对更正。题库中的字符串选项编号只是编码，不是分数；必须结合版本与标签解释。
 
 题目未填、跳题不适用、记不清与明确没有分别保存。两种模式的回答分别分析，不因主题对应就直接混算量表。试填和正式数据分开；旧v0.1与v0.2不得静默合并。
 
-output/playwright/中若出现TEST_ONLY文件，仅为界面检查材料，不是参与者数据，禁止纳入分析。
+output/中若出现TEST_ONLY文件，仅为界面检查材料，不是参与者数据，禁止纳入分析。公开Issue或PR中明确标注TEST_ONLY、test-only或excluded的测试记录同样排除，不因格式完整、具有case_id或出现勾选确认就视为真人参与。
 
 不得用报告条数代替参与人数，不把同一内容的Issue与PR重复计入，不把一篇调研报告当作一名参与者。原报告、人工编码和统计结果分开保存；缺失不填0。
 
@@ -38,4 +38,4 @@ Only kind=mbti-ai-response is a formal exported response. A saved draft with kin
 
 Count participants, tasks, forms and separate studies distinctly. Do not count an Issue and its pull request twice, or treat one study report as one participant. Keep raw reports, coding and statistical outputs separate. Missing, inapplicable, uncertain and explicit absence are distinct. Do not combine the two forms as equivalent scales, mix pilot and formal records, or silently pool v0.1 and v0.2 anchors.
 
-TEST_ONLY files under output/ are interface fixtures excluded from public source control and all analyses. Dataset redistribution and verbatim quotations require separate permission checks; begin with authorized aggregate results. A person's participation consent is not unlimited third-party reuse permission.
+TEST_ONLY files under output/ are interface fixtures excluded from public source control and all analyses. Test records in public Issues or pull requests marked TEST_ONLY, test-only, or excluded must also be excluded. A complete format, case_id or checked confirmations does not turn a fixture into human participation. Dataset redistribution and verbatim quotations require separate permission checks; begin with authorized aggregate results. A person's participation consent is not unlimited third-party reuse permission.
