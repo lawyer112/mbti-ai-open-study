@@ -1,0 +1,17 @@
+name: de · Studie diskutieren
+description: Übersetzungsprobleme oder Verbesserungen melden.
+title: '[de v0.3] '
+labels:
+- method-discussion
+body:
+- type: markdown
+  attributes:
+    value: Issues, PRs und Anhänge sind öffentlich und mit Ihrem GitHub-Konto verknüpft. Ein Teilnahmecode macht
+      Sie nicht anonym.
+- type: textarea
+  id: report
+  attributes:
+    label: Studie diskutieren
+    description: Nennen Sie Problem, Sprache, Fragenkennung und Korrekturvorschlag. Keine privaten Angaben.
+  validations:
+    required: true

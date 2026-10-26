@@ -1,0 +1,18 @@
+name: en · Submit an independent study
+description: Share a separate study, its methods and evidence.
+title: '[en v0.3] '
+labels:
+- needs-review
+body:
+- type: markdown
+  attributes:
+    value: Issues, pull requests and attachments are public and linked to your GitHub account. A report ID does
+      not make you anonymous.
+- type: textarea
+  id: report
+  attributes:
+    label: Submit an independent study
+    description: Describe the research question, recruitment, participant count, personality source, AI tasks/tools,
+      methods, findings, limitations and permissions. Separate real data from hypotheses.
+  validations:
+    required: true

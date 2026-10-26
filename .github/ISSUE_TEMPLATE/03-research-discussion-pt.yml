@@ -1,0 +1,17 @@
+name: pt · Discutir o estudo
+description: Informe problemas de tradução ou sugestões.
+title: '[pt v0.3] '
+labels:
+- method-discussion
+body:
+- type: markdown
+  attributes:
+    value: Issues, PRs e anexos são públicos e vinculados à sua conta do GitHub. Um código de participante não garante
+      anonimato.
+- type: textarea
+  id: report
+  attributes:
+    label: Discutir o estudo
+    description: Indique problema, idioma, código da pergunta e correção sugerida. Não inclua informações privadas.
+  validations:
+    required: true

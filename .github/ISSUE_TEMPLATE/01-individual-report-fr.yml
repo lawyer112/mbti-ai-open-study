@@ -1,0 +1,89 @@
+name: fr · Transmettre un questionnaire
+description: Joignez les fichiers exportés ou collez le rapport complet.
+title: '[fr v0.3] '
+labels:
+- needs-review
+body:
+- type: markdown
+  attributes:
+    value: 'Enquête informelle sur le MBTI, les usages quotidiens de l’IA, les opinions et les histoires vécues.
+      Pensez aux 30 derniers jours. Ce n’est ni un test de personnalité ni un classement des capacités.
+
+
+      Les tickets, PR et pièces jointes sont publics et liés à votre compte GitHub. Un code de participant ne rend
+      pas anonyme.
+
+
+      Vérifiez le rapport et retirez ce qui ne doit pas être public.
+
+
+      Téléchargez les données JSON et le rapport Markdown.
+
+
+      Joignez les fichiers ou collez le rapport complet dans un ticket GitHub. Un PR est également possible.
+
+
+      https://lawyer112.github.io/mbti-ai-open-study/survey/index.html?lang=fr'
+- type: input
+  id: case-id
+  attributes:
+    label: Identifiant du rapport
+    description: Il s’agit de vos habitudes et opinions déclarées. A05 concerne l’autorisation de citation. Reliez
+      les deux formes d’une même participation par cet identifiant.
+  validations:
+    required: true
+- type: input
+  id: schema-version
+  attributes:
+    label: Version du questionnaire
+    description: '0.3'
+    value: '0.3'
+  validations:
+    required: true
+- type: dropdown
+  id: questionnaire-mode
+  attributes:
+    label: Forme du questionnaire
+    options:
+    - Choix rapides
+    - Raconter une histoire
+    - Choix rapides + Raconter une histoire
+  validations:
+    required: true
+- type: input
+  id: instrument-language
+  attributes:
+    label: Langue
+    value: fr
+  validations:
+    required: true
+- type: textarea
+  id: report-files
+  attributes:
+    label: Fichiers ou rapport complet
+    description: Joignez les fichiers exportés ou collez le rapport complet.
+  validations:
+    required: true
+- type: textarea
+  id: amendments
+  attributes:
+    label: Rapports antérieurs et corrections
+    description: Il s’agit de vos habitudes et opinions déclarées. A05 concerne l’autorisation de citation. Reliez
+      les deux formes d’une même participation par cet identifiant.
+  validations:
+    required: false
+- type: checkboxes
+  id: confirmation
+  attributes:
+    label: Confirmations de participation
+    options:
+    - label: J’ai au moins 18 ans et je participe volontairement. Je décris mes propres habitudes, expériences ou
+        opinions réelles.
+      required: true
+    - label: Je comprends que les contributions GitHub sont publiques et liées à mon compte ; un identifiant ne
+        garantit pas l’anonymat.
+      required: true
+    - label: J’ai retiré les informations privées et confidentielles et peux partager ce contenu. J’autorise les
+        statistiques et synthèses du projet et comprends que toutes les copies publiques ne pourront pas forcément
+        être retirées.
+      required: true

@@ -1,0 +1,87 @@
+---
+title: 'MBTI × KI: Wie ist dein KI-Gegenüber?'
+lang: de
+toc: false
+format:
+  html:
+    include-in-header:
+      text: '<link rel="canonical" href="https://lawyer112.github.io/mbti-ai-open-study/de/index.html">
+
+        <link rel="alternate" hreflang="zh-CN" href="https://lawyer112.github.io/mbti-ai-open-study/index.html">
+
+        <link rel="alternate" hreflang="en" href="https://lawyer112.github.io/mbti-ai-open-study/en/index.html">
+
+        <link rel="alternate" hreflang="ja" href="https://lawyer112.github.io/mbti-ai-open-study/ja/index.html">
+
+        <link rel="alternate" hreflang="ko" href="https://lawyer112.github.io/mbti-ai-open-study/ko/index.html">
+
+        <link rel="alternate" hreflang="es" href="https://lawyer112.github.io/mbti-ai-open-study/es/index.html">
+
+        <link rel="alternate" hreflang="fr" href="https://lawyer112.github.io/mbti-ai-open-study/fr/index.html">
+
+        <link rel="alternate" hreflang="de" href="https://lawyer112.github.io/mbti-ai-open-study/de/index.html">
+
+        <link rel="alternate" hreflang="pt" href="https://lawyer112.github.io/mbti-ai-open-study/pt/index.html">
+
+        <link rel="alternate" hreflang="ru" href="https://lawyer112.github.io/mbti-ai-open-study/ru/index.html">
+
+        <link rel="alternate" hreflang="ar" href="https://lawyer112.github.io/mbti-ai-open-study/ar/index.html">
+
+        <link rel="alternate" hreflang="hi" href="https://lawyer112.github.io/mbti-ai-open-study/hi/index.html">
+
+        <link rel="alternate" hreflang="id" href="https://lawyer112.github.io/mbti-ai-open-study/id/index.html">'
+---
+
+::: {.article-links}
+[简体中文](../index.qmd) · [English](../en/index.qmd) · [日本語](../ja/index.qmd) · [한국어](../ko/index.qmd) · [Español](../es/index.qmd) · [Français](../fr/index.qmd) · [Deutsch](../de/index.qmd) · [Português](../pt/index.qmd) · [Русский](../ru/index.qmd) · [العربية](../ar/index.qmd) · [हिन्दी](../hi/index.qmd) · [Bahasa Indonesia](../id/index.qmd)
+:::
+
+Manche öffnen KI, um Arbeit zu erledigen, andere suchen ein Gegenüber. Einige erklären seitenlang den Kontext, andere fragen nur: „Was meinst du?“ Manche lieben die Ideen und hassen zugleich die selbstsicheren Fehler. Wie wird dieselbe Technik zu so unterschiedlichen Begleitern?
+
+**Dies ist eine informelle MBTI-×-KI-Umfrage über echte Alltagsgewohnheiten, Ansichten und Geschichten: Wofür nutzen wir KI, wie sprechen wir mit ihr, was gefällt und was nervt? Wir betrachten Tendenzen zwischen selbst angegebenen Typen und Vielfalt innerhalb eines Typs. Ein Gewinner steht nicht fest; niemand muss KI-Können beweisen.**
+
+**[Schnell auswählen / Eine Geschichte erzählen](../survey/index.html?lang=de)** · [Über GitHub einreichen](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=01-individual-report-de.yml)
+
+## Warum es diese Umfrage gibt
+
+**Was ist KI für dich am ehesten?**
+
+Ein Werkzeug zum Erledigen von Aufgaben / Eine Arbeitshilfe / Eine jederzeit ansprechbare Lehrkraft …
+
+**Wie beginnst du meistens ein Gespräch?**
+
+Mit einer kurzen, direkten Anweisung / Zuerst Kontext, Anforderungen und Grenzen / Ich teile die Aufgabe in Schritte auf …
+
+**Was stört dich an KI am meisten?**
+
+Selbstsicher falsche Antworten geben / Meine eigentliche Frage verfehlen / Zu ausführlich sein oder am Thema vorbeireden …
+
+## Ein gemeinsamer Beziehungsatlas
+
+Mit echten Antworten möchten wir einen Atlas der Beziehungen zwischen 16 Typen und KI entwickeln: Gewohnheitsdiagramme, Verteilungen von Lob und Kritik, erlaubte Zitate wahrer Geschichten und einen fortlaufenden Beobachtungsartikel. Gültige Antworten und Personenzahlen pro Typ werden genannt; ohne Daten bleibt die Stelle leer. Kleine Unterschiede und Ausnahmen sind ebenfalls interessant. Dies sind Pläne, noch keine Teilnehmerstatistiken.
+
+## So funktionieren die Formulare
+
+Betrachte die letzten 30 Tage. Die Auswahlform umfasst 19 Fragen, die Erzählform 11; 7 sind gemeinsam. Die Gesamtzahlen enthalten freiwillige und bedingte Fragen; angezeigt wird nur Zutreffendes. Eine Form reicht; für die zweite bleibt die Berichts-ID gleich. Bei unklarem MBTI entfällt die Quellenfrage, bei Nichtnutzung werden Gründe statt erfundener Erfahrungen erfragt. Der letzte Satz ist freiwillig. Auswahlfragen behandeln Nutzung, Gespräch und Meinung, Geschichten ergänzen Kontext. Fragezwecke können geöffnet werden; das wird vermerkt. Die tatsächliche Dauer muss mit Menschen erprobt werden.
+
+## Teilnehmen und teilen
+
+Ich bin mindestens 18 Jahre alt und nehme freiwillig teil. Ich beschreibe meine eigenen tatsächlichen Gewohnheiten, Erfahrungen oder Ansichten.
+
+1. Prüfen Sie den Bericht und entfernen Sie nicht öffentliche Informationen.
+2. Laden Sie JSON-Daten und den Markdown-Bericht herunter.
+3. Hängen Sie die Dateien an ein GitHub-Issue an oder fügen Sie den vollständigen Bericht ein. Ein PR ist ebenfalls möglich.
+
+Antworten werden nicht automatisch hochgeladen. Speichern Sie vor dem Schließen oder Neuladen einen Entwurf.
+
+Issues, PRs und Anhänge sind öffentlich und mit Ihrem GitHub-Konto verknüpft. Ein Teilnahmecode macht Sie nicht anonym.
+
+[Studie und Teilnahmehinweise](../protocol/20261026-mbti-ai-use-protocol/de.qmd) · [PDF](../protocol/20261026-mbti-ai-use-protocol/de.pdf) · <a href="../survey/index.html" download="mbti-ai-v0.3.html">HTML ↓</a>
+
+[Schnell auswählen · Markdown](../survey/de/choice-questionnaire.md) · [Eine Geschichte erzählen · Markdown](../survey/de/text-questionnaire.md)
+
+## Studie diskutieren
+
+Projektname der verantwortlichen Person: lawyer112. Codex hilft bei Text, Übersetzung, Umsetzung und Prüfung; dies ersetzt keine muttersprachliche oder unabhängige Validierung. Erfahrungen müssen eigene sein; KI-Schreibhilfe wird in A06 erklärt. Alle TEST_ONLY-Daten bleiben ausgeschlossen. Antworten, eigene Studien, Korrekturen und Ideen sind willkommen. Danksagungen sind freiwillig; Artikelautorschaft richtet sich nach tatsächlichen Beiträgen.
+
+[Unabhängige Studie einreichen](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=02-study-report-de.yml) · [Studie diskutieren](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=03-research-discussion-de.yml) · [GitHub](https://github.com/lawyer112/mbti-ai-open-study)

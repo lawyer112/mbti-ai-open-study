@@ -1,0 +1,87 @@
+---
+title: MBTI × AI：あなたの AI 相棒はどんな感じ？
+lang: ja
+toc: false
+format:
+  html:
+    include-in-header:
+      text: '<link rel="canonical" href="https://lawyer112.github.io/mbti-ai-open-study/ja/index.html">
+
+        <link rel="alternate" hreflang="zh-CN" href="https://lawyer112.github.io/mbti-ai-open-study/index.html">
+
+        <link rel="alternate" hreflang="en" href="https://lawyer112.github.io/mbti-ai-open-study/en/index.html">
+
+        <link rel="alternate" hreflang="ja" href="https://lawyer112.github.io/mbti-ai-open-study/ja/index.html">
+
+        <link rel="alternate" hreflang="ko" href="https://lawyer112.github.io/mbti-ai-open-study/ko/index.html">
+
+        <link rel="alternate" hreflang="es" href="https://lawyer112.github.io/mbti-ai-open-study/es/index.html">
+
+        <link rel="alternate" hreflang="fr" href="https://lawyer112.github.io/mbti-ai-open-study/fr/index.html">
+
+        <link rel="alternate" hreflang="de" href="https://lawyer112.github.io/mbti-ai-open-study/de/index.html">
+
+        <link rel="alternate" hreflang="pt" href="https://lawyer112.github.io/mbti-ai-open-study/pt/index.html">
+
+        <link rel="alternate" hreflang="ru" href="https://lawyer112.github.io/mbti-ai-open-study/ru/index.html">
+
+        <link rel="alternate" hreflang="ar" href="https://lawyer112.github.io/mbti-ai-open-study/ar/index.html">
+
+        <link rel="alternate" hreflang="hi" href="https://lawyer112.github.io/mbti-ai-open-study/hi/index.html">
+
+        <link rel="alternate" hreflang="id" href="https://lawyer112.github.io/mbti-ai-open-study/id/index.html">'
+---
+
+::: {.article-links}
+[简体中文](../index.qmd) · [English](../en/index.qmd) · [日本語](../ja/index.qmd) · [한국어](../ko/index.qmd) · [Español](../es/index.qmd) · [Français](../fr/index.qmd) · [Deutsch](../de/index.qmd) · [Português](../pt/index.qmd) · [Русский](../ru/index.qmd) · [العربية](../ar/index.qmd) · [हिन्दी](../hi/index.qmd) · [Bahasa Indonesia](../id/index.qmd)
+:::
+
+仕事を早く終えるために AI を開く人も、議論の相手を求める人もいます。背景を長く説明する人、「どう思う？」と一言だけ聞く人。発想が好きな人も、自信満々の間違いが苦手な人も。同じ AI が、どうしてこれほど違う相棒になるのでしょう。
+
+**これは MBTI × AI の気軽な調査です。普段の使い方、評価、実体験を集め、何に使うか、どう話すか、何が好きで何に不満があるかを知りたいと考えています。自己申告のタイプ間の傾向と、同じタイプ内の多様さをどちらも見ます。勝つタイプは決めていません。AI を使いこなせると証明する必要もありません。**
+
+**[選んで回答 / 経験を語る](../survey/index.html?lang=ja)** · [GitHub から提出](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=01-individual-report-ja.yml)
+
+## この調査を始めた理由
+
+**あなたにとって AI は何に近いですか**
+
+用事をこなす道具 / 仕事の助手 / いつでも質問できる先生 …
+
+**普段、どのように話しかけますか**
+
+短く直接依頼する / 背景・要件・制約を先に伝える / 手順を分けて一つずつ聞く …
+
+**AI のどんなところに不満がありますか**
+
+自信満々に間違う / 質問に答えていない / 長すぎる・要点がずれる …
+
+## 一緒につくる付き合い方図鑑
+
+実際の回答が集まったら、「16 タイプと AI の付き合い方図鑑」を少しずつ作ります。使い方の図表、好評と不満の分布、引用許可を得た実話、更新される観察記事が目標です。有効回答数とタイプ別人数を示し、データのないタイプは空欄にします。差が小さいことや例外の多さも大切です。これは計画であり、現在、参加者の統計結果はありません。
+
+## アンケートの仕組み
+
+過去 30 日を振り返ります。選択式は 19 項目、体験談式は 11 項目で、7 項目を共有します。条件付き・任意項目を含む総数で、該当する質問だけ表示します。片方だけで参加でき、追加する場合は同じレポート ID を使います。MBTI が不明なら判定元の質問を省略し、最近使っていない人はその理由を回答します。体験を作る必要はありません。最後の一文は任意です。選択式は用途・会話・評価、体験談は背景を扱います。各問の目的は開いて読め、閲覧履歴を記録します。所要時間は実際の試行参加で確認します。
+
+## 参加と共有の方法
+
+私は 18 歳以上で自発的に参加し、自分の実際の習慣、経験、考えを回答します。
+
+1. 報告書を確認し、公開すべきでない情報を削除してください。
+2. JSON データと Markdown 報告書をダウンロードしてください。
+3. GitHub Issue に添付するか全文を貼り付けてください。PR でも提出できます。
+
+回答は自動送信されません。ページを閉じる・更新する前に下書きを保存してください。
+
+Issue、PR、添付ファイルは公開され、GitHub アカウントに関連付けられます。参加コードを使っても匿名にはなりません。
+
+[研究・参加案内](../protocol/20261026-mbti-ai-use-protocol/ja.qmd) · [PDF](../protocol/20261026-mbti-ai-use-protocol/ja.pdf) · <a href="../survey/index.html" download="mbti-ai-v0.3.html">HTML ↓</a>
+
+[選んで回答 · Markdown](../survey/ja/choice-questionnaire.md) · [経験を語る · Markdown](../survey/ja/text-questionnaire.md)
+
+## 研究について議論
+
+プロジェクト署名は lawyer112。Codex が執筆、翻訳、実装、確認を支援しますが、母語話者や独立研究者による検証ではありません。経験は本人のものとし、文章整理への AI 支援は A06 で申告します。TEST_ONLY はすべて除外します。回答、独立調査、翻訳修正、設計案を歓迎します。謝辞への掲載は任意で、論文著者は実際の貢献に基づいて話し合います。
+
+[独立した調査を提出](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=02-study-report-ja.yml) · [研究について議論](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=03-research-discussion-ja.yml) · [GitHub](https://github.com/lawyer112/mbti-ai-open-study)

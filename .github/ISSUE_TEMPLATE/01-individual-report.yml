@@ -1,77 +1,81 @@
-name: 个人问卷回传 / Return a questionnaire
-description: 回传导出的问卷。Return your exported questionnaire files or complete readable report.
-title: '[问卷回传 v0.2] '
+name: zh-CN · 个人问卷回传
+description: 附上导出文件或粘贴完整报告。
+title: '[zh-CN v0.3] '
+labels:
+- needs-review
 body:
 - type: markdown
   attributes:
-    value: '请先使用仓库 survey/index.html 填写问卷，检查后导出 JSON 与 Markdown，再在这里回传。
-
-      也接受按题号完成的 Markdown 问卷。不要上传 HTML 或未检查的草稿。
-
-      本 Issue 与附件会公开并关联提交账号；附件上传时即进入 GitHub，请先移除敏感信息。
+    value: '关于 MBTI、日常 AI 使用、评价和故事的趣味调查。请回想最近 30 天；这里不测人格，也不给能力排名。
 
 
-      Use the Chinese v0.2 form in survey/index.html, inspect and export it, then return the files here. Do not
-      upload the blank HTML or a draft. Public attachments upload immediately; redact first. See CONTRIBUTING.md
-      for English participation rules.
+      Issue、PR 及附件会公开并关联 GitHub 账号；研究代号不等于匿名。
 
-      '
-- type: input
-  id: participant-code
-  attributes:
-    label: 研究代号 / Participant code
-    description: 与B01一致。Match B01; retain the code across tasks.
-  validations:
-    required: true
+
+      检查报告，移除不应公开的信息。
+
+
+      下载 JSON 数据与 Markdown 可读报告。
+
+
+      在 GitHub Issue 附文件或粘贴完整报告，也可通过 PR 提交。
+
+
+      https://lawyer112.github.io/mbti-ai-open-study/survey/index.html?lang=zh-CN'
 - type: input
   id: case-id
   attributes:
-    label: 报告编号 / Case ID
-    description: 复制导出文件的case_id。同一任务补填另一版沿用编号。Copy case_id; retain it for both forms of one task.
-  validations:
-    required: true
-- type: dropdown
-  id: questionnaire-mode
-  attributes:
-    label: 问卷模式 / Questionnaire mode
-    options:
-    - 选择题版 / Closed-ended
-    - 文字版 / Narrative
-    - 同一任务两版 / Both forms for one task
+    label: 报告编号
+    description: 内容为本人习惯、经历与看法，引用权限见 A05。同一次参与的两版用报告编号关联。
   validations:
     required: true
 - type: input
   id: schema-version
   attributes:
-    label: 问卷版本 / Instrument version
-    value: '0.2'
-    description: 与实际导出版本一致。Match the exported version.
+    label: 问卷版本
+    description: '0.3'
+    value: '0.3'
+  validations:
+    required: true
+- type: dropdown
+  id: questionnaire-mode
+  attributes:
+    label: 问卷模式
+    options:
+    - 轻松点选
+    - 分享故事
+    - 轻松点选 + 分享故事
+  validations:
+    required: true
+- type: input
+  id: instrument-language
+  attributes:
+    label: 语言
+    value: zh-CN
   validations:
     required: true
 - type: textarea
   id: report-files
   attributes:
-    label: 文件或完整报告 / Files or complete report
-    description: 附上JSON和Markdown，或粘贴完整报告。Attach JSON and Markdown, or paste the complete report with item IDs and
-      consent.
+    label: 文件或完整报告
+    description: 附上导出文件或粘贴完整报告。
   validations:
     required: true
 - type: textarea
   id: amendments
   attributes:
-    label: 关联与更正 / Links and corrections
-    description: 同一任务已提交则贴链接；说明两版顺序及更正。没有填无。Link earlier reports and explain order/corrections; otherwise write
-      none.
+    label: 已有报告与更正
+    description: 内容为本人习惯、经历与看法，引用权限见 A05。同一次参与的两版用报告编号关联。
   validations:
-    required: true
+    required: false
 - type: checkboxes
   id: confirmation
   attributes:
-    label: 回传确认 / Submission confirmations
+    label: 参与确认
     options:
-    - label: 我已满18岁，自愿提交本人真实经历，已检查答案及附件，并有权公开这些材料。 I am at least 18, submit my own real experience voluntarily,
-        and have checked and may share these materials.
+    - label: 我已满 18 岁，自愿参加；填写的是自己的真实习惯、经历或看法。
       required: true
-    - label: 我已在报告中完成参与确认和引用选择；同意本项目用于统计和论文汇总，理解公开副本不能保证完全撤回。 I completed consent and quotation choices, permit
-        project analysis/aggregate reporting, and understand that public copies may not be fully retrievable.
+    - label: 我理解 GitHub 投稿会公开并关联账号；报告编号不代表匿名。
+      required: true
+    - label: 我已移除私人和机密信息，并有权提交；同意本项目用于统计与文章汇总，理解公开副本不一定能完全收回。
       required: true

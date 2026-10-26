@@ -1,0 +1,17 @@
+name: hi · परियोजना पर चर्चा
+description: अनुवाद की समस्या बताएँ या सुधार सुझाएँ।
+title: '[hi v0.3] '
+labels:
+- method-discussion
+body:
+- type: markdown
+  attributes:
+    value: GitHub Issues, pull requests और संलग्न फ़ाइलें सार्वजनिक हैं और आपके खाते से जुड़ी हैं। रिपोर्ट ID आपको
+      गुमनाम नहीं बनाती।
+- type: textarea
+  id: report
+  attributes:
+    label: परियोजना पर चर्चा
+    description: समस्या, भाषा, सवाल की ID और प्रस्तावित सुधार बताएँ। निजी जानकारी न जोड़ें।
+  validations:
+    required: true

@@ -1,0 +1,393 @@
+{
+  "ui": {
+    "title": "MBTI × KI: Wie ist dein KI-Gegenüber?",
+    "hero": "Wie ist dein KI-Gegenüber?",
+    "intro": "Eine lockere Umfrage darüber, wie wir KI nutzen, was uns gefällt und was uns nervt. Teile deine Gewohnheiten oder eine wahre Geschichte.",
+    "language": "Sprache",
+    "pilot": "Pilot · v0.3",
+    "choice": "Schnell auswählen",
+    "text": "Eine Geschichte erzählen",
+    "choice_desc": "Wähle, was zu dir passt: Nutzung, Gesprächsstil, Lob und Kritik.",
+    "text_desc": "Beschreibe eine echte Erfahrung in eigenen Worten. Ein paar Sätze reichen.",
+    "save": "Entwurf speichern",
+    "load": "Entwurf laden",
+    "new": "Neuen Bericht beginnen",
+    "showpurpose": "Fragezwecke anzeigen",
+    "hidepurpose": "Fragezwecke ausblenden",
+    "previous": "Zurück",
+    "next": "Weiter",
+    "review": "Prüfen und exportieren",
+    "close": "Zurück zu den Antworten",
+    "export_json": "Daten herunterladen",
+    "export_md": "Lesbaren Bericht herunterladen",
+    "copy": "Bericht kopieren",
+    "entry": "Vor dem Beginn",
+    "entrytext": "Denke an deine Gewohnheiten und Ansichten der letzten 30 Tage. Du musst keine ganze Arbeitsaufgabe rekonstruieren. Auch ohne kürzliche KI-Nutzung bist du willkommen.",
+    "local_notice": "Antworten werden nicht automatisch hochgeladen. Speichern Sie vor dem Schließen oder Neuladen einen Entwurf.",
+    "footnote": "Eine der beiden Formen reicht. Es gibt weder die ideale KI-Nutzung noch Persönlichkeitspunkte. Wir verbessern die Übersetzungen anhand von Rückmeldungen.",
+    "home": "Studie und Teilnahmehinweise",
+    "return": "Über GitHub einreichen",
+    "required": "Pflichtfrage",
+    "optional": "Optional",
+    "multi": "Mehrfachauswahl",
+    "select": "Bitte auswählen",
+    "purpose": "Warum diese Frage?",
+    "invalid": "Bitte beantworten. Falls unbekannt, wählen oder schreiben Sie dies ausdrücklich.",
+    "progress": "{n} von {total} zutreffenden Pflichtfragen beantwortet",
+    "case": "Berichts-ID: {id}. Behalte sie, wenn du die andere Form für diese Teilnahme ergänzt.",
+    "switched": "Form gewechselt. Gemeinsame Angaben und andere Antworten bleiben erhalten; exportiert wird nur die aktuelle Form.",
+    "missing": "Beantworten Sie {n} Pflichtfragen und bestätigen Sie alle drei Teilnahmebedingungen.",
+    "ready": "Pflichtangaben vollständig. Prüfen Sie Antworten und Veröffentlichungsumfang vor dem Export.",
+    "downloaded": "Download gestartet. Der Export reicht nichts bei GitHub ein.",
+    "copied": "Bericht kopiert. Fügen Sie ihn im Rückgabe-Issue ein.",
+    "copy_failed": "Kopieren nicht erlaubt. Laden Sie den lesbaren Bericht herunter und kopieren Sie seinen Text.",
+    "saved": "Entwurf-Download gestartet. Mit Entwurf laden können Sie fortfahren. Entwürfe können private Angaben enthalten; bewahren Sie sie sicher auf.",
+    "import_failed": "Laden fehlgeschlagen. Nutzen Sie einen unveränderten v0.3-Entwurf dieser Seite.",
+    "replace_confirm": "Das Laden ersetzt die aktuellen Antworten. Fortfahren?",
+    "reset_confirm": "Ein neuer Bericht löscht die aktuellen Antworten. Speichern Sie bei Bedarf vorher einen Entwurf. Fortfahren?",
+    "loaded": "Entwurf geladen. Prüfen Sie vor dem Export die Antworten.",
+    "language_changed": "Sprache geändert; Antworten und Fallkennung bleiben erhalten. Lesen und bestätigen Sie die Teilnahmebedingungen erneut in dieser Sprache.",
+    "version": "Fragebogenversion",
+    "exported": "Exportzeit (nicht Einreichungszeit)",
+    "modeorder": "Angesehene Formen",
+    "purposeviewed": "Angesehene Fragezwecke",
+    "consent": "Teilnahmebestätigungen",
+    "empty": "Nicht beantwortet",
+    "na": "Aufgrund der Bedingungen nicht zutreffend",
+    "none": "Keine",
+    "reportnote": "Dies sind deine selbst berichteten Gewohnheiten und Ansichten. Die Zitiererlaubnis steht in A05. Verknüpfe beide Formen derselben Teilnahme über die Berichts-ID.",
+    "return_steps": [
+      "Prüfen Sie den Bericht und entfernen Sie nicht öffentliche Informationen.",
+      "Laden Sie JSON-Daten und den Markdown-Bericht herunter.",
+      "Hängen Sie die Dateien an ein GitHub-Issue an oder fügen Sie den vollständigen Bericht ein. Ein PR ist ebenfalls möglich."
+    ],
+    "privacy": "Issues, PRs und Anhänge sind öffentlich und mit Ihrem GitHub-Konto verknüpft. Ein Teilnahmecode macht Sie nicht anonym.",
+    "legacy": "Alten v0.2-Entwurf fortsetzen",
+    "mdintro": "Informelle Umfrage zu MBTI, KI im Alltag, Ansichten und Geschichten. Denke an die letzten 30 Tage. Dies ist kein Persönlichkeitstest und keine Rangliste von Fähigkeiten.",
+    "mdexposure": "Diese lesbare Fassung zeigt alle Fragezwecke. Vermerken Sie bei der Einreichung, dass Sie sie gesehen haben.",
+    "condition_equal": "Nur beantworten, wenn {id} mit folgender Option beantwortet wurde: {label}.",
+    "condition_not_equal": "Nur beantworten, wenn {id} mit einer anderen Option als dieser beantwortet wurde: {label}.",
+    "exclusive": "Exklusive Optionen, nicht mit anderen kombinierbar: {labels}.",
+    "answer": "Antwort",
+    "item_count": "{n} Fragen einschließlich gemeinsamer, optionaler und bedingter Angaben. Nur zutreffende Fragen beantworten.",
+    "code": "Teilnahmecode",
+    "case_label": "Berichts-ID",
+    "mode_label": "Fragebogenform",
+    "files": "Dateien oder vollständiger Bericht",
+    "corrections": "Frühere Berichte und Korrekturen",
+    "submit_title": "Fragebogen einreichen",
+    "submit_description": "Exportierte Dateien anhängen oder den vollständigen Bericht einfügen.",
+    "study_title": "Unabhängige Studie einreichen",
+    "study_description": "Eine getrennte Studie mit Methoden und Belegen teilen.",
+    "study_body": "Beschreiben Sie Forschungsfrage, Rekrutierung, Personenzahl, Persönlichkeitsquelle, KI-Aufgaben und -Werkzeuge, Methoden, Ergebnisse, Grenzen und Rechte. Trennen Sie echte Daten und Hypothesen.",
+    "discussion_title": "Studie diskutieren",
+    "discussion_description": "Übersetzungsprobleme oder Verbesserungen melden.",
+    "discussion_body": "Nennen Sie Problem, Sprache, Fragenkennung und Korrekturvorschlag. Keine privaten Angaben."
+  },
+  "groups": {
+    "about": [
+      "Ein wenig über dich",
+      "Auch ein unsicherer MBTI-Typ ist willkommen. Du brauchst keinen neuen Test."
+    ],
+    "uses": [
+      "KI in deinem Alltag",
+      "Denke an die letzten 30 Tage, nicht nur an deine beste Erfahrung."
+    ],
+    "style": [
+      "Dein Gesprächsstil",
+      "Wähle, was deinen Gewohnheiten am nächsten kommt. Es gibt keinen richtigen Stil."
+    ],
+    "opinions": [
+      "Lob und Kritik",
+      "Du darfst KI mögen, nicht mögen oder beides empfinden."
+    ],
+    "stories": [
+      "Deine KI-Geschichte",
+      "Erzähle wie im Freundeskreis. Ein paar Sätze reichen."
+    ],
+    "closing": [
+      "Ein letzter Gedanke",
+      "Entscheide, was geteilt werden darf, prüfe und exportiere dann."
+    ]
+  },
+  "consents": [
+    "Ich bin mindestens 18 Jahre alt und nehme freiwillig teil. Ich beschreibe meine eigenen tatsächlichen Gewohnheiten, Erfahrungen oder Ansichten.",
+    "Ich verstehe, dass GitHub-Einreichungen öffentlich und mit meinem Konto verknüpft sind; eine Berichts-ID schafft keine Anonymität.",
+    "Ich habe private und vertrauliche Angaben entfernt und darf dieses Material teilen. Ich erlaube die Statistiken und Artikelzusammenfassungen des Projekts und verstehe, dass sich öffentliche Kopien möglicherweise nicht vollständig zurückholen lassen."
+  ],
+  "items": {
+    "A01": {
+      "title": "Welchen MBTI-Typ geben Sie derzeit an?",
+      "purpose": "Berichtetes Etikett mit Verhalten verknüpfen, nicht daraus den Typ ableiten.",
+      "hint": "",
+      "options": [
+        "ISTJ",
+        "ISFJ",
+        "INFJ",
+        "INTJ",
+        "ISTP",
+        "ISFP",
+        "INFP",
+        "INTP",
+        "ESTP",
+        "ESFP",
+        "ENFP",
+        "ENTP",
+        "ESTJ",
+        "ESFJ",
+        "ENFJ",
+        "ENTJ",
+        "Ungewiss"
+      ]
+    },
+    "A02": {
+      "title": "Woher stammt diese Typangabe hauptsächlich?",
+      "purpose": "Offiziellen MBTI, 16Personalities, andere Tests und eigenes Urteil unterscheiden.",
+      "hint": "",
+      "options": [
+        "Offizielle MBTI-Erhebung",
+        "16Personalities",
+        "Anderer Onlinetest",
+        "Eigene Einschätzung",
+        "Unbekannt"
+      ]
+    },
+    "A03": {
+      "title": "An wie vielen der letzten 30 Tage nutzten Sie generative KI?",
+      "purpose": "Aktuelle Häufigkeit von Gesamterfahrung trennen.",
+      "hint": "",
+      "options": [
+        "0 Tage; keine kürzliche Nutzung",
+        "1–3 Tage",
+        "4–9 Tage",
+        "10–19 Tage",
+        "20–30 Tage",
+        "Weiß ich nicht mehr"
+      ]
+    },
+    "A04": {
+      "title": "Wie lange nutzen Sie generative KI?",
+      "purpose": "Erfahrung erfassen, statt Fertigkeit der Persönlichkeit zuzuschreiben.",
+      "hint": "",
+      "options": [
+        "Weniger als 1 Monat",
+        "1–5 Monate",
+        "6–11 Monate",
+        "12–23 Monate",
+        "24 Monate oder länger",
+        "Weiß ich nicht mehr"
+      ]
+    },
+    "A05": {
+      "title": "Darf der Artikel bereinigte Auszüge wörtlich zitieren?",
+      "purpose": "Zustimmung zur Auswertung von Zitiererlaubnis trennen.",
+      "hint": "",
+      "options": [
+        "Nein, nur Statistik und Zusammenfassung",
+        "Ja, wörtliche Zitate bereinigter Auszüge erlaubt"
+      ]
+    },
+    "A06": {
+      "title": "Half KI beim Erstellen dieses Berichts?",
+      "purpose": "KI-Unterstützung transparent dokumentieren.",
+      "hint": "",
+      "options": [
+        "Nein",
+        "Ja"
+      ]
+    },
+    "Q01": {
+      "title": "Wofür hast du KI zuletzt hauptsächlich genutzt?",
+      "purpose": "Tatsächliche Nutzungsarten vergleichen; eine Person kann mehrere haben.",
+      "hint": "",
+      "options": [
+        "Schreiben, Überarbeiten oder Übersetzen",
+        "Programmieren oder technische Probleme",
+        "Lernen und Begriffe erklären",
+        "Informationen suchen, ordnen oder analysieren",
+        "Ideen und kreative Arbeit",
+        "Planung oder Entscheidungshilfe",
+        "Über Gefühle sprechen oder Gesellschaft suchen",
+        "Plaudern und Unterhaltung",
+        "Andere Zwecke"
+      ]
+    },
+    "Q02": {
+      "title": "Was ist KI für dich am ehesten?",
+      "purpose": "Zugeschriebene Rollen vergleichen, ohne sie vorab Persönlichkeitstypen zuzuordnen.",
+      "hint": "",
+      "options": [
+        "Ein Werkzeug zum Erledigen von Aufgaben",
+        "Eine Arbeitshilfe",
+        "Eine jederzeit ansprechbare Lehrkraft",
+        "Ein Gegenüber zum Diskutieren",
+        "Ein kreativer Partner",
+        "Jemand zum Plaudern oder Gesellschaftleisten",
+        "Noch keine feste Rolle"
+      ]
+    },
+    "Q03": {
+      "title": "Wie beginnst du meistens ein Gespräch?",
+      "purpose": "Ausdrucksgewohnheiten vergleichen, ohne längere Anweisungen mit mehr Können gleichzusetzen.",
+      "hint": "",
+      "options": [
+        "Mit einer kurzen, direkten Anweisung",
+        "Zuerst Kontext, Anforderungen und Grenzen",
+        "Ich teile die Aufgabe in Schritte auf",
+        "Ich rede erst einmal und kläre dabei meinen Bedarf",
+        "Das hängt stark von der Aufgabe ab",
+        "Ich erinnere mich nicht"
+      ]
+    },
+    "Q04": {
+      "title": "Wenn die erste Antwort nicht passt, was machst du meistens zuerst?",
+      "purpose": "Die erste Reaktion auf eine unbefriedigende Antwort beobachten.",
+      "hint": "",
+      "options": [
+        "Kontext oder Anforderungen ergänzen",
+        "Die Frage anders formulieren",
+        "Mehrere Varianten verlangen",
+        "Modell oder Werkzeug wechseln",
+        "Es selbst erledigen",
+        "Es erst einmal lassen",
+        "Das kam zuletzt nicht vor",
+        "Ich erinnere mich nicht"
+      ]
+    },
+    "Q05": {
+      "title": "Welche Antwort bevorzugst du, wenn du um Rat fragst?",
+      "purpose": "Vorlieben für einen Plan, Optionen, Begründungen oder gemeinsame Erkundung vergleichen.",
+      "hint": "",
+      "options": [
+        "Einen sofort nutzbaren Plan",
+        "Mehrere Optionen zum eigenen Vergleich",
+        "Zuerst Gründe und Belege",
+        "Erst diskutieren, dann eine Antwort entwickeln",
+        "Das hängt vor allem von der Aufgabe ab"
+      ]
+    },
+    "Q06": {
+      "title": "Wie reagierst du, wenn KI dir widerspricht?",
+      "purpose": "Reaktionen auf Widerspruch beschreiben, nicht Vernunft oder Sturheit bewerten.",
+      "hint": "",
+      "options": [
+        "Zuerst ihre Gründe anhören",
+        "Zuerst die Grundlage ihrer Aussage prüfen",
+        "Meinen Wunsch wiederholen und sie meiner Idee folgen lassen",
+        "Je nach konkretem Thema entscheiden",
+        "Das kam zuletzt nicht vor",
+        "Ich erinnere mich nicht"
+      ]
+    },
+    "Q07": {
+      "title": "Prüfst du KI-Antworten bei wichtigen Informationen oder Einschätzungen?",
+      "purpose": "Prüfgewohnheiten beschreiben; die Häufigkeit belegt weder Qualität noch Richtigkeit.",
+      "hint": "",
+      "options": [
+        "Immer",
+        "Oft",
+        "Manchmal",
+        "Selten",
+        "Nie",
+        "Dafür habe ich KI zuletzt nicht genutzt"
+      ]
+    },
+    "Q08": {
+      "title": "Was bringt dir KI am meisten?",
+      "purpose": "Wahrgenommenen Nutzen beschreiben, nicht gemessene Leistungssteigerung behaupten.",
+      "hint": "",
+      "options": [
+        "Zeit sparen oder Wiederholungsarbeit vermeiden",
+        "Unbekanntes besser verstehen",
+        "Ideen oder Inspiration erhalten",
+        "Leichter anfangen",
+        "Eigene Gedanken ausdrücken",
+        "Gespräche oder Gesellschaft",
+        "Bislang kein klarer Nutzen",
+        "Ein anderer Nutzen"
+      ]
+    },
+    "Q09": {
+      "title": "Was stört dich an KI am meisten?",
+      "purpose": "Negative Erfahrungen und Verbesserungswünsche neben Lob berücksichtigen.",
+      "hint": "",
+      "options": [
+        "Selbstsicher falsche Antworten geben",
+        "Meine eigentliche Frage verfehlen",
+        "Zu ausführlich sein oder am Thema vorbeireden",
+        "Mir zu sehr zustimmen",
+        "Frühere Anforderungen vergessen",
+        "Mechanische Sprache oder Stil",
+        "Nutzungsgrenzen, Kosten oder Fähigkeiten",
+        "Datenschutz oder Informationsverwendung",
+        "Momentan keine klare Beschwerde",
+        "Etwas anderes"
+      ]
+    },
+    "Q10": {
+      "title": "Wie zufrieden bist du insgesamt mit deiner jüngsten KI-Erfahrung?",
+      "purpose": "Zufriedenheit getrennt von Vertrauen, Richtigkeit und Arbeitsfähigkeit beschreiben.",
+      "hint": "",
+      "options": [
+        "Sehr unzufrieden",
+        "Eher unzufrieden",
+        "Neutral",
+        "Eher zufrieden",
+        "Sehr zufrieden",
+        "Schwer zu beurteilen"
+      ]
+    },
+    "Q11": {
+      "title": "Warum hast du KI zuletzt nicht genutzt?",
+      "purpose": "Menschen ohne kürzliche Nutzung einbeziehen und ihre Hürden und Entscheidungen getrennt beschreiben.",
+      "hint": "",
+      "options": [
+        "Aktuell kein Bedarf",
+        "Ich weiß nicht, wie ich anfangen soll",
+        "Wenig Vertrauen in die Antworten",
+        "Zugangsprobleme oder Kosten",
+        "Datenschutzbedenken",
+        "Ausprobiert und nicht gemocht",
+        "Ein anderer Grund"
+      ]
+    },
+    "Q12": {
+      "title": "Was beschreibt deine aktuelle Haltung zu KI am besten?",
+      "purpose": "Allgemeine Haltungen vergleichen und zugleich Hoffnung und Sorge zulassen.",
+      "hint": "",
+      "options": [
+        "Begeistert und nutzungsfreudig",
+        "Neugierig und erkundungsfreudig",
+        "Vorsichtig und abwartend",
+        "Besorgt oder ablehnend",
+        "Hoffnungsvoll und besorgt zugleich",
+        "Noch keine klare Meinung"
+      ]
+    },
+    "S01": {
+      "title": "Welche jüngste KI-Erfahrung ist dir besonders im Gedächtnis geblieben?",
+      "purpose": "Nutzungsarten, Bedürfnisse und Ergebnisse anhand echter Geschichten verstehen.",
+      "hint": "Was wolltest du tun, und wie hat KI geholfen oder nicht geholfen? Du kannst das Werkzeug nennen. Entferne private Details."
+    },
+    "S02": {
+      "title": "Wie redest du normalerweise mit KI, und was machst du bei unpassenden Antworten?",
+      "purpose": "Anweisungen, Nachfragen, Anpassungen und Urteile in ihren Kontext setzen.",
+      "hint": "Ein bereinigtes Beispiel oder eine Beschreibung deiner Gewohnheiten reicht. Vollständige Chatverläufe sind unnötig."
+    },
+    "S03": {
+      "title": "Was gefällt dir an KI am besten, und worüber möchtest du dich beschweren?",
+      "purpose": "Positive, negative und gemischte Ansichten samt Gründen erhalten.",
+      "hint": "Du kannst nur eine Seite beantworten. Keine starken Vorlieben oder Beschwerden zu haben ist ebenfalls gültig."
+    },
+    "S04": {
+      "title": "Warum hast du KI zuletzt nicht genutzt? Was könnte dich zum Ausprobieren bewegen?",
+      "purpose": "Nichtnutzung verstehen, ohne sie als gescheiterte Nutzung zu behandeln.",
+      "hint": "Kein Bedarf, fehlendes Wissen, Abneigung oder andere Gründe sind willkommen. Du musst sie später nicht ausprobieren wollen."
+    },
+    "A07": {
+      "title": "Wie würdest du deine Beziehung zu KI in einem Satz beschreiben?",
+      "purpose": "Eigene Formulierungen für mögliche Zitate mit Erlaubnis sammeln.",
+      "hint": "Freiwillig. Beschreibe dein Gefühl; dies ist keine neue Persönlichkeitsbewertung."
+    }
+  }
+}

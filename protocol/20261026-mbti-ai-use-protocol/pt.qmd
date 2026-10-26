@@ -1,0 +1,96 @@
+---
+title: 'MBTI × IA: como é a sua companhia de IA?'
+author:
+- lawyer112
+date: '2026-10-26'
+lang: pt
+paper-id: 20261026-mbti-ai-use-protocol
+paper-version: 0.4.0
+article-type: protocol
+bibliography: references.bib
+abstract: Pesquisa informal sobre MBTI, hábitos cotidianos com IA, opiniões e histórias. Pense nos últimos 30 dias. Não é
+  teste de personalidade nem classificação de habilidades.
+format:
+  html:
+    include-in-header:
+      text: '<link rel="canonical" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/pt.html">
+
+        <link rel="alternate" hreflang="zh-CN" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/zh.html">
+
+        <link rel="alternate" hreflang="en" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/en.html">
+
+        <link rel="alternate" hreflang="ja" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/ja.html">
+
+        <link rel="alternate" hreflang="ko" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/ko.html">
+
+        <link rel="alternate" hreflang="es" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/es.html">
+
+        <link rel="alternate" hreflang="fr" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/fr.html">
+
+        <link rel="alternate" hreflang="de" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/de.html">
+
+        <link rel="alternate" hreflang="pt" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/pt.html">
+
+        <link rel="alternate" hreflang="ru" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/ru.html">
+
+        <link rel="alternate" hreflang="ar" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/ar.html">
+
+        <link rel="alternate" hreflang="hi" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/hi.html">
+
+        <link rel="alternate" hreflang="id" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/id.html">'
+abstract-title: Resumo
+---
+
+:::: {.content-visible when-format="html"}
+::: {.article-links}
+[简体中文](zh.qmd) · [English](en.qmd) · [日本語](ja.qmd) · [한국어](ko.qmd) · [Español](es.qmd) · [Français](fr.qmd) · [Deutsch](de.qmd) · [Português](pt.qmd) · [Русский](ru.qmd) · [العربية](ar.qmd) · [हिन्दी](hi.qmd) · [Bahasa Indonesia](id.qmd) · [PDF](pt.pdf) · [Escolhas rápidas / Conte uma história](../../survey/index.html?lang=pt) · [Estudo e participação](../../pt/index.qmd)
+:::
+::::
+
+## Por que fazemos esta pesquisa {#question}
+
+Há quem abra a IA para terminar o trabalho e quem queira conversar. Alguns explicam todo o contexto; outros perguntam “O que você acha?”. Uns adoram as ideias, outros detestam os erros cheios de confiança. Como a mesma tecnologia vira companhias tão diferentes?
+
+Esta é uma pesquisa informal MBTI × IA sobre hábitos, opiniões e histórias reais: para que usamos IA, como conversamos, o que gostamos e o que incomoda. Vamos observar tendências entre tipos declarados e diversidade dentro de cada tipo. Não há personalidade vencedora definida, nem é preciso provar habilidade com IA.
+
+## Um atlas para criar juntos {#outputs}
+
+Com respostas reais, queremos criar um atlas das relações dos 16 tipos com a IA: gráficos de hábitos, distribuições de elogios e reclamações, histórias citadas com permissão e um artigo de observação em evolução. Informaremos respostas válidas e pessoas por tipo; onde não houver dados, deixaremos em branco. Pequenas diferenças e exceções também interessam. São planos; ainda não apresentamos estatísticas de participantes.
+
+## Como funcionam os formulários {#design}
+
+Considere os últimos 30 dias. A modalidade de escolhas tem 19 perguntas, a narrativa 11, com 7 compartilhadas. Os totais incluem perguntas opcionais e condicionais; só aparecem as aplicáveis. Uma modalidade basta; mantenha o mesmo identificador ao acrescentar a outra. MBTI incerto pula a fonte; quem não usou recentemente explica por quê, sem inventar experiência. A frase final é opcional. As escolhas descrevem usos, conversa e opinião; histórias dão contexto. O propósito de cada pergunta pode ser aberto, com registro dessa consulta. O tempo real ainda precisa de testes com pessoas.
+
+- **Um pouco sobre você** (A01, A02, A03, A04) — Tudo bem não ter certeza do seu MBTI. Não precisa fazer outro teste.
+- **IA no seu dia a dia** (Q01, Q02) — Pense nos usos dos últimos 30 dias, não apenas na melhor experiência.
+- **Seu jeito de conversar** (Q03, Q04, Q05, Q06, Q07) — Escolha o que mais se aproxima dos seus hábitos. Não há estilo correto.
+- **Elogios e reclamações** (Q08, Q09, Q10, Q11, Q12) — Você pode gostar, não gostar ou sentir as duas coisas.
+- **Sua história com IA** (S01, S02, S03, S04) — Conte como contaria a uma amizade. Algumas frases bastam.
+- **Uma última ideia** (A05, A06, A07) — Escolha o que pode ser compartilhado; depois revise e exporte.
+
+## Como organizar as respostas {#analysis}
+
+Primeiro apresentaremos contagens válidas e percentuais, depois distribuições por MBTI, fonte, frequência e experiência. Escolhas múltiplas podem somar mais de 100%. Ausência, não aplicável, incerteza e ausência explícita permanecem distintas. Satisfação é autorrelato; verificar mais não comprova qualidade. Histórias serão classificadas por usos, conversas, benefícios, queixas e exceções, preservando opiniões contrárias. Citação literal só com A05. Não contaremos duas vezes as modalidades, um Issue e seu PR ou correções da mesma pessoa, nem um estudo independente como uma pessoa.
+
+## O que não podemos concluir {#limitations}
+
+A amostra voluntária da internet descreve participantes, não toda a população dos 16 tipos. Não prova causalidade da personalidade nem superioridade no trabalho. Poucos casos não justificam rankings ou significância forçados. As formas não são escalas equivalentes e as 12 traduções não passaram por entrevistas cognitivas com falantes nativos ou validação intercultural. Guardaremos idioma, mudanças e língua usada em cada resposta; idiomas e versões serão apresentados separadamente antes de qualquer combinação justificada. Relatos de tarefa única v0.2 ficam separados dos hábitos cotidianos v0.3.
+
+## Como entender os rótulos {#background}
+
+MBTI inicia uma conversa; não avaliamos a personalidade aqui. MBTI formal, 16Personalities, outros testes, autoavaliação e incerteza ficam separados. Não copiamos questões comerciais nem selecionamos pessoas por tipo. Redação, formato e ordem podem influenciar respostas; testes e comentários sobre ambiguidades ou opções ausentes orientarão novas versões. [@mbti-ethics; @sixteen-framework; @pew-questions]
+
+## Participação e compartilhamento {#availability}
+
+A participação é voluntária para adultos a partir de 18 anos que entendam o idioma escolhido, inclusive sem uso recente. Preencha on-line ou baixe o HTML independente para usar offline, revise, exporte JSON e Markdown e envie por Issue ou PR. Nada é carregado automaticamente. Nos formulários Markdown, mantenha IDs, confirmações, versão e objetivos consultados. Envios GitHub são públicos e ligados à conta; um ID não oferece anonimato. Retire informações privadas, de clientes, segredos profissionais e credenciais. Consentimento para agregação e permissão de citação são separados; redistribuir dados individuais exige autorização adicional. Peça retirada no envio original: análises futuras o excluirão, mas cópias baixadas ou bifurcadas podem permanecer. [@github-pages; @github-attachments]
+
+[Escolhas rápidas · Markdown](../../survey/pt/choice-questionnaire.md) · [Conte uma história · Markdown](../../survey/pt/text-questionnaire.md) · [GitHub](https://github.com/lawyer112/mbti-ai-open-study) · [PERMISSIONS.md](https://github.com/lawyer112/mbti-ai-open-study/blob/main/PERMISSIONS.md)
+
+## Ajuda de IA e autoria {#ai-use}
+
+Assinatura do projeto: lawyer112. Codex ajuda na redação, tradução, implementação e checagem; isso não equivale à validação nativa ou independente. Experiências precisam ser próprias; declare ajuda de IA para escrever em A06. Todo TEST_ONLY é excluído. Respostas, estudos independentes, correções e ideias são bem-vindos. Agradecimentos são voluntários e autoria do artigo depende de contribuições reais.
+
+## Referências {#references}
+
+::: {#refs}
+:::

@@ -1,17 +1,15 @@
-# 个人问卷入口 v0.2
+# 个人问卷回传 / Individual response
 
-请任选一种形式，不必重复填写旧版提纲。
+请使用 [12 语言问卷](https://lawyer112.github.io/mbti-ai-open-study/survey/index.html)导出 JSON 和 Markdown，再提交完整报告。不能运行 HTML 时，使用 `survey/<language>/choice-questionnaire.md` 或 `text-questionnaire.md`，保留全部题号、同意项、引用选择和目的查看记录。
 
-1. 推荐：下载并用浏览器打开[HTML问卷](../survey/index.html)，选择“选择题版”或“文字版”。
-2. 无法使用HTML：复制[选择题全文](../survey/choice-questionnaire.md)或[文字题全文](../survey/text-questionnaire.md)，保留题号、版本、参与确认与引用选择后填写。
-3. 网页填写完后，检查并导出JSON与Markdown；通过“个人问卷回传”Issue附文件，或PR提交到submissions/individual/。
+Use the 12-language form to export JSON and Markdown, then return the complete report. If HTML is unavailable, complete the readable form in your language, retaining IDs, confirmations, quotation choice and purpose exposure.
 
-每份报告对应最近30天内最近一次已结束或暂停的真实任务。未完成、没有收益或未核验均可如实填写。研究代号用于识别人，报告编号用于关联同一次任务。补填另一版要沿用同一编号并说明顺序；新任务另建编号。
+- 问卷版本 / Instrument version: 0.3
+- 报告编号 / Report ID:
+- 语言 / Language:
+- 模式 / Mode:
+- 关联 Issue/PR 或更正 / Related submission or correction:
 
-完整说明见[两种问卷与操作流程](../QUESTIONNAIRE_DESIGN.md)。旧版本地提纲仅作工作记录，不再作为当前投稿模板，也不随首发包公开。
+不提交空白表、草稿或凭据。GitHub 投稿公开且关联账号。两版同次参与沿用一个 response_id，不能重复算人。
 
-## English
-
-Choose one Chinese instrument form. Download survey/index.html and open it in a browser, or complete the linked closed-ended or narrative Markdown form. Preserve item IDs, version, participation confirmations and quotation choice. Export JSON and Markdown from the browser and attach them to the questionnaire-return Issue, or submit through a pull request under submissions/individual/.
-
-Each report covers the most recent real AI task that ended or was paused within the previous 30 days. Failure, lack of benefit and lack of verification are acceptable. Use one participant code across tasks and one case ID across forms for the same task, recording order and corrections. New tasks get new case IDs. Read the [English workflow](../QUESTIONNAIRE_DESIGN.en.md). Older local outlines are not current submission templates and are excluded from the first public package.
+Do not submit blank forms, drafts or credentials. GitHub submissions are public and account-linked. Both forms of one participation share response_id and count as one person.

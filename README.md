@@ -1,5 +1,7 @@
 # MBTI × AI：你的 AI 搭子，是什么画风？
 
+[简体中文](https://lawyer112.github.io/mbti-ai-open-study/) · [English](https://lawyer112.github.io/mbti-ai-open-study/en/) · [日本語](https://lawyer112.github.io/mbti-ai-open-study/ja/) · [한국어](https://lawyer112.github.io/mbti-ai-open-study/ko/) · [Español](https://lawyer112.github.io/mbti-ai-open-study/es/) · [Français](https://lawyer112.github.io/mbti-ai-open-study/fr/) · [Deutsch](https://lawyer112.github.io/mbti-ai-open-study/de/) · [Português](https://lawyer112.github.io/mbti-ai-open-study/pt/) · [Русский](https://lawyer112.github.io/mbti-ai-open-study/ru/) · [العربية](https://lawyer112.github.io/mbti-ai-open-study/ar/) · [हिन्दी](https://lawyer112.github.io/mbti-ai-open-study/hi/) · [Bahasa Indonesia](https://lawyer112.github.io/mbti-ai-open-study/id/)
+
 **16 种人格，同样面对 AI，会不会用出完全不同的风格？**
 
 [English](README.en.md) · [进入调查](https://lawyer112.github.io/mbti-ai-open-study/survey/index.html) · [项目网站](https://lawyer112.github.io/mbti-ai-open-study/)
@@ -42,7 +44,7 @@
 
 不需要附完整聊天记录，不需要写漂亮的提示词，也不需要证明你“会用 AI”。喜欢它、讨厌它、偶尔才用，甚至用完觉得还是自己来，都有值得分享的东西。
 
-**当前状态：项目已公开，尚无真实参与者统计结果；原问卷正在改成更轻量的日常习惯与故事版本，多语言入口也在同步升级。** 已有旧版记录会保留版本，不与改版后的回答直接混算。
+**当前状态：项目已公开，尚无真实参与者统计结果；本版已提供 12 种语言，选择题共 19 项、故事版共 11 项（含条件与可选项），无关题会自动跳过。** 已有旧版记录会保留版本，不与改版后的回答直接混算。
 
 ## 收到回答以后，会做成什么
 

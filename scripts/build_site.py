@@ -25,7 +25,8 @@ def main():
     parser.add_argument('--preview', action='store_true', help='Local layout inspection before review; cannot approve a release.')
     args = parser.parse_args()
     subprocess.run([sys.executable, str(ROOT/'scripts/build_questionnaires.py')], cwd=ROOT, check=True)
-    check_instrument()
+    if not args.preview:
+        check_instrument()
     if not args.preview:
         _, errors = check_all(release=True)
         if errors:
@@ -39,7 +40,7 @@ def main():
     version = subprocess.check_output(command+['--version'], text=True).strip()
     if version != PINNED_QUARTO:
         raise SystemExit(f'Expected Quarto {PINNED_QUARTO}, got {version}')
-    fonts = '"Arial", "Noto Sans SC"' if os.name=='nt' else '"Liberation Sans", "Noto Sans CJK SC"'
+    fonts = '"Arial", "Noto Sans SC", "Yu Gothic", "Malgun Gothic", "Nirmala UI"' if os.name=='nt' else '"Liberation Sans", "Noto Sans CJK SC", "Noto Sans CJK JP", "Noto Sans CJK KR", "Noto Sans Arabic", "Noto Sans Devanagari"'
     metadata = '''format:
   html:
     toc: true
@@ -59,19 +60,23 @@ def main():
         #set text(font: (FONTS))
         #set table.cell(breakable: false)
         #show table.cell: set par(justify: false)
+        #set bibliography(title: none)
+        #show bibliography: set text(dir: ltr)
+        #show bibliography: set align(left)
 '''.replace('FONTS',fonts)
     (ROOT/'protocol/_metadata.yml').write_text(metadata,encoding='utf-8')
     subprocess.run(command+['render','--to','all'],cwd=ROOT,check=True)
     site=ROOT/'_site'
-    expected_files=['index.html','en/index.html','survey/index.html',
-                    'protocol/20261026-mbti-ai-use-protocol/zh.html',
-                    'protocol/20261026-mbti-ai-use-protocol/en.html',
-                    'protocol/20261026-mbti-ai-use-protocol/zh.pdf',
-                    'protocol/20261026-mbti-ai-use-protocol/en.pdf']
+    expected_files=['survey/index.html','survey/v0.2/index.html']
+    for language in json.loads((ROOT/'survey/languages.json').read_text(encoding='utf-8')):
+        code=language['code'];stem='zh' if code=='zh-CN' else code
+        expected_files.append('index.html' if code=='zh-CN' else code+'/index.html')
+        expected_files.extend(f'protocol/{ARTICLE.name}/{stem}.{ext}' for ext in ['html','pdf'])
+        expected_files.extend(f'survey/{code}/{mode}-questionnaire.md' for mode in ['choice','text'])
     for filename in expected_files:
         if not (site/filename).is_file():
             raise SystemExit(f'Missing built file: {filename}')
-    print('Built bilingual protocol, both PDFs, homepages and pilot questionnaire.')
+    print('Built 12 complete survey guides/PDFs, homepages and offline questionnaires.')
 
 if __name__=='__main__':
     main()

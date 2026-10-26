@@ -1,0 +1,16 @@
+name: ja · 独立した調査を提出
+description: 別の研究、その方法と根拠を共有してください。
+title: '[ja v0.3] '
+labels:
+- needs-review
+body:
+- type: markdown
+  attributes:
+    value: Issue、PR、添付ファイルは公開され、GitHub アカウントに関連付けられます。参加コードを使っても匿名にはなりません。
+- type: textarea
+  id: report
+  attributes:
+    label: 独立した調査を提出
+    description: 研究課題、募集方法、参加者数、人格情報の出典、AI タスク・ツール、方法、結果、限界、利用許可を説明してください。実データと仮説を区別してください。
+  validations:
+    required: true

@@ -1,0 +1,100 @@
+---
+title: 'MBTI × AI: seperti apa teman AI kamu?'
+author:
+- lawyer112
+date: '2026-10-26'
+lang: id
+paper-id: 20261026-mbti-ai-use-protocol
+paper-version: 0.4.0
+article-type: protocol
+bibliography: references.bib
+abstract: Survei informal tentang MBTI, kebiasaan sehari-hari memakai AI, pendapat, dan cerita. Ingat 30 hari terakhir. Ini
+  bukan tes kepribadian atau peringkat kemampuan.
+format:
+  html:
+    include-in-header:
+      text: '<link rel="canonical" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/id.html">
+
+        <link rel="alternate" hreflang="zh-CN" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/zh.html">
+
+        <link rel="alternate" hreflang="en" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/en.html">
+
+        <link rel="alternate" hreflang="ja" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/ja.html">
+
+        <link rel="alternate" hreflang="ko" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/ko.html">
+
+        <link rel="alternate" hreflang="es" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/es.html">
+
+        <link rel="alternate" hreflang="fr" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/fr.html">
+
+        <link rel="alternate" hreflang="de" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/de.html">
+
+        <link rel="alternate" hreflang="pt" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/pt.html">
+
+        <link rel="alternate" hreflang="ru" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/ru.html">
+
+        <link rel="alternate" hreflang="ar" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/ar.html">
+
+        <link rel="alternate" hreflang="hi" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/hi.html">
+
+        <link rel="alternate" hreflang="id" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/id.html">'
+abstract-title: Abstrak
+---
+
+:::: {.content-visible when-format="html"}
+::: {.article-links}
+[简体中文](zh.qmd) · [English](en.qmd) · [日本語](ja.qmd) · [한국어](ko.qmd) · [Español](es.qmd) · [Français](fr.qmd) · [Deutsch](de.qmd) · [Português](pt.qmd) · [Русский](ru.qmd) · [العربية](ar.qmd) · [हिन्दी](hi.qmd) · [Bahasa Indonesia](id.qmd) · [PDF](id.pdf) · [Pilihan singkat / Ceritakan pengalaman](../../survey/index.html?lang=id) · [Studi dan panduan peserta](../../id/index.qmd)
+:::
+::::
+
+## Mengapa survei ini dibuat {#question}
+
+Ada yang membuka AI untuk menyelesaikan pekerjaan, ada yang mencari teman diskusi. Sebagian menjelaskan konteks panjang, sebagian cukup bertanya “Menurutmu bagaimana?”. Ada yang suka idenya tetapi kesal pada jawaban salah yang penuh percaya diri. Mengapa teknologi yang sama terasa seperti teman yang berbeda?
+
+Ini survei santai MBTI × AI tentang kebiasaan, pendapat, dan cerita nyata: untuk apa AI dipakai, bagaimana kita mengobrol, apa yang disukai dan dikeluhkan. Kita melihat kecenderungan antar tipe yang dilaporkan sendiri sekaligus keragaman dalam satu tipe. Tidak ada pemenang yang ditentukan sebelumnya dan kamu tidak perlu membuktikan kemampuan AI.
+
+## Atlas yang kita susun bersama {#outputs}
+
+Setelah jawaban nyata masuk, kita ingin membuat atlas hubungan 16 tipe dengan AI: grafik kebiasaan, sebaran pujian dan keluhan, cerita yang dikutip dengan izin, serta artikel pengamatan yang diperbarui. Jumlah jawaban sah dan orang tiap tipe akan disebutkan; tanpa data, bagian dibiarkan kosong. Perbedaan kecil dan banyak pengecualian juga menarik. Ini rencana; belum ada statistik peserta yang dilaporkan.
+
+## Cara kerja formulir {#design}
+
+Ingat 30 hari terakhir. Bentuk pilihan berisi 19 pertanyaan dan cerita 11, dengan 7 pertanyaan bersama. Jumlah ini termasuk pertanyaan opsional dan bersyarat; hanya yang berlaku ditampilkan. Satu bentuk cukup; gunakan ID yang sama untuk menambah bentuk lain. MBTI tidak pasti melewati sumber; yang tidak memakai belakangan ini menjelaskan alasan tanpa mengarang pengalaman. Kalimat terakhir opsional. Pilihan membahas penggunaan, percakapan, dan opini; cerita memberi konteks. Tujuan tiap pertanyaan bisa dibuka dan pembukaannya dicatat. Waktu nyata masih perlu uji coba dengan manusia.
+
+- **Sedikit tentang kamu** (A01, A02, A03, A04) — Tidak yakin dengan MBTI juga boleh. Tidak perlu tes lagi.
+- **AI dalam keseharianmu** (Q01, Q02) — Ingat penggunaan selama 30 hari terakhir, bukan hanya pengalaman terbaik.
+- **Caramu mengobrol** (Q03, Q04, Q05, Q06, Q07) — Pilih yang paling cocok dengan kebiasaanmu. Tidak ada gaya yang benar.
+- **Pujian dan keluhan** (Q08, Q09, Q10, Q11, Q12) — Boleh suka, tidak suka, atau keduanya.
+- **Ceritamu tentang AI** (S01, S02, S03, S04) — Ceritakan seperti kepada teman. Beberapa kalimat cukup.
+- **Satu pikiran terakhir** (A05, A06, A07) — Pilih apa yang boleh dibagikan, lalu periksa dan ekspor.
+
+## Cara mengolah jawaban {#analysis}
+
+Laporkan dulu jumlah jawaban sah dan persentase pilihan, lalu sebaran menurut MBTI, sumber tipe, frekuensi, dan pengalaman. Pilihan ganda dapat berjumlah lebih dari 100%. Kosong, tidak berlaku, tidak pasti, dan ketiadaan eksplisit dipisahkan. Kepuasan adalah laporan diri; sering memeriksa bukan bukti mutu pemeriksaan. Cerita dikodekan menurut penggunaan, percakapan, manfaat, keluhan, dan pengecualian, termasuk pendapat berlawanan. Kutipan langsung hanya dengan A05. Jangan menghitung dua kali kedua bentuk, Issue dan PR, atau perbaikan satu orang; studi mandiri bukan satu peserta.
+
+## Hal yang belum dapat disimpulkan {#limitations}
+
+Sampel internet sukarela ini menggambarkan peserta, bukan semua orang dari 16 tipe. Tidak membuktikan sebab-akibat kepribadian atau keunggulan kerja. Sampel kecil tidak membenarkan peringkat atau klaim signifikansi yang dipaksakan. Kedua bentuk bukan skala setara; 12 terjemahan belum melalui wawancara kognitif penutur asli atau validasi pengukuran lintas budaya. Simpan bahasa, riwayat pergantian, dan bahasa tiap jawaban; laporkan bahasa dan versi terpisah sebelum mempertimbangkan penggabungan beralasan. Laporan satu tugas v0.2 dipisahkan dari kebiasaan sehari-hari v0.3.
+
+## Memahami label kepribadian {#background}
+
+MBTI membuka percakapan, bukan penilaian kepribadian di sini. MBTI resmi, 16Personalities, tes lain, penilaian diri, dan ketidakpastian tetap dibedakan. Kami tidak menyalin soal komersial atau memilih orang berdasarkan tipe. Kata-kata, bentuk, dan urutan dapat memengaruhi jawaban; masukan tentang ketidakjelasan dan opsi yang kurang akan memandu revisi berversi. [@mbti-ethics; @sixteen-framework; @pew-questions]
+
+## Partisipasi dan berbagi {#availability}
+
+Partisipasi sukarela untuk usia 18 tahun ke atas yang memahami bahasa pilihan, termasuk tanpa penggunaan terbaru. Isi daring atau unduh HTML mandiri untuk luring, periksa, ekspor JSON dan Markdown, lalu kirim lewat Issue atau PR. Tidak ada unggahan otomatis. Formulir Markdown juga tersedia: pertahankan ID soal, konfirmasi, versi, dan tujuan yang dilihat. GitHub publik dan terkait akun; ID bukan anonimitas. Hapus informasi pribadi, klien, rahasia kerja, dan kredensial. Izin agregasi berbeda dari izin kutipan; penyebaran bebas data individual memerlukan izin terpisah. Ajukan penarikan di kiriman awal: analisis berikutnya akan mengecualikan, tetapi salinan unduhan atau fork mungkin tetap ada. [@github-pages; @github-attachments]
+
+[Pilihan singkat · Markdown](../../survey/id/choice-questionnaire.md) · [Ceritakan pengalaman · Markdown](../../survey/id/text-questionnaire.md) · [GitHub](https://github.com/lawyer112/mbti-ai-open-study) · [PERMISSIONS.md](https://github.com/lawyer112/mbti-ai-open-study/blob/main/PERMISSIONS.md)
+
+## Bantuan AI dan penulis {#ai-use}
+
+Nama proyek: lawyer112. Codex membantu penulisan, penerjemahan, implementasi, dan pemeriksaan; ini bukan validasi penutur asli atau peneliti independen. Pengalaman harus milik sendiri; bantuan menulis AI dinyatakan di A06. Semua TEST_ONLY dikecualikan. Jawaban, studi mandiri, koreksi, dan ide diterima. Ucapan terima kasih bersifat sukarela; penulis artikel ditentukan berdasarkan kontribusi nyata.
+
+```{=typst}
+#pagebreak()
+```
+
+## Referensi {#references}
+
+::: {#refs}
+:::

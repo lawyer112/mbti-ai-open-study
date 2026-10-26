@@ -1,0 +1,87 @@
+---
+title: 'MBTI × AI: seperti apa teman AI kamu?'
+lang: id
+toc: false
+format:
+  html:
+    include-in-header:
+      text: '<link rel="canonical" href="https://lawyer112.github.io/mbti-ai-open-study/id/index.html">
+
+        <link rel="alternate" hreflang="zh-CN" href="https://lawyer112.github.io/mbti-ai-open-study/index.html">
+
+        <link rel="alternate" hreflang="en" href="https://lawyer112.github.io/mbti-ai-open-study/en/index.html">
+
+        <link rel="alternate" hreflang="ja" href="https://lawyer112.github.io/mbti-ai-open-study/ja/index.html">
+
+        <link rel="alternate" hreflang="ko" href="https://lawyer112.github.io/mbti-ai-open-study/ko/index.html">
+
+        <link rel="alternate" hreflang="es" href="https://lawyer112.github.io/mbti-ai-open-study/es/index.html">
+
+        <link rel="alternate" hreflang="fr" href="https://lawyer112.github.io/mbti-ai-open-study/fr/index.html">
+
+        <link rel="alternate" hreflang="de" href="https://lawyer112.github.io/mbti-ai-open-study/de/index.html">
+
+        <link rel="alternate" hreflang="pt" href="https://lawyer112.github.io/mbti-ai-open-study/pt/index.html">
+
+        <link rel="alternate" hreflang="ru" href="https://lawyer112.github.io/mbti-ai-open-study/ru/index.html">
+
+        <link rel="alternate" hreflang="ar" href="https://lawyer112.github.io/mbti-ai-open-study/ar/index.html">
+
+        <link rel="alternate" hreflang="hi" href="https://lawyer112.github.io/mbti-ai-open-study/hi/index.html">
+
+        <link rel="alternate" hreflang="id" href="https://lawyer112.github.io/mbti-ai-open-study/id/index.html">'
+---
+
+::: {.article-links}
+[简体中文](../index.qmd) · [English](../en/index.qmd) · [日本語](../ja/index.qmd) · [한국어](../ko/index.qmd) · [Español](../es/index.qmd) · [Français](../fr/index.qmd) · [Deutsch](../de/index.qmd) · [Português](../pt/index.qmd) · [Русский](../ru/index.qmd) · [العربية](../ar/index.qmd) · [हिन्दी](../hi/index.qmd) · [Bahasa Indonesia](../id/index.qmd)
+:::
+
+Ada yang membuka AI untuk menyelesaikan pekerjaan, ada yang mencari teman diskusi. Sebagian menjelaskan konteks panjang, sebagian cukup bertanya “Menurutmu bagaimana?”. Ada yang suka idenya tetapi kesal pada jawaban salah yang penuh percaya diri. Mengapa teknologi yang sama terasa seperti teman yang berbeda?
+
+**Ini survei santai MBTI × AI tentang kebiasaan, pendapat, dan cerita nyata: untuk apa AI dipakai, bagaimana kita mengobrol, apa yang disukai dan dikeluhkan. Kita melihat kecenderungan antar tipe yang dilaporkan sendiri sekaligus keragaman dalam satu tipe. Tidak ada pemenang yang ditentukan sebelumnya dan kamu tidak perlu membuktikan kemampuan AI.**
+
+**[Pilihan singkat / Ceritakan pengalaman](../survey/index.html?lang=id)** · [Kirim melalui GitHub](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=01-individual-report-id.yml)
+
+## Mengapa survei ini dibuat
+
+**Bagi kamu, AI paling mirip apa?**
+
+Alat untuk menyelesaikan sesuatu / Asisten kerja / Guru yang bisa ditanya …
+
+**Bagaimana kamu biasanya memulai percakapan?**
+
+Instruksi singkat dan langsung / Konteks, kebutuhan, dan batasan lebih dulu / Membagi jadi langkah-langkah dan bertanya satu per satu …
+
+**Apa yang paling mengganggumu tentang AI?**
+
+Salah dengan sangat percaya diri / Tidak menangkap pertanyaan sebenarnya / Terlalu panjang atau tidak langsung ke inti …
+
+## Atlas yang kita susun bersama
+
+Setelah jawaban nyata masuk, kita ingin membuat atlas hubungan 16 tipe dengan AI: grafik kebiasaan, sebaran pujian dan keluhan, cerita yang dikutip dengan izin, serta artikel pengamatan yang diperbarui. Jumlah jawaban sah dan orang tiap tipe akan disebutkan; tanpa data, bagian dibiarkan kosong. Perbedaan kecil dan banyak pengecualian juga menarik. Ini rencana; belum ada statistik peserta yang dilaporkan.
+
+## Cara kerja formulir
+
+Ingat 30 hari terakhir. Bentuk pilihan berisi 19 pertanyaan dan cerita 11, dengan 7 pertanyaan bersama. Jumlah ini termasuk pertanyaan opsional dan bersyarat; hanya yang berlaku ditampilkan. Satu bentuk cukup; gunakan ID yang sama untuk menambah bentuk lain. MBTI tidak pasti melewati sumber; yang tidak memakai belakangan ini menjelaskan alasan tanpa mengarang pengalaman. Kalimat terakhir opsional. Pilihan membahas penggunaan, percakapan, dan opini; cerita memberi konteks. Tujuan tiap pertanyaan bisa dibuka dan pembukaannya dicatat. Waktu nyata masih perlu uji coba dengan manusia.
+
+## Partisipasi dan berbagi
+
+Saya berusia minimal 18 tahun dan berpartisipasi secara sukarela. Saya menceritakan kebiasaan, pengalaman, atau pendapat nyata saya sendiri.
+
+1. Periksa laporan dan hapus informasi yang tidak boleh dipublikasikan.
+2. Unduh data JSON dan laporan Markdown.
+3. Lampirkan berkas atau tempelkan laporan lengkap pada Issue GitHub. PR juga dapat digunakan.
+
+Jawaban tidak diunggah otomatis. Simpan draf sebelum menutup atau memuat ulang halaman.
+
+Issue, PR, dan lampiran bersifat publik serta terhubung dengan akun GitHub Anda. Kode peserta tidak menjadikan Anda anonim.
+
+[Studi dan panduan peserta](../protocol/20261026-mbti-ai-use-protocol/id.qmd) · [PDF](../protocol/20261026-mbti-ai-use-protocol/id.pdf) · <a href="../survey/index.html" download="mbti-ai-v0.3.html">HTML ↓</a>
+
+[Pilihan singkat · Markdown](../survey/id/choice-questionnaire.md) · [Ceritakan pengalaman · Markdown](../survey/id/text-questionnaire.md)
+
+## Diskusikan studi
+
+Nama proyek: lawyer112. Codex membantu penulisan, penerjemahan, implementasi, dan pemeriksaan; ini bukan validasi penutur asli atau peneliti independen. Pengalaman harus milik sendiri; bantuan menulis AI dinyatakan di A06. Semua TEST_ONLY dikecualikan. Jawaban, studi mandiri, koreksi, dan ide diterima. Ucapan terima kasih bersifat sukarela; penulis artikel ditentukan berdasarkan kontribusi nyata.
+
+[Kirim studi independen](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=02-study-report-id.yml) · [Diskusikan studi](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=03-research-discussion-id.yml) · [GitHub](https://github.com/lawyer112/mbti-ai-open-study)

@@ -1,0 +1,88 @@
+name: es · Entregar cuestionario
+description: Adjunta los archivos exportados o pega el informe completo.
+title: '[es v0.3] '
+labels:
+- needs-review
+body:
+- type: markdown
+  attributes:
+    value: 'Encuesta informal sobre MBTI, hábitos cotidianos con IA, opiniones e historias. Piensa en los últimos
+      30 días. No es un test de personalidad ni una clasificación de capacidades.
+
+
+      Las incidencias, los PR y los adjuntos son públicos y se vinculan a tu cuenta de GitHub. Un código de participante
+      no te hace anónimo.
+
+
+      Revisa el informe y elimina lo que no deba ser público.
+
+
+      Descarga los datos JSON y el informe Markdown.
+
+
+      Adjunta los archivos o pega el informe completo en una incidencia de GitHub. También puedes enviar un PR.
+
+
+      https://lawyer112.github.io/mbti-ai-open-study/survey/index.html?lang=es'
+- type: input
+  id: case-id
+  attributes:
+    label: Identificador del informe
+    description: Son tus hábitos y opiniones declarados. A05 recoge el permiso para citar. Vincula las dos modalidades
+      de una misma participación mediante el identificador del informe.
+  validations:
+    required: true
+- type: input
+  id: schema-version
+  attributes:
+    label: Versión del cuestionario
+    description: '0.3'
+    value: '0.3'
+  validations:
+    required: true
+- type: dropdown
+  id: questionnaire-mode
+  attributes:
+    label: Modalidad
+    options:
+    - Respuestas rápidas
+    - Cuenta una historia
+    - Respuestas rápidas + Cuenta una historia
+  validations:
+    required: true
+- type: input
+  id: instrument-language
+  attributes:
+    label: Idioma
+    value: es
+  validations:
+    required: true
+- type: textarea
+  id: report-files
+  attributes:
+    label: Archivos o informe completo
+    description: Adjunta los archivos exportados o pega el informe completo.
+  validations:
+    required: true
+- type: textarea
+  id: amendments
+  attributes:
+    label: Informes previos y correcciones
+    description: Son tus hábitos y opiniones declarados. A05 recoge el permiso para citar. Vincula las dos modalidades
+      de una misma participación mediante el identificador del informe.
+  validations:
+    required: false
+- type: checkboxes
+  id: confirmation
+  attributes:
+    label: Confirmaciones de participación
+    options:
+    - label: Tengo al menos 18 años y participo voluntariamente. Describo mis propios hábitos, experiencias u opiniones
+        reales.
+      required: true
+    - label: Entiendo que los envíos a GitHub son públicos y están vinculados a mi cuenta; un identificador no garantiza
+        anonimato.
+      required: true
+    - label: He retirado información privada y confidencial y puedo compartir este material. Autorizo las estadísticas
+        y los resúmenes del proyecto y entiendo que quizá no se puedan retirar todas las copias públicas.
+      required: true

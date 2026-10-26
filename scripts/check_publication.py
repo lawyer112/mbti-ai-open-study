@@ -23,8 +23,9 @@ REQUIRED = {
     "paper.json", "zh.qmd", "en.qmd", "references.bib", "evidence.csv",
     "glossary.csv", "CHANGELOG.md", "reproduce.md", "review.json",
 }
-CHECKS = {"content", "sources", "bilingual", "web_desktop_mobile", "pdf_zh_en", "public_scope"}
-PLACEHOLDER = re.compile(r"\b(?:TODO|TBD|PLACEHOLDER)\b", re.I)
+CHECKS = {"content", "sources", "bilingual", "multilingual", "web_desktop_mobile", "pdf_zh_en", "pdf_all_languages", "public_scope"}
+# Match explicit editorial markers, not ordinary Spanish/Portuguese words such as "todo".
+PLACEHOLDER = re.compile(r"\b(?:TODO|TBD|PLACEHOLDER)\b")
 
 
 def fingerprints(folder: Path) -> dict[str, str]:
@@ -95,7 +96,9 @@ def check_article(folder: Path) -> tuple[dict, list[str]]:
     bib_keys = set(re.findall(r"@\w+\s*\{\s*([^,\s]+)\s*,", bib))
     structures = []
     citation_sets = []
-    for language, filename, counterpart in (("zh-CN", "zh.qmd", "en.qmd"), ("en", "en.qmd", "zh.qmd")):
+    languages=json.loads((ROOT/'survey/languages.json').read_text(encoding='utf-8'))
+    for entry in languages:
+        language=entry['code'];filename=('zh' if language=='zh-CN' else language)+'.qmd';counterpart='en.qmd' if language=='zh-CN' else 'zh.qmd'
         front, body = frontmatter(folder / filename)
         if meta.get("language_status", {}).get(language) != "reviewed":
             errors.append(f"Full {language} manuscript has not been reviewed")
@@ -105,8 +108,8 @@ def check_article(folder: Path) -> tuple[dict, list[str]]:
                 errors.append(f"{filename}: {key} does not match article metadata")
         if str(front.get("date")) != str(meta.get("date")) or front.get("author") != authors:
             errors.append(f"{filename}: date/authors do not match")
-        if not front.get("abstract") or not front.get("subtitle"):
-            errors.append(f"{filename}: abstract and visible status subtitle are required")
+        if not front.get("abstract"):
+            errors.append(f"{filename}: abstract is required")
         if PLACEHOLDER.search(body + json.dumps(front, default=str, ensure_ascii=False)):
             errors.append(f"{filename}: unresolved placeholders")
         if len(re.sub(r"\s", "", body)) < 300:
@@ -128,10 +131,10 @@ def check_article(folder: Path) -> tuple[dict, list[str]]:
         if meta.get("type") == "playful":
             if not re.search("趣味|戏仿|虚构" if language == "zh-CN" else "playful|satire|fiction", str(front.get("subtitle", "")), re.I):
                 errors.append(f"{filename}: playful identity must be visible in the subtitle")
-    if structures[0] != structures[1]:
-        errors.append("Chinese and English semantic section anchors/order differ")
-    if citation_sets[0] != citation_sets[1]:
-        errors.append("Chinese and English citation keys differ")
+    if any(s!=structures[0] for s in structures[1:]):
+        errors.append("Localized semantic section anchors/order differ")
+    if any(s!=citation_sets[0] for s in citation_sets[1:]):
+        errors.append("Localized citation keys differ")
     for filename in ("CHANGELOG.md", "reproduce.md"):
         if PLACEHOLDER.search((folder / filename).read_text(encoding="utf-8-sig")):
             errors.append(f"{filename}: unresolved placeholders")

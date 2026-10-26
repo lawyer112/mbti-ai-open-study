@@ -1,18 +1,16 @@
-name: 研究讨论 / Discuss research
-description: 讨论问卷、证据与分析。Discuss the instrument, evidence and analysis.
-title: '[研究讨论] '
+name: zh-CN · 讨论研究
+description: 反馈翻译问题或提出改进建议。
+title: '[zh-CN v0.3] '
+labels:
+- method-discussion
 body:
-- type: textarea
-  id: question
+- type: markdown
   attributes:
-    label: 希望讨论的问题 / Question
-  validations:
-    required: true
+    value: Issue、PR 及附件会公开并关联 GitHub 账号；研究代号不等于匿名。
 - type: textarea
-  id: proposal
+  id: report
   attributes:
-    label: 建议和依据 / Proposal and evidence
-    description: 可提供论文链接、具体观察或可执行的改法。请区分已有证据与个人假设。 Link sources or observations, propose concrete changes, and distinguish
-      evidence from hypotheses.
+    label: 讨论研究
+    description: 说明问题、语言、题号和修改建议，请勿包含私人信息。
   validations:
     required: true

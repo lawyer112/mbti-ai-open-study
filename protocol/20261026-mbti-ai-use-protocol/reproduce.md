@@ -1,8 +1,8 @@
 # 复现与构建 / Reproduction and build
 
-本方案尚无真人样本统计，没有可复算的经验结果或功效计算。49题、34题及所有题号来自scripts/questionnaire_items.py，使用构建脚本生成。TEST_ONLY材料是界面检查夹具，不是研究数据，不随首发包公开。
+没有真人统计结果或功效计算。题数来自 `scripts/survey_items_v03.py`：选择题 19 项、故事版 11 项，共享 7 项，23 个不同题项。`survey/locales/` 提供 12 语种的文字，选项编码和条件规则共享。TEST_ONLY 是界面检查材料，排除于数据和公开包。
 
-在仓库根目录使用Python 3.12或更新版本、Quarto 1.10.19、PyYAML 6.0.3和可用中文字体：
+No participant statistics or power analysis exist. `scripts/survey_items_v03.py` defines 19 choice items, 11 story items, 7 shared and 23 distinct. `survey/locales/` supplies 12 languages with shared option codes and routing. TEST_ONLY fixtures are excluded from participant data and public source control.
 
 ```text
 python -m pip install -r requirements.txt
@@ -11,12 +11,14 @@ python scripts/check_publication.py --release
 python scripts/build_site.py
 ```
 
-本地Quarto不在PATH时，设置QUARTO_BIN指向其入口。Linux构建使用Noto Sans CJK SC与Liberation Sans；Windows使用Noto Sans SC与Arial。输出为_site/中的双语网页、两个PDF和独立HTML问卷。--preview仅用于验收前排版检查，不允许据此发布；正式构建核验review.json和instrument-lock.json。
+使用 Python 3.12+、Quarto 1.10.19、PyYAML 6.0.3。Quarto 不在 PATH 时设置 QUARTO_BIN。Windows 使用 Arial、Noto Sans SC、Yu Gothic、Malgun Gothic、Nirmala UI；Linux 安装 fonts-liberation、fonts-noto-cjk、fonts-noto-core。输出 `_site/` 包含 12 介绍、12 设计说明和 PDF、独立 HTML 问卷、24 Markdown 问卷及旧版入口。
 
-查看问卷后，使用明确标记的测试内容检查必答项、条件题、互斥选项、草稿恢复和两版导出。发布前还需检查桌面、手机、PDF逐页内容及公开范围。题库、引用、文稿或关键实现变化后重新核验，不能自动更新指纹掩盖变化。
+Use Python 3.12+, Quarto 1.10.19 and PyYAML 6.0.3; set QUARTO_BIN if needed. Windows fonts: Arial, Noto Sans SC, Yu Gothic, Malgun Gothic and Nirmala UI. Linux packages: fonts-liberation, fonts-noto-cjk and fonts-noto-core. `_site/` contains 12 introductions, 12 guides/PDFs, the standalone form, 24 Markdown forms and the legacy route.
 
-This protocol has no human-participant statistics, empirical results to reproduce, or completed power calculation. The counts of 49 and 34 items and all item IDs come from scripts/questionnaire_items.py and its generator. TEST_ONLY materials are interface fixtures, not research data, and are excluded from the first public package.
+`--preview` 仅用于检查，跳过尚待完成的验收锁，不能据此发布。正式构建核验 review.json 和 instrument-lock.json。实际核验后才能更新指纹。发布为手动工作流，推送后的检查工作流不自动部署。
 
-Run the commands above from the repository root with Python 3.12 or later, Quarto 1.10.19, PyYAML 6.0.3, and Chinese fonts. Set QUARTO_BIN if Quarto is not on PATH. Linux uses Noto Sans CJK SC and Liberation Sans; Windows uses Noto Sans SC and Arial. The _site/ output contains bilingual HTML, both PDFs, and the standalone questionnaire. --preview is only for layout inspection before review; release builds require the review record and instrument lock.
+`--preview` is for inspection only and bypasses pending review locks; it does not authorize release. Release builds check review.json and instrument-lock.json. Update fingerprints only after actual checks. Deployment is manual; push/PR checks do not deploy.
 
-Use explicitly marked test content to check required items, conditional questions, mutually exclusive answers, draft restoration, and both form exports. Review desktop/mobile pages, each PDF page, and public scope before release. Recheck after substantive source or implementation changes; do not automatically replace hashes to hide unreviewed changes.
+实际验证包括各语言的近期用户/非使用者两种模式、必答项、互斥、草稿恢复、语言切换和导出，桌面/手机阅读、内部链接、PDF 逐页显示、公开范围。未进行真人问卷试填、母语者访谈或测量验证，不能以工具测试替代。
+
+Actual checks cover each language's user/nonuser routes in both modes, required and exclusive fields, drafts, switching and exports; desktop/mobile reading, links, every PDF page and public scope. These do not replace a human pilot, native-speaker interviews or measurement validation, none of which has been completed.

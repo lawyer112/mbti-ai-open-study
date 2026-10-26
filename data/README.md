@@ -1,41 +1,33 @@
-# 数据整理规范
+# 数据整理 / Data handling
 
-目前没有参与者数据，不放模拟样本充当真实提交。
+## 中文
 
-## 分层保存
+当前没有本项目真人统计结果。生成答案、界面测试和独立研究的汇总人数不能充当本问卷样本。个人 PR 放 `submissions/individual/`，独立研究放 `submissions/studies/`，Issue 保留来源。实际使用时再建 `data/derived/`、`analysis/` 和 `paper/`，不预填结果。
 
-- `submissions/individual/`：通过PR接收的个人报告；Issue报告保留来源链接。
-- `submissions/studies/`：独立调研报告与方法。
-- `data/derived/`：维护者依据问卷规则整理的结构化数据。首次发布前明确授权范围、数据字典和版本。
-- `analysis/`：后续可复现分析脚本与运行说明。
-- `paper/`：有数据后逐步形成的论文与版本记录。
+正式导出 `kind=mbti-ai-response`，保留 `response_id`、`schema_version`、`record_protocol=everyday-ai-habits-recent30-v0.3`、`questionnaire_mode`、`instrument_language`、`instrument_revision`、`exported_at`、`collection_stage`、`consent`、`answers`、`answer_labels`、`not_applicable`、`answer_ui_language` 与 `method`。method 包含模式顺序、目的展示、语言历史、自报性质和验证状态。导出时间不是提交时间。
 
-这些目录按首次实际使用时建立，不预填结果。
+维护者另记来源、参与轮次、内部参与者关联、审核状态和更正。一个报告 ID 可有两版；同一人重建 ID、Issue 转 PR、更正和补充都要核对，不能按报告条数算人数。账号也不保证一人一号，无法确认的重叠注明不确定。来源可关联账号，不能称匿名数据。
 
-## 记录原则
+编码不是分数，必须结合版本及标签。未答、不适用、记不清、明确没有分别保存，不填 0。统计展示每题有效分母；多选比例可超过 100%。故事和选择题不能合成总分，满意度不能变成正确率或工作增益。文字保留相反意见和例外。
 
-保留report_id、participant_code、来源、问卷版本、记录时间、审核状态与更正历史。来源链接本身可能关联GitHub账号，不能称为匿名数据。面向统计的表不直接使用用户名，不携带对话中的联系方式或私人文本。
+语言和版本先分层，译文未经母语者认知访谈或等价验证。旧 v0.2 的 case_id/task_protocol 描述单项任务，不能换字段后视为 v0.3 日常习惯。试填与后续正式轮次也分开，合并须有依据。
 
-v0.2另保留case_id、questionnaire_mode、task_protocol、purpose_viewed及浏览问卷顺序；公开表单同时标记instrument_language=zh-CN和collection_stage=pilot。正式导出kind为mbti-ai-response；kind为mbti-ai-draft的草稿不纳入。选择题与文字题针对同一任务时关联同一case_id，共同信息若冲突需核对更正。题库中的字符串选项编号只是编码，不是分数；必须结合版本与标签解释。
+草稿 `kind=mbti-ai-draft` 不是已确认投稿。所有 TEST_ONLY、test-only、excluded、withdrawn 材料排除；格式完整或勾选不能让测试变真人。A06 说明 AI 写作帮助不自动排除真实参与，但不能编造经历。
 
-题目未填、跳题不适用、记不清与明确没有分别保存。两种模式的回答分别分析，不因主题对应就直接混算量表。试填和正式数据分开；旧v0.1与v0.2不得静默合并。
-
-output/中若出现TEST_ONLY文件，仅为界面检查材料，不是参与者数据，禁止纳入分析。公开Issue或PR中明确标注TEST_ONLY、test-only或excluded的测试记录同样排除，不因格式完整、具有case_id或出现勾选确认就视为真人参与。
-
-不得用报告条数代替参与人数，不把同一内容的Issue与PR重复计入，不把一篇调研报告当作一名参与者。原报告、人工编码和统计结果分开保存；缺失不填0。
-
-公开数据集与论文中的逐字引文分别核对许可；默认先发布获准的汇总统计。个人提交的同意范围不自动等于第三方可无限再利用。
+先发布获准的汇总；引用核对 A05；个体数据再发布另查许可。公开原投稿仍可关联账号，分析表去用户名不让它追溯性变匿名。撤回影响后续分析，不能保证收回互联网副本。
 
 ## English
 
-This release contains no real participant dataset. Do not substitute simulated or generated responses for participants.
+No human participant statistics are reported. Generated answers, interface fixtures and aggregate study counts are not questionnaire participants. Individual PRs use `submissions/individual/`, separate studies use `submissions/studies/`, and Issues retain provenance. Create `data/derived/`, `analysis/` and `paper/` only when needed, without invented findings.
 
-Use submissions/individual/ for individual reports submitted by pull request, preserving source links for Issue reports; submissions/studies/ for separate studies; data/derived/ for checked structured records; analysis/ for reproducible analyses; and paper/ for later empirical manuscripts. Create these directories when actual materials exist, without placeholder findings. The current protocol is separately available under protocol/.
+Exports use `kind=mbti-ai-response`. Retain `response_id`, `schema_version`, `record_protocol=everyday-ai-habits-recent30-v0.3`, `questionnaire_mode`, `instrument_language`, `instrument_revision`, `exported_at`, `collection_stage`, `consent`, `answers`, `answer_labels`, `not_applicable`, `answer_ui_language` and `method`. Method records form order, purpose exposure, language history, self-report and validation status. Export time is not submission time.
 
-Keep report_id, participant_code, provenance, version, recording dates, review state and corrections. v0.2 also retains case_id, questionnaire_mode, task_protocol, purpose_viewed and form-viewing order; the public form adds instrument_language=zh-CN and collection_stage=pilot. Provenance can identify GitHub accounts, so do not call the data anonymous. Statistical tables should omit account names, contact details and private conversation content.
+Maintain provenance, participation round, internal participant linkage, review state and corrections. One ID can contain both forms. Check regenerated IDs, Issue/PR duplicates, supplements and corrections; report counts are not person counts. Accounts do not guarantee one person per account. State uncertain overlap. Provenance may identify accounts, so do not call records anonymous.
 
-Only kind=mbti-ai-response is a formal exported response. A saved draft with kind=mbti-ai-draft is not a submission. Link both forms for the same task by case_id and resolve conflicts in shared information. String option IDs are version-specific codes, not scores; interpret them with labels and the instrument version.
+Codes are not scores; interpret them with version and labels. Missing, inapplicable, uncertain and explicit absence remain separate, never filled with zero. Show each item's valid denominator; multiple-choice percentages may exceed 100%. Do not combine stories and choices into a total score or turn satisfaction into accuracy or productivity. Preserve opposing stories and exceptions.
 
-Count participants, tasks, forms and separate studies distinctly. Do not count an Issue and its pull request twice, or treat one study report as one participant. Keep raw reports, coding and statistical outputs separate. Missing, inapplicable, uncertain and explicit absence are distinct. Do not combine the two forms as equivalent scales, mix pilot and formal records, or silently pool v0.1 and v0.2 anchors.
+Stratify by language and version first; translations lack native-speaker cognitive interviews and equivalence validation. Old v0.2 case_id/task_protocol records concern one task, not v0.3 everyday habits. Renaming fields does not make them equivalent. Separate pilot and later formal rounds and justify pooling.
 
-TEST_ONLY files under output/ are interface fixtures excluded from public source control and all analyses. Test records in public Issues or pull requests marked TEST_ONLY, test-only, or excluded must also be excluded. A complete format, case_id or checked confirmations does not turn a fixture into human participation. Dataset redistribution and verbatim quotations require separate permission checks; begin with authorized aggregate results. A person's participation consent is not unlimited third-party reuse permission.
+`kind=mbti-ai-draft` is not a confirmed submission. Exclude all TEST_ONLY, test-only, excluded and withdrawn material; complete formatting and confirmations do not make tests into people. A06 AI writing help does not automatically exclude real participation, but invented experiences are unacceptable.
+
+Publish authorized aggregates first; check A05 for quotations and separate permissions for individual-data releases. Public originals may identify accounts; removing usernames from tables cannot retroactively anonymize them. Withdrawal affects later analysis, without promising recall of internet copies.

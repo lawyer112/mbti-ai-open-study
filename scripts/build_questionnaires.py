@@ -1,61 +1,101 @@
-"""生成不依赖服务器的 HTML，以及带逐题目的说明的两版问卷。"""
+"""Build complete, offline, localized questionnaires from one shared item schema."""
 from pathlib import Path
+import argparse
+import copy
 import json
-from questionnaire_items import DATA
+import re
+import yaml
+from survey_items_v03 import DATA
 
-ROOT = Path(__file__).resolve().parents[1]
-SURVEY = ROOT / "survey"
+ROOT=Path(__file__).resolve().parents[1]
+SURVEY=ROOT/'survey'
+REVISION='2026-10-26.fun.1'
 
-def selected(mode):
-    return [g for g in DATA['groups'] if g['mode'] in ['shared', mode]]
+def localized(code):
+    pack=json.loads((SURVEY/'locales'/f'{code}.json').read_text(encoding='utf-8'))
+    en=json.loads((SURVEY/'locales/en.json').read_text(encoding='utf-8'))
+    assert set(pack['ui'])==set(en['ui']), (code,'UI keys')
+    assert len(pack['consents'])==3 and all(pack['consents'])
+    for key,value in pack['ui'].items():
+        assert type(value)==type(en['ui'][key]) and value,(code,key)
+        source=' '.join(en['ui'][key]) if isinstance(value,list) else en['ui'][key]
+        target=' '.join(value) if isinstance(value,list) else value
+        assert set(re.findall(r'\{\w+\}',source))==set(re.findall(r'\{\w+\}',target)),(code,key,'variables')
+    bank=copy.deepcopy(DATA);bank['title']=pack['ui']['title'];bank['ui']=pack['ui'];bank['consents']=pack['consents']
+    assert set(pack['groups'])=={g['id'] for g in bank['groups']}
+    assert set(pack['items'])=={q['id'] for g in bank['groups'] for q in g['items']}
+    for group in bank['groups']:
+        group['title'],group['intro']=pack['groups'][group['id']]
+        for q in group['items']:
+            local=pack['items'][q['id']]
+            assert set(local)==({'title','purpose','hint','options'} if q.get('options') else {'title','purpose','hint'}),(code,q['id'],'keys')
+            for key in ['title','purpose','hint']:
+                assert bool(local[key])==bool(q[key]),(code,q['id'],key)
+                q[key]=local[key]
+            if q.get('options'):
+                assert len(local['options'])==len(q['options']),(code,q['id'],'option count')
+                assert all(local['options'])
+                for option,label in zip(q['options'],local['options']):option['label']=label
+                if q['id']=='A01':assert local['options'][:16]==[o['label'] for g in DATA['groups'] for item in g['items'] if item['id']=='A01' for o in item['options']][:16]
+    return bank
+
+def readable(bank,code,mode):
+    ui=bank['ui'];groups=[g for g in bank['groups'] if g['mode'] in ['shared',mode]];all_items={q['id']:q for g in bank['groups'] for q in g['items']}
+    lines=[f"# {bank['title']} · {ui[mode]} v{bank['version']}",'',ui['mdintro'],'',ui['entrytext'],'',ui['mdexposure'],'',f"## {ui['consent']}",'']
+    lines += [f'- [ ] {s}' for s in bank['consents']]
+    lines += ['',ui['item_count'].format(n=sum(len(g['items']) for g in groups)),'',f"- {ui['language']}: {code}",f"- {ui['case_label']}:",f"- {ui['modeorder']}:",f"- {ui['purposeviewed']}: {ui['mdexposure']}",'']
+    for group in groups:
+        lines += [f"## {group['title']}",'',group['intro'],'']
+        for q in group['items']:
+            lines += [f"### {q['id']} {q['title']} ({ui['required' if q['required'] else 'optional']})",'']
+            if q.get('show_if'):
+                dep=q['show_if'];key='equals' if 'equals' in dep else 'not_equals';label=next(o['label'] for o in all_items[dep['id']]['options'] if o['value']==dep[key])
+                lines += [ui['condition_equal' if key=='equals' else 'condition_not_equal'].format(id=dep['id'],label=label),'']
+            if q['hint']:lines += [q['hint'],'']
+            if q.get('options'):
+                lines += [f"- [ ] {o['label']}" for o in q['options']]
+                if q.get('exclusive'):lines += ['',ui['exclusive'].format(labels=' / '.join(o['label'] for o in q['options'] if o['value'] in q['exclusive']))]
+            else:lines += [ui['answer']+':','']
+            lines += ['',f"**{ui['purpose']}** {q['purpose']}",'']
+    lines += [f"## {ui['return']}",'',*ui['return_steps'],'',ui['privacy'],'',ui['reportnote'],'']
+    return '\n'.join(lines)
+
+def issue_forms(bank,code):
+    ui=bank['ui'];suffix='' if code=='zh-CN' else '-'+code
+    intro='\n\n'.join([ui['mdintro'],ui['privacy'],*ui['return_steps'],f'https://lawyer112.github.io/mbti-ai-open-study/survey/index.html?lang={code}'])
+    body=[{'type':'markdown','attributes':{'value':intro}}]
+    for item,label,desc in [('case-id','case_label',ui['case']),('schema-version','version','0.3')]:
+        attrs={'label':ui[label],'description':desc}
+        if item=='schema-version':attrs['value']='0.3'
+        if item=='case-id':attrs['description']=ui['reportnote']
+        body.append({'type':'input','id':item,'attributes':attrs,'validations':{'required':True}})
+    body += [{'type':'dropdown','id':'questionnaire-mode','attributes':{'label':ui['mode_label'],'options':[ui['choice'],ui['text'],ui['choice']+' + '+ui['text']]},'validations':{'required':True}},
+             {'type':'input','id':'instrument-language','attributes':{'label':ui['language'],'value':code},'validations':{'required':True}}]
+    for item,key in [('report-files','files'),('amendments','corrections')]:body.append({'type':'textarea','id':item,'attributes':{'label':ui[key],'description':ui['submit_description'] if key=='files' else ui['reportnote']},'validations':{'required':item=='report-files'}})
+    body.append({'type':'checkboxes','id':'confirmation','attributes':{'label':ui['consent'],'options':[{'label':c,'required':True} for c in bank['consents']]}})
+    base=ROOT/'.github/ISSUE_TEMPLATE'
+    forms=[('01-individual-report',ui['submit_title'],ui['submit_description'],body,'needs-review')]
+    for stem,prefix in [('02-study-report','study'),('03-research-discussion','discussion')]:
+        forms.append((stem,ui[prefix+'_title'],ui[prefix+'_description'],[{'type':'markdown','attributes':{'value':ui['privacy']}},{'type':'textarea','id':'report','attributes':{'label':ui[prefix+'_title'],'description':ui[prefix+'_body']},'validations':{'required':True}}], 'needs-review' if prefix=='study' else 'method-discussion'))
+    for stem,name,description,form,label in forms:
+        entry={'name':f'{code} · {name}','description':description,'title':f'[{code} v0.3] ','labels':[label],'body':form}
+        assert len(entry['name'])<=64 and len(description)<=200,(code,stem,'GitHub limits')
+        (base/f'{stem}{suffix}.yml').write_text(yaml.safe_dump(entry,allow_unicode=True,sort_keys=False,width=110),encoding='utf-8',newline='\n')
 
 def build():
-    all_items = [q for g in DATA['groups'] for q in g['items']]
-    ids = [q['id'] for q in all_items]
-    assert len(ids) == len(set(ids)), '题号重复'
-    for q in all_items:
-        assert q['purpose'] and q['title']
-        if 'show_if' in q:
-            assert q['show_if']['id'] in ids
-    payload = json.dumps(DATA, ensure_ascii=False).replace('<', '\\u003c').replace('&', '\\u0026')
-    template = (SURVEY / 'page.template.html').read_text(encoding='utf-8')
-    (SURVEY / 'index.html').write_text(template.replace('__QUESTIONNAIRE_DATA__', payload), encoding='utf-8', newline='\n')
-    for mode, label in [('choice', '选择题版'), ('text', '文字版')]:
-        groups = selected(mode)
-        items = [q for g in groups for q in g['items']]
-        lines = [f'# {DATA["title"]} · {label} v{DATA["version"]}', '',
-            '试填稿。研究问题：人格偏好与 AI 使用过程有什么关系？本问卷不测定 MBTI，也不产生人格优劣排名。', '',
-            '请回顾最近30天内最近一次已经结束或决定暂停的真实 AI 任务；成功、失败、未完成都可以。所有题围绕同一次任务。首次参与任选一版；如补填另一版，沿用同一报告编号，并注明顺序。', '',
-            '下面同时展示题目与研究目的，供审阅和协作。网页填写时研究目的默认折叠；主动查看会记录为方法信息。', '',
-            '## 参与确认', '']
-        lines += [f'- [ ] {c}' for c in DATA['consents']]
-        lines += ['', f'共{len(items)}个题项，含背景、人格、可选补充及条件题；符合跳题条件才回答。耗时待试填验证。', '',
-                  '- 研究代号：见 B01', '- 报告编号：网页自动生成；手工提交请自定并沿用，例如“研究代号-任务日期-01”。',
-                  '- 是否已经看过另一版：', '- 是否查看本文件的逐题研究目的：是（本文件同时展示）。', '']
-        for g in groups:
-            lines += [f'## {g["title"]}', '', g['intro'], '']
-            for q in g['items']:
-                optional = '必答' if q['required'] else '可选'
-                kind = {'radio':'单选','select':'单选','multi':'多选','short':'简答','long':'文字'}[q['kind']]
-                lines += [f'### {q["id"]} {q["title"]}（{kind}；{optional}）', '']
-                if q.get('show_if'):
-                    dep=q['show_if']; parent=next(x for x in all_items if x['id']==dep['id'])
-                    key = 'equals' if 'equals' in dep else 'not_equals'
-                    label2=next(o['label'] for o in parent['options'] if o['value']==dep[key])
-                    lines += [f'仅在 {dep["id"]} 已回答且{ "选择" if key=="equals" else "未选择" }“{label2}”时回答。', '']
-                if q['hint']: lines += [q['hint'], '']
-                if q.get('options'):
-                    lines += [f'- [ ] {o["label"]}' for o in q['options']]
-                    if q.get('exclusive'):
-                        labels=[o['label'] for o in q['options'] if o['value'] in q['exclusive']]
-                        lines += ['', '互斥选项：'+'、'.join(labels)+'；任一互斥项不可与其他项同时选择。']
-                else: lines += ['回答：', '']
-                lines += ['', f'**设计目的：** {q["purpose"]}', '']
-        lines += ['## 回传', '', '网页填写可导出 JSON 与 Markdown；在个人问卷回传 Issue 中附文件，或通过 PR 提交。直接填写本 Markdown 也可以，但维护者需核对并人工结构化。不要回传含私人内容的完整聊天记录。', '']
-        (SURVEY / f'{mode}-questionnaire.md').write_text('\n'.join(lines), encoding='utf-8', newline='\n')
-    print(json.dumps({'version':DATA['version'], 'choice_items':sum(len(g['items']) for g in selected('choice')),
-                      'text_items':sum(len(g['items']) for g in selected('text')),
-                      'outputs':['survey/index.html','survey/choice-questionnaire.md','survey/text-questionnaire.md']}, ensure_ascii=False))
+    parser=argparse.ArgumentParser();parser.add_argument('--preview-locales',help='Local preview only. Never use for publication.');args=parser.parse_args()
+    languages=json.loads((SURVEY/'languages.json').read_text(encoding='utf-8'))
+    if args.preview_locales:languages=[l for l in languages if l['code'] in args.preview_locales.split(',')]
+    banks={l['code']:localized(l['code']) for l in languages}
+    payload=json.dumps({'version':DATA['version'],'revision':REVISION,'languages':languages,'banks':banks},ensure_ascii=False).replace('<','\\u003c').replace('&','\\u0026')
+    text=(SURVEY/'page.template.html').read_text(encoding='utf-8').replace('__SURVEY_CSS__',(SURVEY/'styles.css').read_text(encoding='utf-8')).replace('__SURVEY_JS__',(SURVEY/'app.js').read_text(encoding='utf-8')).replace('__QUESTIONNAIRE_DATA__',payload)
+    (SURVEY/'index.html').write_text(text,encoding='utf-8',newline='\n')
+    for code,bank in banks.items():
+        folder=SURVEY/code;folder.mkdir(exist_ok=True)
+        for mode in ['choice','text']:
+            text=readable(bank,code,mode);(folder/f'{mode}-questionnaire.md').write_text(text,encoding='utf-8',newline='\n')
+            if code=='zh-CN':(SURVEY/f'{mode}-questionnaire.md').write_text(text,encoding='utf-8',newline='\n')
+        if not args.preview_locales:issue_forms(bank,code)
+    print(json.dumps({'version':DATA['version'],'languages':list(banks),'items_per_language':23,'choice_items':19,'text_items':11,'preview':bool(args.preview_locales)}))
 
-if __name__ == '__main__':
-    build()
+if __name__=='__main__':build()

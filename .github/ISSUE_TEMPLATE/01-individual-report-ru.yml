@@ -1,0 +1,86 @@
+name: ru · Отправить анкету
+description: Прикрепите выгруженные файлы или вставьте полный отчёт.
+title: '[ru v0.3] '
+labels:
+- needs-review
+body:
+- type: markdown
+  attributes:
+    value: 'Неформальный опрос о MBTI, повседневном использовании ИИ, мнениях и историях. Вспомните последние 30
+      дней. Это не тест личности и не рейтинг способностей.
+
+
+      Issue, PR и вложения публичны и связаны с вашим аккаунтом GitHub. Код участника не обеспечивает анонимность.
+
+
+      Проверьте отчёт и удалите то, что нельзя публиковать.
+
+
+      Скачайте данные JSON и отчёт Markdown.
+
+
+      Прикрепите файлы или вставьте полный отчёт в Issue GitHub. Можно также отправить PR.
+
+
+      https://lawyer112.github.io/mbti-ai-open-study/survey/index.html?lang=ru'
+- type: input
+  id: case-id
+  attributes:
+    label: Идентификатор отчёта
+    description: Это ваши собственные сведения о привычках и мнениях. Разрешение на цитирование — в A05. Обе формы
+      одного участия связываются идентификатором отчёта.
+  validations:
+    required: true
+- type: input
+  id: schema-version
+  attributes:
+    label: Версия анкеты
+    description: '0.3'
+    value: '0.3'
+  validations:
+    required: true
+- type: dropdown
+  id: questionnaire-mode
+  attributes:
+    label: Форма анкеты
+    options:
+    - Быстрый выбор
+    - Рассказать историю
+    - Быстрый выбор + Рассказать историю
+  validations:
+    required: true
+- type: input
+  id: instrument-language
+  attributes:
+    label: Язык
+    value: ru
+  validations:
+    required: true
+- type: textarea
+  id: report-files
+  attributes:
+    label: Файлы или полный отчёт
+    description: Прикрепите выгруженные файлы или вставьте полный отчёт.
+  validations:
+    required: true
+- type: textarea
+  id: amendments
+  attributes:
+    label: Предыдущие отчёты и исправления
+    description: Это ваши собственные сведения о привычках и мнениях. Разрешение на цитирование — в A05. Обе формы
+      одного участия связываются идентификатором отчёта.
+  validations:
+    required: false
+- type: checkboxes
+  id: confirmation
+  attributes:
+    label: Подтверждения участия
+    options:
+    - label: Мне не менее 18 лет, я участвую добровольно и описываю собственные реальные привычки, опыт или мнения.
+      required: true
+    - label: Я понимаю, что материалы в GitHub общедоступны и связаны с моей учётной записью; идентификатор не обеспечивает
+        анонимность.
+      required: true
+    - label: Я удалил(а) личные и конфиденциальные сведения и вправе делиться материалом. Разрешаю статистическую
+        обработку и обобщение в статьях проекта и понимаю, что не все публичные копии удастся изъять.
+      required: true

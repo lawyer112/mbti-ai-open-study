@@ -1,0 +1,18 @@
+name: hi · स्वतंत्र अध्ययन भेजें
+description: अलग अध्ययन, उसकी विधि और प्रमाण साझा करें।
+title: '[hi v0.3] '
+labels:
+- needs-review
+body:
+- type: markdown
+  attributes:
+    value: GitHub Issues, pull requests और संलग्न फ़ाइलें सार्वजनिक हैं और आपके खाते से जुड़ी हैं। रिपोर्ट ID आपको
+      गुमनाम नहीं बनाती।
+- type: textarea
+  id: report
+  attributes:
+    label: स्वतंत्र अध्ययन भेजें
+    description: शोध प्रश्न, प्रतिभागियों की भर्ती, संख्या, व्यक्तित्व के स्रोत, AI कार्य और उपकरण, विधि, निष्कर्ष,
+      सीमाएँ और अनुमतियाँ बताएँ। असली डेटा को परिकल्पनाओं से अलग रखें।
+  validations:
+    required: true

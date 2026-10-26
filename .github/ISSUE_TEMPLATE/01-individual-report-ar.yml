@@ -1,0 +1,83 @@
+name: ar · إرسال إجابات الاستطلاع
+description: أرفق الملفات المصدرة أو الصق التقرير كاملًا.
+title: '[ar v0.3] '
+labels:
+- needs-review
+body:
+- type: markdown
+  attributes:
+    value: 'استطلاع غير رسمي عن MBTI وعادات استخدام الذكاء الاصطناعي وآرائنا وقصصنا. فكر في آخر 30 يومًا. ليس اختبار
+      شخصية أو ترتيبًا للقدرات.
+
+
+      الطلبات والمرفقات على GitHub علنية ومرتبطة بحسابك. معرّف التقرير لا يجعل مشاركتك مجهولة الهوية.
+
+
+      راجع التقرير واحذف ما لا ينبغي نشره.
+
+
+      نزّل بيانات JSON والتقرير المقروء بصيغة Markdown.
+
+
+      أرفق الملفات أو الصق التقرير كاملًا في Issue على GitHub. يمكن أيضًا تقديم طلب سحب.
+
+
+      https://lawyer112.github.io/mbti-ai-open-study/survey/index.html?lang=ar'
+- type: input
+  id: case-id
+  attributes:
+    label: معرّف التقرير
+    description: هذه عاداتك وآراؤك كما وصفتها. إذن الاقتباس في A05. اربط النموذجين للمشاركة نفسها بمعرّف التقرير.
+  validations:
+    required: true
+- type: input
+  id: schema-version
+  attributes:
+    label: إصدار الاستطلاع
+    description: '0.3'
+    value: '0.3'
+  validations:
+    required: true
+- type: dropdown
+  id: questionnaire-mode
+  attributes:
+    label: نوع النموذج
+    options:
+    - اختيارات سريعة
+    - احكِ قصة
+    - اختيارات سريعة + احكِ قصة
+  validations:
+    required: true
+- type: input
+  id: instrument-language
+  attributes:
+    label: اللغة
+    value: ar
+  validations:
+    required: true
+- type: textarea
+  id: report-files
+  attributes:
+    label: الملفات أو التقرير الكامل
+    description: أرفق الملفات المصدرة أو الصق التقرير كاملًا.
+  validations:
+    required: true
+- type: textarea
+  id: amendments
+  attributes:
+    label: التقارير السابقة والتصحيحات
+    description: هذه عاداتك وآراؤك كما وصفتها. إذن الاقتباس في A05. اربط النموذجين للمشاركة نفسها بمعرّف التقرير.
+  validations:
+    required: false
+- type: checkboxes
+  id: confirmation
+  attributes:
+    label: تأكيدات المشاركة
+    options:
+    - label: عمري 18 عامًا على الأقل وأشارك طوعًا. أصف عاداتي أو تجاربي أو آرائي الحقيقية.
+      required: true
+    - label: أفهم أن المشاركات على GitHub علنية ومرتبطة بحسابي؛ معرّف التقرير لا يوفر إخفاء الهوية.
+      required: true
+    - label: حذفت المعلومات الخاصة والسرية ويحق لي مشاركة هذه المادة. أسمح بإحصاءات المشروع وملخصات مقالاته، وأفهم
+        أنه قد يتعذر استرجاع جميع النسخ العلنية.
+      required: true

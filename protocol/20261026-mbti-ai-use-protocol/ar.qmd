@@ -1,0 +1,101 @@
+---
+title: 'MBTI × الذكاء الاصطناعي: كيف تبدو علاقتك برفيقك الرقمي؟'
+author:
+- lawyer112
+date: '2026-10-26'
+lang: ar
+paper-id: 20261026-mbti-ai-use-protocol
+paper-version: 0.4.0
+article-type: protocol
+bibliography: references.bib
+abstract: استطلاع غير رسمي عن MBTI وعادات استخدام الذكاء الاصطناعي وآرائنا وقصصنا. فكر في آخر 30 يومًا. ليس اختبار شخصية أو
+  ترتيبًا للقدرات.
+format:
+  html:
+    include-in-header:
+      text: '<link rel="canonical" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/ar.html">
+
+        <link rel="alternate" hreflang="zh-CN" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/zh.html">
+
+        <link rel="alternate" hreflang="en" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/en.html">
+
+        <link rel="alternate" hreflang="ja" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/ja.html">
+
+        <link rel="alternate" hreflang="ko" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/ko.html">
+
+        <link rel="alternate" hreflang="es" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/es.html">
+
+        <link rel="alternate" hreflang="fr" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/fr.html">
+
+        <link rel="alternate" hreflang="de" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/de.html">
+
+        <link rel="alternate" hreflang="pt" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/pt.html">
+
+        <link rel="alternate" hreflang="ru" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/ru.html">
+
+        <link rel="alternate" hreflang="ar" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/ar.html">
+
+        <link rel="alternate" hreflang="hi" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/hi.html">
+
+        <link rel="alternate" hreflang="id" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/id.html">'
+dir: rtl
+abstract-title: ملخص
+language:
+  toc-title-document: محتويات الصفحة
+  title-block-author-single: الكاتب
+  title-block-published: التاريخ
+---
+
+:::: {.content-visible when-format="html"}
+::: {.article-links}
+[简体中文](zh.qmd) · [English](en.qmd) · [日本語](ja.qmd) · [한국어](ko.qmd) · [Español](es.qmd) · [Français](fr.qmd) · [Deutsch](de.qmd) · [Português](pt.qmd) · [Русский](ru.qmd) · [العربية](ar.qmd) · [हिन्दी](hi.qmd) · [Bahasa Indonesia](id.qmd) · [PDF](ar.pdf) · [اختيارات سريعة / احكِ قصة](../../survey/index.html?lang=ar) · [دليل المشروع والمشاركة](../../ar/index.qmd)
+:::
+::::
+
+## لماذا نجري هذا الاستطلاع {#question}
+
+يفتح بعضنا الذكاء الاصطناعي لإنهاء العمل، ويبحث آخرون عن شريك نقاش. هناك من يشرح السياق طويلًا ومن يسأل فقط: «ما رأيك؟». قد نحب أفكاره ونكره أخطاءه الواثقة. كيف تصبح التقنية نفسها رفيقًا مختلفًا لكل شخص؟
+
+هذا استطلاع خفيف عن MBTI والذكاء الاصطناعي يجمع عادات وآراء وقصصًا حقيقية: فيم نستخدمه، وكيف نحاوره، وما نحبه أو نتذمر منه. ننظر إلى اتجاهات بين الأنواع المبلغ عنها وإلى التنوع داخل كل نوع. لا نوع فائز محدد مسبقًا، ولا تحتاج لإثبات مهارتك.
+
+## أطلس نبنيه معًا {#outputs}
+
+عندما تصل إجابات حقيقية نريد بناء أطلس لعلاقة الأنواع الستة عشر بالذكاء الاصطناعي: رسوم للعادات، وتوزيع للإعجاب والشكاوى، وقصص مقتبسة بإذن، ومقال ملاحظات يتطور. نذكر أعداد الإجابات الصالحة والأشخاص لكل نوع؛ ونترك الأنواع بلا بيانات فارغة. الفروق الصغيرة والاستثناءات مهمة أيضًا. هذه خطط، ولا توجد إحصاءات مشاركين منشورة حاليًا.
+
+## كيف تعمل النماذج {#design}
+
+فكر في آخر 30 يومًا. نموذج الاختيارات يضم 19 سؤالًا ونموذج القصص 11، منها 7 مشتركة. تشمل الأعداد الأسئلة الاختيارية والمشروطة؛ يظهر المناسب فقط. يكفي نموذج واحد، واستخدم المعرّف نفسه لإضافة الآخر. النوع غير المؤكد يتجاوز سؤال المصدر، ومن لم يستخدم حديثًا يشرح السبب دون اختلاق تجربة. الجملة الأخيرة اختيارية. الاختيارات تصف الاستخدام والحوار والرأي، والقصص تضيف السياق. يمكن عرض هدف كل سؤال ويسجل الاطلاع عليه. الوقت الفعلي يحتاج تجربة بشرية.
+
+- **قليل عنك** (A01, A02, A03, A04) — لا بأس إن لم تكن متأكدًا من نوع MBTI. لا تحتاج لاختبار جديد.
+- **الذكاء الاصطناعي في يومك** (Q01, Q02) — فكر في آخر 30 يومًا، وليس أفضل تجربة فقط.
+- **أسلوبك في الحوار** (Q03, Q04, Q05, Q06, Q07) — اختر ما يطابق عاداتك. لا يوجد أسلوب صحيح واحد.
+- **إعجاب وشكاوى** (Q08, Q09, Q10, Q11, Q12) — قد يعجبك أو يزعجك أو يجمع الأمرين.
+- **قصتك مع الذكاء الاصطناعي** (S01, S02, S03, S04) — احكها كأنك تحكي لصديق. تكفي بضع جمل.
+- **فكرة أخيرة** (A05, A06, A07) — اختر ما يجوز مشاركته ثم راجع وصدّر.
+
+## كيف سنرتب الإجابات {#analysis}
+
+نعرض أولًا العدد الصالح والنسب لكل خيار، ثم التوزيعات حسب MBTI ومصدره والتكرار والخبرة. قد تتجاوز نسب الاختيارات المتعددة 100%. نفصل المفقود وغير المنطبق وغير المؤكد والغياب الصريح. الرضا وصف ذاتي، وتكرار التحقق ليس جودة التحقق. نصنف القصص إلى استخدام وحوار وفوائد وشكاوى واستثناءات مع حفظ الآراء المعاكسة. الاقتباس الحرفي يحتاج إذن A05. لا نعد النموذجين أو Issue وPR أو التصحيحات للشخص نفسه مرتين، ولا نعد الدراسة المستقلة مشاركًا واحدًا.
+
+## ما لا نستطيع استنتاجه {#limitations}
+
+العينة الطوعية عبر الإنترنت تصف المشاركين لا جميع أصحاب الأنواع الستة عشر. لا تثبت أن الشخصية سبب السلوك أو تفوق القدرة المهنية. العينات الصغيرة لا تبرر ترتيبًا أو دلالة إحصائية مفروضة. النموذجان ليسا مقياسين متكافئين؛ والترجمات الاثنتا عشرة لم تخضع لمقابلات معرفية مع ناطقين أصليين أو تحقق قياسي عبر الثقافات. نحفظ اللغة وتاريخ تبديلها ولغة كل إجابة، ونقدم اللغات والإصدارات منفصلة قبل أي دمج مبرر. نفصل تقارير المهمة الواحدة v0.2 عن عادات الحياة اليومية v0.3.
+
+## فهم تصنيفات الشخصية {#background}
+
+MBTI مدخل للحوار وليس تقييمًا نجريه هنا. نفصل MBTI الرسمي و16Personalities والاختبارات الأخرى والتقدير الذاتي وعدم التأكد. لا ننسخ أسئلة تجارية ولا نختار الأشخاص بحسب النوع. الصياغة والشكل والترتيب قد تؤثر في الإجابة، لذا توجه ملاحظات الغموض والخيارات الناقصة مراجعات ذات إصدارات واضحة. [@mbti-ethics; @sixteen-framework; @pew-questions]
+
+## المشاركة والمشاركة العلنية {#availability}
+
+المشاركة طوعية لمن بلغوا 18 عامًا ويفهمون اللغة المختارة، حتى دون استخدام حديث. املأ عبر الإنترنت أو نزّل HTML مستقلًا للعمل بلا اتصال، ثم راجع وصدّر JSON وMarkdown وأرسل عبر Issue أو PR. لا رفع تلقائي. تتوفر نماذج Markdown أيضًا؛ احتفظ بأرقام الأسئلة والتأكيدات والإصدار وأهداف الأسئلة المعروضة. GitHub علني ويرتبط بالحساب؛ المعرّف لا يوفر إخفاء الهوية. احذف المعلومات الخاصة ومعلومات العملاء وأسرار العمل وبيانات الدخول. إذن التحليل الإجمالي منفصل عن الاقتباس، وإعادة توزيع البيانات الفردية تتطلب إذنًا إضافيًا. اطلب السحب من المشاركة الأصلية لاستبعادها من التحليلات اللاحقة، لكن النسخ المنزلة أو المتفرعة قد تبقى. [@github-pages; @github-attachments]
+
+[اختيارات سريعة · Markdown](../../survey/ar/choice-questionnaire.md) · [احكِ قصة · Markdown](../../survey/ar/text-questionnaire.md) · [GitHub](https://github.com/lawyer112/mbti-ai-open-study) · [PERMISSIONS.md](https://github.com/lawyer112/mbti-ai-open-study/blob/main/PERMISSIONS.md)
+
+## مساعدة الذكاء الاصطناعي والتأليف {#ai-use}
+
+توقيع المشروع: lawyer112. يساعد Codex في الكتابة والترجمة والتنفيذ والفحص؛ هذا لا يساوي تحقق ناطق أصلي أو باحث مستقل. التجارب يجب أن تكون شخصية، ومساعدة AI في الكتابة تُذكر في A06. نستبعد كل TEST_ONLY. نرحب بالإجابات والدراسات المستقلة والتصحيحات والأفكار. ذكر المساهم في الشكر اختياري، وتأليف المقال بحسب المساهمة الفعلية.
+
+## المراجع {#references}
+
+::: {#refs}
+:::

@@ -1,50 +1,29 @@
-# 提交与协作
+# 参与和一起完善 / Participate and contribute
 
-## 提交个人报告
+## 中文
 
-先打开[HTML 问卷](survey/index.html)，任选选择题版或文字版，填写并检查后导出 JSON 与 Markdown。在 Issues 中选择“个人问卷回传”，附上文件；也可粘贴导出的可读报告。不要回传问卷 HTML 或尚未脱敏的草稿。
+面向年满 18 岁、能理解所选语言的自愿参与者，最近没有用过 AI 也欢迎。在线填写或下载独立 HTML 离线填写，检查后导出 JSON 数据和 Markdown 报告，再通过 Issue 或 PR 回传；网页不会自动上传答案。无法使用网页时可填写对应语言的 Markdown 问卷并保留题号、确认项、版本和目的查看记录。GitHub 投稿公开并关联账号，报告 ID 不代表匿名。请删除私人、客户、公司机密和凭据。统计汇总许可与逐字引用许可分开；未单独授权，不把个体数据当作可任意再分发的数据集。可在原提交处申请撤回，后续分析予以排除，但已下载或分叉的副本不能保证收回。
 
-通过 PR 贡献时，把导出的两个文件放到 `submissions/individual/`。文件名包含自动生成的报告编号与问卷类型，不放真实姓名。不能使用 HTML 时，可直接填写[选择题 Markdown](survey/choice-questionnaire.md)或[文字 Markdown](survey/text-questionnaire.md)，保留题号、版本、同意项和目的查看声明，由维护者核对后结构化。
+导出文件可通过对应语言的 Issue 附上或粘贴完整报告；PR 放入 `submissions/individual/`。不要提交空白 HTML、草稿或测试材料。关闭网页前可保存草稿，重新载入继续。
 
-两版任选其一，不要求都填。补填另一版应沿用同一报告编号，记录顺序；共同信息有修改时注明更正，维护者核对差异。不同问卷模式分别标记，不能当作两次独立任务。
+同次参与的两版沿用 `response_id`。已有 Issue 后再提 PR 应链接原投稿；重复导出、补充和更正不算新人，共同答案冲突时说明修改。内部草稿的 `case_id` 是实现兼容字段，不要求复盘单项任务。
 
-同一人沿用同一代号。若报告已通过 Issue 提交，在 PR 中链接原 Issue；这只是补充材料，不重复计数。修改原报告时说明更正内容，保留来源与修改日期。
+独立调研使用对应语言的表单或 [调研模板](templates/study-report.md)，交代样本、招募、方法、证据、局限、许可和重叠情况。汇总报告不当作个体问卷。翻译或题意修改应说明理由，题意变化提高版本并同步各语言。
 
-## 提交独立调研
+维护者检查确认项、版本、类型来源、适用题、重复和许可。未清楚的记录标 `needs-info`；符合要求后标 `accepted`。原文、编码和汇总分开，缺失不填 0，撤回与测试排除。标签不能代替研究判断。
 
-在 Issues 中选择调研报告表单，或把[调研模板](templates/study-report.md)复制到 `submissions/studies/`。需说明样本、招募、人格测量、任务或问卷、分析方法、授权及与本项目既有记录的重叠情况。没有个体数据也可以提交，但应标为汇总报告。
+项目署名 lawyer112。Codex 协助起草、翻译、实现和检查；这些检查不等于母语者或独立研究者验证。真实经历必须来自本人，AI 协助整理需在 A06 说明。所有 TEST_ONLY 测试材料均排除。欢迎提交真实回答、独立调研、翻译修正和设计建议；贡献者致谢依本人意愿，论文作者署名按实际贡献讨论。
 
-## 改进方法与论文
+## English
 
-使用研究讨论 Issue 提出问题。方法、问卷或论文修改通过 PR 说明改了什么、依据是什么、是否改变既有数据的解释。正式收集后的问卷变更提高版本号，不能静默改动。
+Participation is voluntary for adults aged 18 or older who understand their chosen language, including recent nonusers. Complete the online form or download the standalone HTML for offline use, inspect and export JSON data and a Markdown report, then return them through an Issue or PR. The form does not upload answers automatically. Readable Markdown forms are also available; retain item IDs, confirmations, version and purpose-exposure records. GitHub submissions are public and linked to accounts; a report ID is not anonymity. Remove private, client, employer-confidential and credential information. Aggregate-use consent and quotation permission are separate; do not redistribute individual data freely without separate authorization. Request withdrawal at the original submission; later analyses exclude it, but downloaded or forked copies may remain.
 
-## 维护者处理步骤
+Attach exports or paste the complete report in the localized Issue; PR exports go in `submissions/individual/`. Do not submit blank HTML, drafts or fixtures. Save and reload a draft to resume later.
 
-1. 核对参与确认、材料使用范围、类型测量来源、任务与模型信息。
-2. 检查重复记录、补充材料及研究间样本重叠。
-3. 必要时请求补充；仍缺关键字段时注明原因，保留在待补充池。
-4. 接受后建立report_id，保留问卷case_id、版本和模式，按数据规范整理；仅接收正式报告，不把kind为mbti-ai-draft的文件当作已同意投稿。定量分析只纳入符合该项指标要求的记录。
+Both forms of the same participation retain `response_id`. Link an earlier Issue when adding a PR. Repeated exports, supplements and corrections are not new people; explain shared-answer conflicts. Internal draft `case_id` is a compatibility field, not a single-task requirement.
 
-建议维护标签：`needs-review`、`needs-info`、`accepted`、`excluded`、`withdrawn`、`method-discussion`。标签需建仓后创建；当前表单不依赖标签存在。
+Independent studies use their localized form or the [study template](templates/study-report.md), describing samples, recruitment, methods, evidence, limits, permissions and overlap. Aggregate studies are not individual questionnaires. Explain translation or meaning changes; meaning changes need a new version and synchronized languages.
 
-## 撤回与引用
+Maintainers check confirmations, versions, type sources, applicable items, duplication and permissions. Unclear records remain `needs-info`; eligible ones become `accepted`. Keep originals, coding and summaries separate. Never replace missingness with zero; exclude tests and withdrawals. Labels do not replace research judgment.
 
-可在原 Issue 或关联 PR 中申请撤回，不必公开说明理由，也不要为撤回再次上传私人材料。维护者从后续分析中排除并记录撤回状态；已被下载或分叉的内容不能保证收回。
-
-允许本项目进行统计分析和论文汇总，不等于允许逐字引用或将材料任意再分发。逐字引用按提交者单独选择执行。对外发布数据集前需明确授权范围。贡献者名单依据本人意愿公开，论文作者署名按实际研究贡献讨论。
-
-## English: participation and contribution
-
-The pilot instrument is in Simplified Chinese, for volunteers aged 18 or older who understand it and have a real AI task from the previous 30 days. Open survey/index.html, choose either form, complete it, inspect your answers, and export JSON and Markdown. Attach them to a “个人问卷回传 / Return a questionnaire” Issue, or paste the complete readable report. Do not upload the blank HTML or an unconfirmed draft. Public submissions and attachments are associated with your GitHub account; remove private or confidential information before uploading.
-
-For a pull request, put the exported files in submissions/individual/. Their filenames contain the case ID and mode, not a real name. If you cannot use HTML, complete the corresponding Chinese Markdown form while preserving item IDs, version, consent and quotation permission. State that its item purposes were visible. Maintainers must check and structure manual reports.
-
-One form is sufficient. Retain your participant code across tasks and use the same case ID when adding the other form for one task. Record order and explain corrections to shared information. Link an earlier Issue or pull request instead of counting it twice. Corrections retain provenance and dates.
-
-Independent studies use the study-report Issue or templates/study-report.md and submissions/studies/. Describe recruitment, sample, instruments, tasks, methods, permissions, and overlap with existing records. Aggregated reports without participant-level data are welcome but are not pooled as individual observations.
-
-Use a discussion Issue for methodological questions and a pull request for instrument, analysis or manuscript changes. Explain the evidence and implications. Changes after formal collection starts require a new version rather than silent edits. Synchronize the complete Chinese and English protocol when methods or conclusions change.
-
-Maintainers check consent, permitted uses, measurement source, task/model information, duplicates, and study overlap. They may request clarification and keep incomplete material pending. Accepted records receive report_id while retaining case_id, version and mode. Files with kind=mbti-ai-draft are not consented research submissions. Each analysis includes only records eligible for that indicator. Suggested labels are needs-review, needs-info, accepted, excluded, withdrawn and method-discussion; labels alone do not establish research validity.
-
-Request withdrawal in the original Issue or linked pull request without giving private reasons. The project excludes withdrawn material from later analyses and records its status; already downloaded or forked copies may not be retrievable. Analysis/aggregate-reporting consent does not authorize verbatim quotation or unlimited redistribution. Check quotation choices separately and obtain appropriate scope before releasing individual datasets. Contributor acknowledgement is voluntary, and authorship follows actual research contributions rather than a single submission.
+Project byline: lawyer112. Codex assists with drafting, translation, implementation and checks; these are not native-speaker or independent researcher validation. Experiences must be the participant’s own; disclose AI writing help in A06. Exclude all TEST_ONLY fixtures. Real responses, independent studies, translation corrections and design ideas are welcome. Acknowledgement is voluntary, and paper authorship follows actual contributions.

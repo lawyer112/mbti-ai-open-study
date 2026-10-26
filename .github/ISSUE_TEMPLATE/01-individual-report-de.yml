@@ -1,0 +1,90 @@
+name: de · Fragebogen einreichen
+description: Exportierte Dateien anhängen oder den vollständigen Bericht einfügen.
+title: '[de v0.3] '
+labels:
+- needs-review
+body:
+- type: markdown
+  attributes:
+    value: 'Informelle Umfrage zu MBTI, KI im Alltag, Ansichten und Geschichten. Denke an die letzten 30 Tage. Dies
+      ist kein Persönlichkeitstest und keine Rangliste von Fähigkeiten.
+
+
+      Issues, PRs und Anhänge sind öffentlich und mit Ihrem GitHub-Konto verknüpft. Ein Teilnahmecode macht Sie
+      nicht anonym.
+
+
+      Prüfen Sie den Bericht und entfernen Sie nicht öffentliche Informationen.
+
+
+      Laden Sie JSON-Daten und den Markdown-Bericht herunter.
+
+
+      Hängen Sie die Dateien an ein GitHub-Issue an oder fügen Sie den vollständigen Bericht ein. Ein PR ist ebenfalls
+      möglich.
+
+
+      https://lawyer112.github.io/mbti-ai-open-study/survey/index.html?lang=de'
+- type: input
+  id: case-id
+  attributes:
+    label: Berichts-ID
+    description: Dies sind deine selbst berichteten Gewohnheiten und Ansichten. Die Zitiererlaubnis steht in A05.
+      Verknüpfe beide Formen derselben Teilnahme über die Berichts-ID.
+  validations:
+    required: true
+- type: input
+  id: schema-version
+  attributes:
+    label: Fragebogenversion
+    description: '0.3'
+    value: '0.3'
+  validations:
+    required: true
+- type: dropdown
+  id: questionnaire-mode
+  attributes:
+    label: Fragebogenform
+    options:
+    - Schnell auswählen
+    - Eine Geschichte erzählen
+    - Schnell auswählen + Eine Geschichte erzählen
+  validations:
+    required: true
+- type: input
+  id: instrument-language
+  attributes:
+    label: Sprache
+    value: de
+  validations:
+    required: true
+- type: textarea
+  id: report-files
+  attributes:
+    label: Dateien oder vollständiger Bericht
+    description: Exportierte Dateien anhängen oder den vollständigen Bericht einfügen.
+  validations:
+    required: true
+- type: textarea
+  id: amendments
+  attributes:
+    label: Frühere Berichte und Korrekturen
+    description: Dies sind deine selbst berichteten Gewohnheiten und Ansichten. Die Zitiererlaubnis steht in A05.
+      Verknüpfe beide Formen derselben Teilnahme über die Berichts-ID.
+  validations:
+    required: false
+- type: checkboxes
+  id: confirmation
+  attributes:
+    label: Teilnahmebestätigungen
+    options:
+    - label: Ich bin mindestens 18 Jahre alt und nehme freiwillig teil. Ich beschreibe meine eigenen tatsächlichen
+        Gewohnheiten, Erfahrungen oder Ansichten.
+      required: true
+    - label: Ich verstehe, dass GitHub-Einreichungen öffentlich und mit meinem Konto verknüpft sind; eine Berichts-ID
+        schafft keine Anonymität.
+      required: true
+    - label: Ich habe private und vertrauliche Angaben entfernt und darf dieses Material teilen. Ich erlaube die
+        Statistiken und Artikelzusammenfassungen des Projekts und verstehe, dass sich öffentliche Kopien möglicherweise
+        nicht vollständig zurückholen lassen.
+      required: true

@@ -1,0 +1,87 @@
+---
+title: 'MBTI × ИИ: какой у вас ИИ-собеседник?'
+lang: ru
+toc: false
+format:
+  html:
+    include-in-header:
+      text: '<link rel="canonical" href="https://lawyer112.github.io/mbti-ai-open-study/ru/index.html">
+
+        <link rel="alternate" hreflang="zh-CN" href="https://lawyer112.github.io/mbti-ai-open-study/index.html">
+
+        <link rel="alternate" hreflang="en" href="https://lawyer112.github.io/mbti-ai-open-study/en/index.html">
+
+        <link rel="alternate" hreflang="ja" href="https://lawyer112.github.io/mbti-ai-open-study/ja/index.html">
+
+        <link rel="alternate" hreflang="ko" href="https://lawyer112.github.io/mbti-ai-open-study/ko/index.html">
+
+        <link rel="alternate" hreflang="es" href="https://lawyer112.github.io/mbti-ai-open-study/es/index.html">
+
+        <link rel="alternate" hreflang="fr" href="https://lawyer112.github.io/mbti-ai-open-study/fr/index.html">
+
+        <link rel="alternate" hreflang="de" href="https://lawyer112.github.io/mbti-ai-open-study/de/index.html">
+
+        <link rel="alternate" hreflang="pt" href="https://lawyer112.github.io/mbti-ai-open-study/pt/index.html">
+
+        <link rel="alternate" hreflang="ru" href="https://lawyer112.github.io/mbti-ai-open-study/ru/index.html">
+
+        <link rel="alternate" hreflang="ar" href="https://lawyer112.github.io/mbti-ai-open-study/ar/index.html">
+
+        <link rel="alternate" hreflang="hi" href="https://lawyer112.github.io/mbti-ai-open-study/hi/index.html">
+
+        <link rel="alternate" hreflang="id" href="https://lawyer112.github.io/mbti-ai-open-study/id/index.html">'
+---
+
+::: {.article-links}
+[简体中文](../index.qmd) · [English](../en/index.qmd) · [日本語](../ja/index.qmd) · [한국어](../ko/index.qmd) · [Español](../es/index.qmd) · [Français](../fr/index.qmd) · [Deutsch](../de/index.qmd) · [Português](../pt/index.qmd) · [Русский](../ru/index.qmd) · [العربية](../ar/index.qmd) · [हिन्दी](../hi/index.qmd) · [Bahasa Indonesia](../id/index.qmd)
+:::
+
+Кто-то открывает ИИ, чтобы закончить работу, кто-то ищет собеседника. Одни подробно объясняют контекст, другие спрашивают: «Что думаешь?» Можно любить его идеи и ненавидеть уверенные ошибки. Как одна технология становится такими разными помощниками?
+
+**Это неформальный опрос MBTI × ИИ о настоящих привычках, мнениях и историях: для чего мы используем ИИ, как общаемся, что нравится и раздражает. Посмотрим на тенденции между заявленными типами и разнообразие внутри каждого. Победитель заранее не определён; доказывать умение пользоваться ИИ не нужно.**
+
+**[Быстрый выбор / Рассказать историю](../survey/index.html?lang=ru)** · [Отправить через GitHub](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=01-individual-report-ru.yml)
+
+## Зачем нужен этот опрос
+
+**На кого или на что ИИ больше всего похож для вас?**
+
+Инструмент для выполнения задач / Рабочий помощник / Учитель, которому можно задать вопрос …
+
+**Как вы обычно начинаете разговор?**
+
+Короткое прямое указание / Сначала контекст, требования и ограничения / Разбиваю задачу на шаги и спрашиваю по очереди …
+
+**Что вас больше всего раздражает в ИИ?**
+
+Уверенные ошибки / Непонимание моего настоящего вопроса / Многословие или уход от сути …
+
+## Атлас, который создадим вместе
+
+С реальными ответами хотим создать атлас отношений 16 типов с ИИ: диаграммы привычек, распределения похвалы и жалоб, истории с разрешёнными цитатами и обновляемую статью-наблюдение. Укажем число пригодных ответов и людей каждого типа; без данных оставим пробел. Малые различия и исключения тоже интересны. Это планы; статистики участников пока нет.
+
+## Как устроены формы
+
+Вспомните последние 30 дней. Форма выбора содержит 19 вопросов, рассказ — 11, из них 7 общих. В число входят условные и необязательные вопросы; показываются только подходящие. Достаточно одной формы; для второй сохраните идентификатор. Неуверенный MBTI пропускает источник, недавние не-пользователи объясняют причины без выдумывания опыта. Последняя фраза необязательна. Выбор описывает использование, разговор и мнение; истории дают контекст. Цель каждого вопроса можно открыть, просмотр записывается. Реальное время ещё нужно проверить с людьми.
+
+## Участие и публикация
+
+Мне не менее 18 лет, я участвую добровольно и описываю собственные реальные привычки, опыт или мнения.
+
+1. Проверьте отчёт и удалите то, что нельзя публиковать.
+2. Скачайте данные JSON и отчёт Markdown.
+3. Прикрепите файлы или вставьте полный отчёт в Issue GitHub. Можно также отправить PR.
+
+Ответы не отправляются автоматически. Сохраните черновик перед закрытием или обновлением страницы.
+
+Issue, PR и вложения публичны и связаны с вашим аккаунтом GitHub. Код участника не обеспечивает анонимность.
+
+[Исследование и участие](../protocol/20261026-mbti-ai-use-protocol/ru.qmd) · [PDF](../protocol/20261026-mbti-ai-use-protocol/ru.pdf) · <a href="../survey/index.html" download="mbti-ai-v0.3.html">HTML ↓</a>
+
+[Быстрый выбор · Markdown](../survey/ru/choice-questionnaire.md) · [Рассказать историю · Markdown](../survey/ru/text-questionnaire.md)
+
+## Обсудить исследование
+
+Подпись проекта: lawyer112. Codex помогает писать, переводить, реализовывать и проверять; это не проверка носителем языка или независимым исследователем. Опыт должен быть собственным; помощь ИИ с текстом укажите в A06. Все TEST_ONLY исключаются. Приветствуются ответы, самостоятельные исследования, исправления и идеи. Благодарности добровольны, авторство статьи определяется реальным вкладом.
+
+[Представить отдельное исследование](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=02-study-report-ru.yml) · [Обсудить исследование](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=03-research-discussion-ru.yml) · [GitHub](https://github.com/lawyer112/mbti-ai-open-study)

@@ -1,0 +1,87 @@
+name: en · Return a questionnaire
+description: Attach exported files or paste the complete report.
+title: '[en v0.3] '
+labels:
+- needs-review
+body:
+- type: markdown
+  attributes:
+    value: 'An informal survey about MBTI, everyday AI habits, opinions and stories. Think about the past 30 days.
+      This is not a personality test or ability ranking.
+
+
+      Issues, pull requests and attachments are public and linked to your GitHub account. A report ID does not make
+      you anonymous.
+
+
+      Inspect the report and remove anything that should not be public.
+
+
+      Download the JSON data and readable Markdown report.
+
+
+      Return the files or paste the complete report into the GitHub Issue. A pull request is also possible.
+
+
+      https://lawyer112.github.io/mbti-ai-open-study/survey/index.html?lang=en'
+- type: input
+  id: case-id
+  attributes:
+    label: Report ID
+    description: These are your own reported habits and opinions. Quotation permission is in A05. Link both forms
+      of the same participation by report ID.
+  validations:
+    required: true
+- type: input
+  id: schema-version
+  attributes:
+    label: Instrument version
+    description: '0.3'
+    value: '0.3'
+  validations:
+    required: true
+- type: dropdown
+  id: questionnaire-mode
+  attributes:
+    label: Questionnaire mode
+    options:
+    - Quick choices
+    - Share a story
+    - Quick choices + Share a story
+  validations:
+    required: true
+- type: input
+  id: instrument-language
+  attributes:
+    label: Language
+    value: en
+  validations:
+    required: true
+- type: textarea
+  id: report-files
+  attributes:
+    label: Files or complete report
+    description: Attach exported files or paste the complete report.
+  validations:
+    required: true
+- type: textarea
+  id: amendments
+  attributes:
+    label: Earlier reports and corrections
+    description: These are your own reported habits and opinions. Quotation permission is in A05. Link both forms
+      of the same participation by report ID.
+  validations:
+    required: false
+- type: checkboxes
+  id: confirmation
+  attributes:
+    label: Participation confirmations
+    options:
+    - label: I am at least 18 and participate voluntarily. I am describing my own real habits, experiences or opinions.
+      required: true
+    - label: I understand that GitHub submissions are public and linked to my account; a report ID does not provide
+        anonymity.
+      required: true
+    - label: I have removed private and confidential information and may share this material. I permit this project’s
+        statistics and article summaries, and understand that public copies may not be fully retrievable.
+      required: true

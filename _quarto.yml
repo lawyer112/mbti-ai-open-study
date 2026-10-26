@@ -4,36 +4,31 @@ project:
   render:
     - index.qmd
     - en/index.qmd
-    - protocol/*/zh.qmd
-    - protocol/*/en.qmd
+    - ja/index.qmd
+    - ko/index.qmd
+    - es/index.qmd
+    - fr/index.qmd
+    - de/index.qmd
+    - pt/index.qmd
+    - ru/index.qmd
+    - ar/index.qmd
+    - hi/index.qmd
+    - id/index.qmd
+    - protocol/*/*.qmd
   resources:
     - survey/index.html
     - survey/choice-questionnaire.md
     - survey/text-questionnaire.md
+    - survey/*/*-questionnaire.md
+    - survey/v0.2/index.html
     - .nojekyll
 
 website:
-  title: "MBTI × AI 使用研究"
+  title: "MBTI × AI"
   site-url: "https://lawyer112.github.io/mbti-ai-open-study/"
   repo-url: "https://github.com/lawyer112/mbti-ai-open-study"
-  navbar:
-    background: white
-    left:
-      - href: index.qmd
-        text: "项目介绍"
-      - href: survey/index.html
-        text: "填写问卷"
-      - href: protocol/20261026-mbti-ai-use-protocol/zh.qmd
-        text: "研究方案"
-    right:
-      - href: index.qmd
-        text: "中文"
-      - href: en/index.qmd
-        text: "English"
-      - href: https://github.com/lawyer112/mbti-ai-open-study
-        text: "GitHub"
-  page-footer: "开放协作研究方案 · Pilot protocol · Not externally peer reviewed"
-  search: true
+  navbar: false
+  search: false
   open-graph: true
 
 lang: zh-CN

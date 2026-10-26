@@ -1,0 +1,18 @@
+name: pt · Enviar estudo independente
+description: Compartilhe uma pesquisa separada, seus métodos e evidências.
+title: '[pt v0.3] '
+labels:
+- needs-review
+body:
+- type: markdown
+  attributes:
+    value: Issues, PRs e anexos são públicos e vinculados à sua conta do GitHub. Um código de participante não garante
+      anonimato.
+- type: textarea
+  id: report
+  attributes:
+    label: Enviar estudo independente
+    description: Descreva pergunta, recrutamento, número de participantes, fonte da personalidade, tarefas e ferramentas
+      de IA, métodos, resultados, limitações e permissões. Separe dados reais de hipóteses.
+  validations:
+    required: true

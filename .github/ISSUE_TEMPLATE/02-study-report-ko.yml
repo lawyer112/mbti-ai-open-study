@@ -1,0 +1,16 @@
+name: ko · 독립 조사 제출
+description: 별도 연구의 방법과 근거를 공유하세요.
+title: '[ko v0.3] '
+labels:
+- needs-review
+body:
+- type: markdown
+  attributes:
+    value: Issue, PR, 첨부 파일은 공개되며 GitHub 계정과 연결됩니다. 참여 코드가 익명성을 보장하지는 않습니다.
+- type: textarea
+  id: report
+  attributes:
+    label: 독립 조사 제출
+    description: 연구 질문, 모집 방법, 참여자 수, 성격 정보 출처, AI 작업과 도구, 방법, 결과, 한계, 이용 허가를 설명하세요. 실제 데이터와 가설을 구분하세요.
+  validations:
+    required: true

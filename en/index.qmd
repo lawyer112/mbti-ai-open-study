@@ -1,6 +1,5 @@
 ---
-title: 'MBTI and AI Use: An Open Collaborative Study'
-subtitle: Research protocol · Pilot questionnaire v0.2 · Protocol 0.3.0 · Not externally peer reviewed
+title: 'MBTI × AI: What is your AI companion like?'
 lang: en
 toc: false
 format:
@@ -8,45 +7,81 @@ format:
     include-in-header:
       text: '<link rel="canonical" href="https://lawyer112.github.io/mbti-ai-open-study/en/index.html">
 
+        <link rel="alternate" hreflang="zh-CN" href="https://lawyer112.github.io/mbti-ai-open-study/index.html">
+
         <link rel="alternate" hreflang="en" href="https://lawyer112.github.io/mbti-ai-open-study/en/index.html">
 
-        <link rel="alternate" hreflang="zh-CN" href="https://lawyer112.github.io/mbti-ai-open-study/index.html">'
+        <link rel="alternate" hreflang="ja" href="https://lawyer112.github.io/mbti-ai-open-study/ja/index.html">
+
+        <link rel="alternate" hreflang="ko" href="https://lawyer112.github.io/mbti-ai-open-study/ko/index.html">
+
+        <link rel="alternate" hreflang="es" href="https://lawyer112.github.io/mbti-ai-open-study/es/index.html">
+
+        <link rel="alternate" hreflang="fr" href="https://lawyer112.github.io/mbti-ai-open-study/fr/index.html">
+
+        <link rel="alternate" hreflang="de" href="https://lawyer112.github.io/mbti-ai-open-study/de/index.html">
+
+        <link rel="alternate" hreflang="pt" href="https://lawyer112.github.io/mbti-ai-open-study/pt/index.html">
+
+        <link rel="alternate" hreflang="ru" href="https://lawyer112.github.io/mbti-ai-open-study/ru/index.html">
+
+        <link rel="alternate" hreflang="ar" href="https://lawyer112.github.io/mbti-ai-open-study/ar/index.html">
+
+        <link rel="alternate" hreflang="hi" href="https://lawyer112.github.io/mbti-ai-open-study/hi/index.html">
+
+        <link rel="alternate" hreflang="id" href="https://lawyer112.github.io/mbti-ai-open-study/id/index.html">'
 ---
 
-[中文](../index.qmd)
+::: {.article-links}
+[简体中文](../index.qmd) · [English](../en/index.qmd) · [日本語](../ja/index.qmd) · [한국어](../ko/index.qmd) · [Español](../es/index.qmd) · [Français](../fr/index.qmd) · [Deutsch](../de/index.qmd) · [Português](../pt/index.qmd) · [Русский](../ru/index.qmd) · [العربية](../ar/index.qmd) · [हिन्दी](../hi/index.qmd) · [Bahasa Indonesia](../id/index.qmd)
+:::
 
-We study how reported personality labels relate to the full process of using AI: initiation, prompting, adjustment, verification, adoption, and experience. This release provides the design and participation tools, not findings that rank personality types.
+Some people open AI to finish work quickly; others want a discussion partner. Some start with a page of context, others with “What do you think?” Some love the ideas; others cannot stand confident nonsense. How does the same technology become such different companions?
 
-## Begin with one real task
+**This is an informal MBTI × AI survey. We want real everyday habits, opinions and stories: what people use AI for, how they talk to it, what they enjoy and what annoys them. We will look for tendencies between reported types and variety within each type. There is no predetermined winning personality, and you do not need to prove your AI skills.**
 
-**[Open the Chinese questionnaire](../survey/index.html)** · [Return a completed report](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=01-individual-report.yml)
+**[Quick choices / Share a story](../survey/index.html?lang=en)** · [Return through GitHub](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=01-individual-report-en.yml)
 
-Choose your most recent AI task that ended or was deliberately paused within the past 30 days. Complete either the closed-ended or the open-ended form. Successful, unsuccessful, incomplete, and unchecked outcomes are all welcome.
+## Why this survey exists
 
-1. Fill in the browser form. Each item has an expandable explanation of its purpose.
-2. Inspect your answers and export the JSON data file and readable Markdown report.
-3. Attach them to a questionnaire-return Issue, or contribute them through a pull request. Exporting does not submit the report automatically.
+**What does AI feel most like to you?**
 
-<a href="../survey/index.html" download="mbti-ai-questionnaire-v0.2.html">Download the standalone HTML questionnaire for offline use</a>
+A tool for getting things done / A work assistant / A teacher available for questions …
 
-The pilot is for recent AI users aged 18 or older who can understand the Chinese instrument. Public submissions are associated with GitHub accounts, so a participant code does not provide anonymity. Remove private and confidential content before submission. Read the bilingual [participation and contribution rules](https://github.com/lawyer112/mbti-ai-open-study/blob/main/CONTRIBUTING.md).
+**How do you usually start a conversation?**
 
-## Two complementary forms
+A short, direct instruction / Context, requirements and constraints first / Break it into steps and ask one by one …
 
-The closed-ended form has 28 process/experience items and 49 items in total. The narrative form has 13 open-ended questions and 34 items in total. Totals include shared background fields, optional items, and conditional questions. The former supports behavioral comparisons; the latter explores processes and reasons. Matching themes do not justify a combined total score.
+**What bothers you most about AI?**
 
-The initial 20 to 30 volunteers are for improving usability and comprehension, not for guaranteeing comparisons among 16 types. Completion time has not yet been measured. This release does not include a validated English questionnaire.
+Confidently getting things wrong / Missing my actual question / Being verbose or missing the point …
 
-## Read the complete protocol
+## An atlas we can build together
 
-- [English full text](../protocol/20261026-mbti-ai-use-protocol/en.qmd) · [English PDF](../protocol/20261026-mbti-ai-use-protocol/en.pdf)
-- [中文全文](../protocol/20261026-mbti-ai-use-protocol/zh.qmd) · [中文 PDF](../protocol/20261026-mbti-ai-use-protocol/zh.pdf)
-- [Closed-ended items and rationales, in Chinese](../survey/choice-questionnaire.md) · [Narrative items and rationales, in Chinese](../survey/text-questionnaire.md)
+Once real responses arrive, we hope to build an atlas of how 16 personality types live with AI: habit charts, praise and complaint distributions, true stories quoted with permission, and an evolving observation article. We will state usable response counts and counts for each type; types without data stay blank. Small differences and many exceptions are interesting too. These are planned outputs; no participant statistics are currently reported.
 
-The protocol maps research questions to items, coding, analyses, and permissible conclusions. The questionnaire can investigate associations involving self-reported behavior. Objective work performance and gains from AI require a later standardized-task study.
+## How the forms work
 
-## Contribute
+Think about the past 30 days. Quick choices contain 19 items and the story form 11, with 7 shared items. Totals include optional and conditional items; only applicable questions appear. One form is enough; use the same report ID to add the other. Uncertain MBTI skips the source question. Recent nonusers answer why they have not used AI, without inventing an experience. The final one-sentence reflection is optional. Choices describe uses, conversation habits and opinions; stories add context. Each item’s purpose can be opened, and that exposure is recorded. Actual completion time still needs human pilot feedback.
 
-Submit an [independent study](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=02-study-report.yml), [discuss methods](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=03-research-discussion.yml), or improve materials through a pull request. Individual reports, independent studies, and test fixtures are kept separate. Generated answers are never treated as human participants.
+## Taking part and sharing
 
-Project byline: lawyer112. Codex assisted with drafting, translation, implementation, and checking, as disclosed in the full protocol. No institutional ethics approval or assessment-provider endorsement is claimed. See [permissions and participant-material scope](https://github.com/lawyer112/mbti-ai-open-study/blob/main/PERMISSIONS.md).
+I am at least 18 and participate voluntarily. I am describing my own real habits, experiences or opinions.
+
+1. Inspect the report and remove anything that should not be public.
+2. Download the JSON data and readable Markdown report.
+3. Return the files or paste the complete report into the GitHub Issue. A pull request is also possible.
+
+Answers are not uploaded automatically. Save a draft before closing or refreshing this page.
+
+Issues, pull requests and attachments are public and linked to your GitHub account. A participant code does not make you anonymous.
+
+[Study and participation guide](../protocol/20261026-mbti-ai-use-protocol/en.qmd) · [PDF](../protocol/20261026-mbti-ai-use-protocol/en.pdf) · <a href="../survey/index.html" download="mbti-ai-v0.3.html">HTML ↓</a>
+
+[Quick choices · Markdown](../survey/en/choice-questionnaire.md) · [Share a story · Markdown](../survey/en/text-questionnaire.md)
+
+## Discuss the study
+
+Project byline: lawyer112. Codex assists with drafting, translation, implementation and checks; these are not native-speaker or independent researcher validation. Experiences must be the participant’s own; disclose AI writing help in A06. Exclude all TEST_ONLY fixtures. Real responses, independent studies, translation corrections and design ideas are welcome. Acknowledgement is voluntary, and paper authorship follows actual contributions.
+
+[Submit an independent study](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=02-study-report-en.yml) · [Discuss the study](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=03-research-discussion-en.yml) · [GitHub](https://github.com/lawyer112/mbti-ai-open-study)

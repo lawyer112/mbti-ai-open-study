@@ -1,0 +1,393 @@
+{
+  "ui": {
+    "title": "MBTI × IA : à quoi ressemble votre partenaire IA ?",
+    "hero": "À quoi ressemble votre partenaire IA ?",
+    "intro": "Une enquête informelle sur nos usages de l’IA, ce que nous aimons et ce qui nous agace. Partagez vos habitudes ou une histoire vécue.",
+    "language": "Langue",
+    "pilot": "Pilote · v0.3",
+    "choice": "Choix rapides",
+    "text": "Raconter une histoire",
+    "choice_desc": "Choisissez ce qui vous ressemble : usages, échanges, compliments et critiques.",
+    "text_desc": "Racontez une expérience réelle avec vos mots. Quelques phrases suffisent.",
+    "save": "Enregistrer le brouillon",
+    "load": "Charger un brouillon",
+    "new": "Commencer un autre relevé",
+    "showpurpose": "Afficher les objectifs",
+    "hidepurpose": "Masquer les objectifs",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "review": "Vérifier et exporter",
+    "close": "Revenir aux réponses",
+    "export_json": "Télécharger les données",
+    "export_md": "Télécharger le rapport lisible",
+    "copy": "Copier le rapport",
+    "entry": "Avant de commencer",
+    "entrytext": "Pensez à vos habitudes et opinions des 30 derniers jours. Inutile de reconstituer une tâche entière. Vous pouvez aussi participer sans usage récent de l’IA.",
+    "local_notice": "Aucun envoi automatique. Enregistrez un brouillon avant de fermer ou d’actualiser la page.",
+    "footnote": "Une seule des deux formes suffit. Il n’y a ni usage idéal de l’IA ni score de personnalité. Les traductions évolueront avec vos retours.",
+    "home": "Étude et participation",
+    "return": "Transmettre via GitHub",
+    "required": "Obligatoire",
+    "optional": "Facultatif",
+    "multi": "Choix multiples",
+    "select": "Choisir une réponse",
+    "purpose": "Pourquoi cette question ?",
+    "invalid": "Répondez à cette question. En cas d’incertitude, sélectionnez ou écrivez que vous ne savez pas.",
+    "progress": "{n} / {total} questions obligatoires applicables remplies",
+    "case": "Identifiant du rapport : {id}. Conservez-le pour ajouter l’autre forme à cette participation.",
+    "switched": "Forme modifiée. Les champs communs et les autres réponses sont conservés ; seule la forme actuelle est exportée.",
+    "missing": "Remplissez {n} questions obligatoires et les trois confirmations avant d’exporter.",
+    "ready": "Les réponses obligatoires sont complètes. Vérifiez le contenu et ce que vous publierez.",
+    "downloaded": "Téléchargement lancé. Exporter ne transmet rien à GitHub.",
+    "copied": "Rapport copié. Collez-le dans le ticket de retour du questionnaire.",
+    "copy_failed": "Copie refusée. Téléchargez le rapport lisible puis copiez son texte.",
+    "saved": "Téléchargement du brouillon lancé. Rechargez-le pour reprendre. Il peut contenir des informations privées : conservez-le avec soin.",
+    "import_failed": "Chargement impossible. Utilisez un brouillon v0.3 enregistré par cette page, sans modification de format.",
+    "replace_confirm": "Le chargement remplacera les réponses actuelles. Continuer ?",
+    "reset_confirm": "Un nouveau relevé efface les réponses actuelles. Enregistrez d’abord un brouillon si nécessaire. Continuer ?",
+    "loaded": "Brouillon chargé. Vérifiez les réponses avant l’export.",
+    "language_changed": "Langue modifiée ; réponses et identifiant conservés. Relisez et confirmez les conditions dans cette langue.",
+    "version": "Version du questionnaire",
+    "exported": "Date d’export (pas de soumission)",
+    "modeorder": "Formes consultées",
+    "purposeviewed": "Objectifs de questions consultés",
+    "consent": "Confirmations de participation",
+    "empty": "Sans réponse",
+    "na": "Non applicable selon les conditions",
+    "none": "Aucun",
+    "reportnote": "Il s’agit de vos habitudes et opinions déclarées. A05 concerne l’autorisation de citation. Reliez les deux formes d’une même participation par cet identifiant.",
+    "return_steps": [
+      "Vérifiez le rapport et retirez ce qui ne doit pas être public.",
+      "Téléchargez les données JSON et le rapport Markdown.",
+      "Joignez les fichiers ou collez le rapport complet dans un ticket GitHub. Un PR est également possible."
+    ],
+    "privacy": "Les tickets, PR et pièces jointes sont publics et liés à votre compte GitHub. Un code de participant ne rend pas anonyme.",
+    "legacy": "Reprendre un ancien brouillon v0.2",
+    "mdintro": "Enquête informelle sur le MBTI, les usages quotidiens de l’IA, les opinions et les histoires vécues. Pensez aux 30 derniers jours. Ce n’est ni un test de personnalité ni un classement des capacités.",
+    "mdexposure": "Cette version lisible affiche tous les objectifs. Signalez leur consultation lors de l’envoi.",
+    "condition_equal": "Répondez seulement si vous avez répondu à {id} par : {label}.",
+    "condition_not_equal": "Répondez seulement si vous avez répondu à {id} par une autre option que : {label}.",
+    "exclusive": "Options exclusives, incompatibles avec toute autre : {labels}.",
+    "answer": "Réponse",
+    "item_count": "{n} questions, dont des champs communs, facultatifs et conditionnels. Répondez uniquement aux questions applicables.",
+    "code": "Code du participant",
+    "case_label": "Identifiant du rapport",
+    "mode_label": "Forme du questionnaire",
+    "files": "Fichiers ou rapport complet",
+    "corrections": "Rapports antérieurs et corrections",
+    "submit_title": "Transmettre un questionnaire",
+    "submit_description": "Joignez les fichiers exportés ou collez le rapport complet.",
+    "study_title": "Soumettre une étude indépendante",
+    "study_description": "Partagez une étude distincte, ses méthodes et ses éléments probants.",
+    "study_body": "Décrivez question, recrutement, effectif, source de personnalité, tâches et outils d’IA, méthodes, résultats, limites et permissions. Séparez données réelles et hypothèses.",
+    "discussion_title": "Discuter de l’étude",
+    "discussion_description": "Signalez une traduction problématique ou une amélioration.",
+    "discussion_body": "Précisez problème, langue, numéro de question et correction proposée, sans information privée."
+  },
+  "groups": {
+    "about": [
+      "Quelques mots sur vous",
+      "Un type MBTI incertain est accepté. Aucun nouveau test n’est nécessaire."
+    ],
+    "uses": [
+      "L’IA dans votre quotidien",
+      "Pensez aux usages des 30 derniers jours, pas seulement à votre meilleure expérience."
+    ],
+    "style": [
+      "Votre façon d’échanger",
+      "Choisissez ce qui correspond à vos habitudes. Il n’y a pas de bon style imposé."
+    ],
+    "opinions": [
+      "Compliments et critiques",
+      "Vous pouvez aimer, détester, ou ressentir les deux."
+    ],
+    "stories": [
+      "Votre histoire avec l’IA",
+      "Racontez-la comme à un proche. Quelques phrases suffisent."
+    ],
+    "closing": [
+      "Une dernière idée",
+      "Choisissez ce qui peut être partagé, puis relisez et exportez."
+    ]
+  },
+  "consents": [
+    "J’ai au moins 18 ans et je participe volontairement. Je décris mes propres habitudes, expériences ou opinions réelles.",
+    "Je comprends que les contributions GitHub sont publiques et liées à mon compte ; un identifiant ne garantit pas l’anonymat.",
+    "J’ai retiré les informations privées et confidentielles et peux partager ce contenu. J’autorise les statistiques et synthèses du projet et comprends que toutes les copies publiques ne pourront pas forcément être retirées."
+  ],
+  "items": {
+    "A01": {
+      "title": "Quel type MBTI déclarez-vous actuellement ?",
+      "purpose": "Relier une étiquette déclarée au comportement, sans déduire le type du comportement.",
+      "hint": "",
+      "options": [
+        "ISTJ",
+        "ISFJ",
+        "INFJ",
+        "INTJ",
+        "ISTP",
+        "ISFP",
+        "INFP",
+        "INTP",
+        "ESTP",
+        "ESFP",
+        "ENFP",
+        "ENTP",
+        "ESTJ",
+        "ESFJ",
+        "ENFJ",
+        "ENTJ",
+        "Incertain"
+      ]
+    },
+    "A02": {
+      "title": "Quelle est la principale source de ce type ?",
+      "purpose": "Distinguer MBTI officiel, 16Personalities, autres tests et autoévaluation.",
+      "hint": "",
+      "options": [
+        "Évaluation MBTI officielle",
+        "16Personalities",
+        "Autre test en ligne",
+        "Jugement personnel",
+        "Inconnu"
+      ]
+    },
+    "A03": {
+      "title": "Combien de jours avez-vous utilisé l’IA générative sur les 30 derniers ?",
+      "purpose": "Séparer fréquence récente et expérience cumulée.",
+      "hint": "",
+      "options": [
+        "0 jour ; aucun usage récent",
+        "1–3 jours",
+        "4–9 jours",
+        "10–19 jours",
+        "20–30 jours",
+        "Ne me souviens pas"
+      ]
+    },
+    "A04": {
+      "title": "Depuis combien de temps utilisez-vous l’IA générative ?",
+      "purpose": "Distinguer expérience et effets attribués à la personnalité.",
+      "hint": "",
+      "options": [
+        "Moins de 1 mois",
+        "1–5 mois",
+        "6–11 mois",
+        "12–23 mois",
+        "24 mois ou plus",
+        "Ne me souviens pas"
+      ]
+    },
+    "A05": {
+      "title": "L’article peut-il citer mot pour mot des extraits expurgés ?",
+      "purpose": "Séparer autorisation d’analyse agrégée et citation littérale.",
+      "hint": "",
+      "options": [
+        "Non, statistiques et synthèses seulement",
+        "Oui, citations littérales d’extraits expurgés autorisées"
+      ]
+    },
+    "A06": {
+      "title": "L’IA a-t-elle aidé à préparer ce rapport ?",
+      "purpose": "Documenter l’aide de l’IA de façon transparente.",
+      "hint": "",
+      "options": [
+        "Non",
+        "Oui"
+      ]
+    },
+    "Q01": {
+      "title": "À quoi avez-vous surtout utilisé l’IA récemment ?",
+      "purpose": "Comparer les usages réels ; une personne peut en avoir plusieurs.",
+      "hint": "",
+      "options": [
+        "Rédiger, réviser ou traduire",
+        "Programmation ou problèmes techniques",
+        "Apprendre et expliquer des concepts",
+        "Chercher, organiser ou analyser des informations",
+        "Idées et création",
+        "Planifier ou aider à choisir",
+        "Parler d’émotions ou chercher de la compagnie",
+        "Discuter et se divertir",
+        "Autres usages"
+      ]
+    },
+    "Q02": {
+      "title": "À quoi l’IA ressemble-t-elle le plus pour vous ?",
+      "purpose": "Comparer les rôles attribués à l’IA sans les associer d’avance à des types de personnalité.",
+      "hint": "",
+      "options": [
+        "Un outil pour accomplir des tâches",
+        "Un assistant de travail",
+        "Un professeur disponible",
+        "Un partenaire de discussion",
+        "Un partenaire créatif",
+        "Quelqu’un avec qui discuter ou se sentir accompagné",
+        "Pas encore de rôle fixe"
+      ]
+    },
+    "Q03": {
+      "title": "Comment commencez-vous généralement un échange ?",
+      "purpose": "Comparer les habitudes d’expression sans assimiler la longueur des consignes à la compétence.",
+      "hint": "",
+      "options": [
+        "Une consigne courte et directe",
+        "D’abord le contexte, les attentes et les contraintes",
+        "Je découpe en étapes et pose les questions une à une",
+        "Je commence à discuter pour préciser mon besoin",
+        "Cela dépend beaucoup de la tâche",
+        "Je ne me souviens pas"
+      ]
+    },
+    "Q04": {
+      "title": "Si la première réponse ne convient pas, que faites-vous d’abord ?",
+      "purpose": "Observer la première réaction à une réponse insatisfaisante.",
+      "hint": "",
+      "options": [
+        "J’ajoute du contexte ou des exigences",
+        "Je reformule la question",
+        "Je demande plusieurs versions",
+        "Je change de modèle ou d’outil",
+        "Je m’en occupe moi-même",
+        "Je laisse tomber pour le moment",
+        "Cela ne m’est pas arrivé récemment",
+        "Je ne me souviens pas"
+      ]
+    },
+    "Q05": {
+      "title": "Quand vous demandez conseil, quelle réponse préférez-vous ?",
+      "purpose": "Comparer les préférences pour un plan, des options, des explications ou une exploration commune.",
+      "hint": "",
+      "options": [
+        "Un plan directement utilisable",
+        "Plusieurs options à comparer moi-même",
+        "D’abord les raisons et les éléments de preuve",
+        "Une discussion avant de construire la réponse",
+        "Cela dépend surtout de la tâche"
+      ]
+    },
+    "Q06": {
+      "title": "Comment réagissez-vous quand l’IA n’est pas d’accord avec vous ?",
+      "purpose": "Décrire les réactions au désaccord, sans mesurer rationalité ou entêtement.",
+      "hint": "",
+      "options": [
+        "J’écoute d’abord ses raisons",
+        "Je vérifie d’abord sur quoi elle se fonde",
+        "Je répète ce que je veux et demande de suivre mon idée",
+        "Je décide selon le sujet précis",
+        "Cela ne m’est pas arrivé récemment",
+        "Je ne me souviens pas"
+      ]
+    },
+    "Q07": {
+      "title": "Vérifiez-vous les réponses de l’IA lorsqu’elles portent sur des informations ou jugements importants ?",
+      "purpose": "Décrire les habitudes de vérification ; leur fréquence ne prouve ni qualité ni exactitude.",
+      "hint": "",
+      "options": [
+        "Toujours",
+        "Souvent",
+        "Parfois",
+        "Rarement",
+        "Jamais",
+        "Je n’ai pas utilisé l’IA pour cela récemment"
+      ]
+    },
+    "Q08": {
+      "title": "Quel est le principal bénéfice que vous apporte l’IA ?",
+      "purpose": "Décrire les bénéfices ressentis sans les présenter comme des gains de performance mesurés.",
+      "hint": "",
+      "options": [
+        "Gagner du temps ou éviter les tâches répétitives",
+        "Comprendre des choses nouvelles",
+        "Trouver des idées ou de l’inspiration",
+        "M’aider à démarrer",
+        "M’aider à exprimer mes pensées",
+        "Discuter ou avoir de la compagnie",
+        "Aucun bénéfice clair pour l’instant",
+        "Un autre bénéfice"
+      ]
+    },
+    "Q09": {
+      "title": "Qu’est-ce qui vous agace le plus chez l’IA ?",
+      "purpose": "Inclure les expériences négatives et les améliorations souhaitées, pas seulement les compliments.",
+      "hint": "",
+      "options": [
+        "Se tromper avec assurance",
+        "Passer à côté de ma vraie question",
+        "Être trop longue ou ne pas aller à l’essentiel",
+        "Me donner trop souvent raison",
+        "Oublier les exigences précédentes",
+        "Un style mécanique",
+        "Limites d’usage, coûts ou capacités de l’outil",
+        "La confidentialité ou l’usage des informations",
+        "Aucune critique précise pour le moment",
+        "Autre chose"
+      ]
+    },
+    "Q10": {
+      "title": "Dans l’ensemble, quelle satisfaction tirez-vous de votre expérience récente avec l’IA ?",
+      "purpose": "Décrire la satisfaction, séparément de la confiance, de l’exactitude ou des aptitudes au travail.",
+      "hint": "",
+      "options": [
+        "Très insatisfait·e",
+        "Plutôt insatisfait·e",
+        "Neutre",
+        "Plutôt satisfait·e",
+        "Très satisfait·e",
+        "Difficile à dire"
+      ]
+    },
+    "Q11": {
+      "title": "Pourquoi n’avez-vous pas utilisé l’IA récemment ?",
+      "purpose": "Inclure les personnes sans usage récent et décrire séparément leurs obstacles et choix.",
+      "hint": "",
+      "options": [
+        "Pas de besoin actuel",
+        "Je ne sais pas par où commencer",
+        "Je fais peu confiance aux réponses",
+        "Obstacles d’accès ou coût",
+        "Préoccupations de confidentialité",
+        "J’ai essayé et cela ne m’a pas plu",
+        "Une autre raison"
+      ]
+    },
+    "Q12": {
+      "title": "Quelle est votre attitude actuelle envers l’IA ?",
+      "purpose": "Comparer les attitudes générales en permettant espoir et inquiétude à la fois.",
+      "hint": "",
+      "options": [
+        "Enthousiaste et envie de l’utiliser",
+        "Curieux·se et envie d’explorer",
+        "Prudent·e, j’attends de voir",
+        "Inquiet·ète ou réticent·e",
+        "À la fois plein·e d’espoir et inquiet·ète",
+        "Pas encore d’avis clair"
+      ]
+    },
+    "S01": {
+      "title": "Quelle expérience récente avec l’IA vous a marqué·e ?",
+      "purpose": "Comprendre les usages, besoins et résultats à partir d’histoires réelles.",
+      "hint": "Que vouliez-vous faire ? Comment l’IA vous a-t-elle aidé·e ou non ? Vous pouvez nommer l’outil. Retirez les détails privés."
+    },
+    "S02": {
+      "title": "Comment parlez-vous habituellement à l’IA et que faites-vous si la réponse ne convient pas ?",
+      "purpose": "Préciser le contexte des consignes, relances, ajustements et jugements.",
+      "hint": "Vous pouvez donner un exemple expurgé ou décrire vos habitudes. Les conversations intégrales sont inutiles."
+    },
+    "S03": {
+      "title": "Qu’aimez-vous le plus dans l’IA et que voudriez-vous critiquer ?",
+      "purpose": "Conserver les avis positifs, négatifs et mitigés avec leurs raisons.",
+      "hint": "Vous pouvez répondre à une seule partie. Ne pas avoir d’avis très marqué est aussi une réponse valable."
+    },
+    "S04": {
+      "title": "Pourquoi n’avez-vous pas utilisé l’IA récemment ? Qu’est-ce qui pourrait vous donner envie d’essayer ?",
+      "purpose": "Comprendre le non-usage sans le traiter comme un échec.",
+      "hint": "Absence de besoin, manque de savoir-faire, déplaisir ou autres raisons : tout est recevable. Vous n’avez pas à vouloir essayer plus tard."
+    },
+    "A07": {
+      "title": "En une phrase, comment décririez-vous votre relation avec l’IA ?",
+      "purpose": "Recueillir vos propres mots pour une éventuelle citation autorisée.",
+      "hint": "Facultatif. Exprimez votre ressenti ; ce n’est pas une nouvelle évaluation de personnalité."
+    }
+  }
+}

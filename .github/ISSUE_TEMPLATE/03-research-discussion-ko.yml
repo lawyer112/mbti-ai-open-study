@@ -1,0 +1,16 @@
+name: ko · 연구 토론
+description: 번역 문제나 개선 의견을 알려 주세요.
+title: '[ko v0.3] '
+labels:
+- method-discussion
+body:
+- type: markdown
+  attributes:
+    value: Issue, PR, 첨부 파일은 공개되며 GitHub 계정과 연결됩니다. 참여 코드가 익명성을 보장하지는 않습니다.
+- type: textarea
+  id: report
+  attributes:
+    label: 연구 토론
+    description: 문제, 언어, 문항 번호, 수정안을 설명하세요. 사적인 정보는 넣지 마세요.
+  validations:
+    required: true

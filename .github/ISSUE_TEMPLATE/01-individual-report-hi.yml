@@ -1,0 +1,89 @@
+name: hi · प्रश्नावली जमा करें
+description: निर्यात की गई फ़ाइलें लगाएँ या पूरी रिपोर्ट पेस्ट करें।
+title: '[hi v0.3] '
+labels:
+- needs-review
+body:
+- type: markdown
+  attributes:
+    value: 'MBTI, रोज़मर्रा के AI इस्तेमाल, विचारों और अनुभवों पर अनौपचारिक सर्वेक्षण। पिछले 30 दिनों के बारे में
+      सोचें। यह व्यक्तित्व परीक्षण या क्षमता की रैंकिंग नहीं है।
+
+
+      GitHub Issues, pull requests और संलग्न फ़ाइलें सार्वजनिक हैं और आपके खाते से जुड़ी हैं। रिपोर्ट ID आपको गुमनाम
+      नहीं बनाती।
+
+
+      रिपोर्ट जाँचें और सार्वजनिक न की जाने वाली सामग्री हटाएँ।
+
+
+      JSON डेटा और पढ़ने योग्य Markdown रिपोर्ट डाउनलोड करें।
+
+
+      GitHub Issue में फ़ाइलें लगाएँ या पूरी रिपोर्ट पेस्ट करें। Pull request भी कर सकते हैं।
+
+
+      https://lawyer112.github.io/mbti-ai-open-study/survey/index.html?lang=hi'
+- type: input
+  id: case-id
+  attributes:
+    label: रिपोर्ट ID
+    description: ये आपकी बताई हुई आदतें और राय हैं। उद्धरण की अनुमति A05 में है। एक ही भागीदारी के दोनों फ़ॉर्म
+      रिपोर्ट ID से जोड़ें।
+  validations:
+    required: true
+- type: input
+  id: schema-version
+  attributes:
+    label: प्रश्नावली संस्करण
+    description: '0.3'
+    value: '0.3'
+  validations:
+    required: true
+- type: dropdown
+  id: questionnaire-mode
+  attributes:
+    label: प्रश्नावली का प्रकार
+    options:
+    - झटपट विकल्प
+    - एक कहानी सुनाएँ
+    - झटपट विकल्प + एक कहानी सुनाएँ
+  validations:
+    required: true
+- type: input
+  id: instrument-language
+  attributes:
+    label: भाषा
+    value: hi
+  validations:
+    required: true
+- type: textarea
+  id: report-files
+  attributes:
+    label: फ़ाइलें या पूरी रिपोर्ट
+    description: निर्यात की गई फ़ाइलें लगाएँ या पूरी रिपोर्ट पेस्ट करें।
+  validations:
+    required: true
+- type: textarea
+  id: amendments
+  attributes:
+    label: पहले की रिपोर्ट और सुधार
+    description: ये आपकी बताई हुई आदतें और राय हैं। उद्धरण की अनुमति A05 में है। एक ही भागीदारी के दोनों फ़ॉर्म
+      रिपोर्ट ID से जोड़ें।
+  validations:
+    required: false
+- type: checkboxes
+  id: confirmation
+  attributes:
+    label: भागीदारी की पुष्टियाँ
+    options:
+    - label: मेरी उम्र कम से कम 18 वर्ष है और मैं स्वेच्छा से भाग ले रहा/रही हूँ। मैं अपनी असली आदतें, अनुभव या
+        राय बता रहा/रही हूँ।
+      required: true
+    - label: मैं समझता/समझती हूँ कि GitHub पर भेजी सामग्री सार्वजनिक है और मेरे खाते से जुड़ी है; रिपोर्ट ID गुमनामी
+        नहीं देती।
+      required: true
+    - label: मैंने निजी और गोपनीय जानकारी हटा दी है और मुझे सामग्री साझा करने का अधिकार है। मैं परियोजना के आँकड़ों
+        और लेख के सारांशों में उपयोग की अनुमति देता/देती हूँ और समझता/समझती हूँ कि सभी सार्वजनिक प्रतियाँ वापस लेना
+        संभव नहीं हो सकता।
+      required: true

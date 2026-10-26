@@ -1,0 +1,18 @@
+name: de · Unabhängige Studie einreichen
+description: Eine getrennte Studie mit Methoden und Belegen teilen.
+title: '[de v0.3] '
+labels:
+- needs-review
+body:
+- type: markdown
+  attributes:
+    value: Issues, PRs und Anhänge sind öffentlich und mit Ihrem GitHub-Konto verknüpft. Ein Teilnahmecode macht
+      Sie nicht anonym.
+- type: textarea
+  id: report
+  attributes:
+    label: Unabhängige Studie einreichen
+    description: Beschreiben Sie Forschungsfrage, Rekrutierung, Personenzahl, Persönlichkeitsquelle, KI-Aufgaben
+      und -Werkzeuge, Methoden, Ergebnisse, Grenzen und Rechte. Trennen Sie echte Daten und Hypothesen.
+  validations:
+    required: true

@@ -1,0 +1,96 @@
+---
+title: 'MBTI × KI: Wie ist dein KI-Gegenüber?'
+author:
+- lawyer112
+date: '2026-10-26'
+lang: de
+paper-id: 20261026-mbti-ai-use-protocol
+paper-version: 0.4.0
+article-type: protocol
+bibliography: references.bib
+abstract: Informelle Umfrage zu MBTI, KI im Alltag, Ansichten und Geschichten. Denke an die letzten 30 Tage. Dies ist kein
+  Persönlichkeitstest und keine Rangliste von Fähigkeiten.
+format:
+  html:
+    include-in-header:
+      text: '<link rel="canonical" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/de.html">
+
+        <link rel="alternate" hreflang="zh-CN" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/zh.html">
+
+        <link rel="alternate" hreflang="en" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/en.html">
+
+        <link rel="alternate" hreflang="ja" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/ja.html">
+
+        <link rel="alternate" hreflang="ko" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/ko.html">
+
+        <link rel="alternate" hreflang="es" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/es.html">
+
+        <link rel="alternate" hreflang="fr" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/fr.html">
+
+        <link rel="alternate" hreflang="de" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/de.html">
+
+        <link rel="alternate" hreflang="pt" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/pt.html">
+
+        <link rel="alternate" hreflang="ru" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/ru.html">
+
+        <link rel="alternate" hreflang="ar" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/ar.html">
+
+        <link rel="alternate" hreflang="hi" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/hi.html">
+
+        <link rel="alternate" hreflang="id" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/id.html">'
+abstract-title: Zusammenfassung
+---
+
+:::: {.content-visible when-format="html"}
+::: {.article-links}
+[简体中文](zh.qmd) · [English](en.qmd) · [日本語](ja.qmd) · [한국어](ko.qmd) · [Español](es.qmd) · [Français](fr.qmd) · [Deutsch](de.qmd) · [Português](pt.qmd) · [Русский](ru.qmd) · [العربية](ar.qmd) · [हिन्दी](hi.qmd) · [Bahasa Indonesia](id.qmd) · [PDF](de.pdf) · [Schnell auswählen / Eine Geschichte erzählen](../../survey/index.html?lang=de) · [Studie und Teilnahmehinweise](../../de/index.qmd)
+:::
+::::
+
+## Warum es diese Umfrage gibt {#question}
+
+Manche öffnen KI, um Arbeit zu erledigen, andere suchen ein Gegenüber. Einige erklären seitenlang den Kontext, andere fragen nur: „Was meinst du?“ Manche lieben die Ideen und hassen zugleich die selbstsicheren Fehler. Wie wird dieselbe Technik zu so unterschiedlichen Begleitern?
+
+Dies ist eine informelle MBTI-×-KI-Umfrage über echte Alltagsgewohnheiten, Ansichten und Geschichten: Wofür nutzen wir KI, wie sprechen wir mit ihr, was gefällt und was nervt? Wir betrachten Tendenzen zwischen selbst angegebenen Typen und Vielfalt innerhalb eines Typs. Ein Gewinner steht nicht fest; niemand muss KI-Können beweisen.
+
+## Ein gemeinsamer Beziehungsatlas {#outputs}
+
+Mit echten Antworten möchten wir einen Atlas der Beziehungen zwischen 16 Typen und KI entwickeln: Gewohnheitsdiagramme, Verteilungen von Lob und Kritik, erlaubte Zitate wahrer Geschichten und einen fortlaufenden Beobachtungsartikel. Gültige Antworten und Personenzahlen pro Typ werden genannt; ohne Daten bleibt die Stelle leer. Kleine Unterschiede und Ausnahmen sind ebenfalls interessant. Dies sind Pläne, noch keine Teilnehmerstatistiken.
+
+## So funktionieren die Formulare {#design}
+
+Betrachte die letzten 30 Tage. Die Auswahlform umfasst 19 Fragen, die Erzählform 11; 7 sind gemeinsam. Die Gesamtzahlen enthalten freiwillige und bedingte Fragen; angezeigt wird nur Zutreffendes. Eine Form reicht; für die zweite bleibt die Berichts-ID gleich. Bei unklarem MBTI entfällt die Quellenfrage, bei Nichtnutzung werden Gründe statt erfundener Erfahrungen erfragt. Der letzte Satz ist freiwillig. Auswahlfragen behandeln Nutzung, Gespräch und Meinung, Geschichten ergänzen Kontext. Fragezwecke können geöffnet werden; das wird vermerkt. Die tatsächliche Dauer muss mit Menschen erprobt werden.
+
+- **Ein wenig über dich** (A01, A02, A03, A04) — Auch ein unsicherer MBTI-Typ ist willkommen. Du brauchst keinen neuen Test.
+- **KI in deinem Alltag** (Q01, Q02) — Denke an die letzten 30 Tage, nicht nur an deine beste Erfahrung.
+- **Dein Gesprächsstil** (Q03, Q04, Q05, Q06, Q07) — Wähle, was deinen Gewohnheiten am nächsten kommt. Es gibt keinen richtigen Stil.
+- **Lob und Kritik** (Q08, Q09, Q10, Q11, Q12) — Du darfst KI mögen, nicht mögen oder beides empfinden.
+- **Deine KI-Geschichte** (S01, S02, S03, S04) — Erzähle wie im Freundeskreis. Ein paar Sätze reichen.
+- **Ein letzter Gedanke** (A05, A06, A07) — Entscheide, was geteilt werden darf, prüfe und exportiere dann.
+
+## Was mit Antworten geschieht {#analysis}
+
+Zuerst berichten wir gültige Fallzahlen und Anteile, danach Verteilungen nach MBTI, Quelle, Häufigkeit und Erfahrung. Mehrfachauswahl kann über 100 % ergeben. Fehlend, unzutreffend, unsicher und ausdrücklich nicht vorhanden bleiben getrennt. Zufriedenheit ist Selbstauskunft; häufiges Prüfen beweist keine Prüfqualität. Geschichten werden nach Nutzung, Gespräch, Nutzen, Kritik und Ausnahmen geordnet, auch Gegenbeispiele bleiben erhalten. Wörtliche Zitate nur mit A05-Erlaubnis. Beide Formen, Issue und PR sowie Korrekturen einer Person zählen nicht mehrfach; eine unabhängige Studie ist keine einzelne Person.
+
+## Was wir nicht schließen können {#limitations}
+
+Diese freiwillige Internetstichprobe beschreibt Teilnehmende, nicht sämtliche 16 Typen. Sie beweist weder Persönlichkeitsursachen noch höhere Arbeitsfähigkeit. Kleine Fallzahlen rechtfertigen keine erzwungenen Ranglisten oder Signifikanzbehauptungen. Die Formen sind keine gleichwertigen Skalen; die 12 Übersetzungen haben keine muttersprachlichen kognitiven Interviews oder kulturübergreifende Messvalidierung durchlaufen. Sprache, Wechsel und Antwortsprache pro Frage bleiben erhalten. Sprachen und Versionen werden zunächst getrennt berichtet; Zusammenführung braucht Begründung. Alte v0.2-Einzelaufgaben bleiben von v0.3-Alltagsgewohnheiten getrennt.
+
+## Persönlichkeitslabels verstehen {#background}
+
+MBTI eröffnet ein Gespräch; hier findet keine Persönlichkeitsmessung statt. Formelles MBTI, 16Personalities, andere Tests, Selbsteinschätzung und Unsicherheit bleiben getrennt. Wir kopieren keine kommerziellen Testfragen und wählen keine Personen nach Typ aus. Wortlaut, Form und Reihenfolge können Antworten beeinflussen; Rückmeldungen zu Unklarheiten und fehlenden Optionen führen zu versionierten Änderungen. [@mbti-ethics; @sixteen-framework; @pew-questions]
+
+## Teilnehmen und teilen {#availability}
+
+Freiwillig teilnehmen können Erwachsene ab 18, die die gewählte Sprache verstehen, auch ohne jüngste Nutzung. Online ausfüllen oder die eigenständige HTML-Datei offline nutzen, prüfen, JSON und Markdown exportieren und per Issue oder PR zurückgeben. Es gibt keinen automatischen Upload. Markdown-Formulare bewahren Frage-IDs, Bestätigungen, Version und gelesene Zwecke. GitHub-Beiträge sind öffentlich und kontogebunden; IDs schaffen keine Anonymität. Private Angaben, Kundendaten, Betriebsgeheimnisse und Zugangsdaten entfernen. Auswertung und Zitiererlaubnis sind getrennt; freie Weitergabe einzelner Daten braucht gesonderte Erlaubnis. Rücknahme im ursprünglichen Beitrag beantragen: Spätere Analysen schließen ihn aus, heruntergeladene oder geforkte Kopien können bleiben. [@github-pages; @github-attachments]
+
+[Schnell auswählen · Markdown](../../survey/de/choice-questionnaire.md) · [Eine Geschichte erzählen · Markdown](../../survey/de/text-questionnaire.md) · [GitHub](https://github.com/lawyer112/mbti-ai-open-study) · [PERMISSIONS.md](https://github.com/lawyer112/mbti-ai-open-study/blob/main/PERMISSIONS.md)
+
+## KI-Hilfe und Urheberschaft {#ai-use}
+
+Projektname der verantwortlichen Person: lawyer112. Codex hilft bei Text, Übersetzung, Umsetzung und Prüfung; dies ersetzt keine muttersprachliche oder unabhängige Validierung. Erfahrungen müssen eigene sein; KI-Schreibhilfe wird in A06 erklärt. Alle TEST_ONLY-Daten bleiben ausgeschlossen. Antworten, eigene Studien, Korrekturen und Ideen sind willkommen. Danksagungen sind freiwillig; Artikelautorschaft richtet sich nach tatsächlichen Beiträgen.
+
+## Quellen {#references}
+
+::: {#refs}
+:::

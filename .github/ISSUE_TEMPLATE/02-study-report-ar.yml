@@ -1,0 +1,17 @@
+name: ar · تقديم دراسة مستقلة
+description: شارك دراسة منفصلة ومنهجها وأدلتها.
+title: '[ar v0.3] '
+labels:
+- needs-review
+body:
+- type: markdown
+  attributes:
+    value: الطلبات والمرفقات على GitHub علنية ومرتبطة بحسابك. معرّف التقرير لا يجعل مشاركتك مجهولة الهوية.
+- type: textarea
+  id: report
+  attributes:
+    label: تقديم دراسة مستقلة
+    description: صف السؤال البحثي وطريقة الاستقطاب وعدد المشاركين ومصدر نوع الشخصية ومهام وأدوات الذكاء الاصطناعي
+      والمنهج والنتائج والحدود والأذونات. افصل البيانات الحقيقية عن الفرضيات.
+  validations:
+    required: true

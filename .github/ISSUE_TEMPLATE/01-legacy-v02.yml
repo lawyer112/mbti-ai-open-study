@@ -1,0 +1,77 @@
+name: 旧版 v0.2 / Legacy records
+description: 仅回传已保存的 v0.2 单任务记录；新参与请使用 v0.3。 Saved v0.2 records only.
+title: '[问卷回传 v0.2] '
+body:
+- type: markdown
+  attributes:
+    value: '请先使用仓库 survey/v0.2/index.html 填写问卷，检查后导出 JSON 与 Markdown，再在这里回传。
+
+      也接受按题号完成的 Markdown 问卷。不要上传 HTML 或未检查的草稿。
+
+      本 Issue 与附件会公开并关联提交账号；附件上传时即进入 GitHub，请先移除敏感信息。
+
+
+      Use the Chinese v0.2 form in survey/v0.2/index.html, inspect and export it, then return the files here. Do
+      not upload the blank HTML or a draft. Public attachments upload immediately; redact first. See CONTRIBUTING.md
+      for English participation rules.
+
+      '
+- type: input
+  id: participant-code
+  attributes:
+    label: 研究代号 / Participant code
+    description: 与B01一致。Match B01; retain the code across tasks.
+  validations:
+    required: true
+- type: input
+  id: case-id
+  attributes:
+    label: 报告编号 / Case ID
+    description: 复制导出文件的case_id。同一任务补填另一版沿用编号。Copy case_id; retain it for both forms of one task.
+  validations:
+    required: true
+- type: dropdown
+  id: questionnaire-mode
+  attributes:
+    label: 问卷模式 / Questionnaire mode
+    options:
+    - 选择题版 / Closed-ended
+    - 文字版 / Narrative
+    - 同一任务两版 / Both forms for one task
+  validations:
+    required: true
+- type: input
+  id: schema-version
+  attributes:
+    label: 问卷版本 / Instrument version
+    value: '0.2'
+    description: 与实际导出版本一致。Match the exported version.
+  validations:
+    required: true
+- type: textarea
+  id: report-files
+  attributes:
+    label: 文件或完整报告 / Files or complete report
+    description: 附上JSON和Markdown，或粘贴完整报告。Attach JSON and Markdown, or paste the complete report with item IDs and
+      consent.
+  validations:
+    required: true
+- type: textarea
+  id: amendments
+  attributes:
+    label: 关联与更正 / Links and corrections
+    description: 同一任务已提交则贴链接；说明两版顺序及更正。没有填无。Link earlier reports and explain order/corrections; otherwise write
+      none.
+  validations:
+    required: true
+- type: checkboxes
+  id: confirmation
+  attributes:
+    label: 回传确认 / Submission confirmations
+    options:
+    - label: 我已满18岁，自愿提交本人真实经历，已检查答案及附件，并有权公开这些材料。 I am at least 18, submit my own real experience voluntarily,
+        and have checked and may share these materials.
+      required: true
+    - label: 我已在报告中完成参与确认和引用选择；同意本项目用于统计和论文汇总，理解公开副本不能保证完全撤回。 I completed consent and quotation choices, permit
+        project analysis/aggregate reporting, and understand that public copies may not be fully retrievable.
+      required: true

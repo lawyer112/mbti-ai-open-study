@@ -2,7 +2,7 @@
   "schema_version": 1,
   "paper_id": "20261026-mbti-ai-use-protocol",
   "type": "protocol",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "status": "ready",
   "original_language": "zh-CN",
   "date": "2026-10-26",
@@ -10,14 +10,35 @@
     "lawyer112"
   ],
   "title": {
-    "zh-CN": "MBTI 人格偏好与生成式 AI 使用行为的关系",
-    "en": "MBTI Personality Preferences and Generative AI Use"
+    "zh-CN": "MBTI × AI：你的 AI 搭子，是什么画风？",
+    "en": "MBTI × AI: What is your AI companion like?",
+    "ja": "MBTI × AI：あなたの AI 相棒はどんな感じ？",
+    "ko": "MBTI × AI: 당신의 AI 파트너는 어떤 모습인가요?",
+    "es": "MBTI × IA: ¿Cómo es tu compañero de IA?",
+    "fr": "MBTI × IA : à quoi ressemble votre partenaire IA ?",
+    "de": "MBTI × KI: Wie ist dein KI-Gegenüber?",
+    "pt": "MBTI × IA: como é a sua companhia de IA?",
+    "ru": "MBTI × ИИ: какой у вас ИИ-собеседник?",
+    "ar": "MBTI × الذكاء الاصطناعي: كيف تبدو علاقتك برفيقك الرقمي؟",
+    "hi": "MBTI × AI: आपका AI साथी कैसा है?",
+    "id": "MBTI × AI: seperti apa teman AI kamu?"
   },
   "language_status": {
     "zh-CN": "reviewed",
-    "en": "reviewed"
+    "en": "reviewed",
+    "ja": "reviewed",
+    "ko": "reviewed",
+    "es": "reviewed",
+    "fr": "reviewed",
+    "de": "reviewed",
+    "pt": "reviewed",
+    "ru": "reviewed",
+    "ar": "reviewed",
+    "hi": "reviewed",
+    "id": "reviewed"
   },
   "peer_review": "not-peer-reviewed",
   "license": "No general reuse license granted. Article, code, participant and third-party permissions are separate; see PERMISSIONS.md.",
-  "related_work": []
+  "related_work": [],
+  "review_method": "AI-assisted content and rendering checks; no native-speaker or measurement validation"
 }

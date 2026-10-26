@@ -1,12 +1,13 @@
 zh,en,note
-人格偏好,personality preference,"Reported labels, not measured ability"
-外部核验,external verification,Operational definition in coding section
-自报,self-report,Not automatically verified behavior
-采用方式,adoption,"Categorical, not a quality ranking"
-控制感,sense of control,Subjective experience
-试填,pilot,Not formal hypothesis testing
-统一任务,standardized task,Later separate study
-研究代号,participant code,Does not provide anonymity
-报告编号,case_id,One task across two forms
-文字版,open-ended / narrative form,Chinese instrument v0.2
-选择题版,closed-ended form,Chinese instrument v0.2
+趣味调查,informal survey,Exploratory observation without predetermined type rankings
+自报类型,self-reported type,Keep source and uncertainty distinct
+日常习惯,everyday habits,Past 30 days; not one selected task
+满意度,satisfaction,Self-report rather than objective performance
+核验习惯,checking habits,Frequency does not establish quality
+近期未使用者,recent nonuser,A03 zero days; separate routing
+报告编号,response_id,Links both forms of one participation; not proof of one person
+选择题版,quick choices,19 total including shared optional and conditional items
+故事版,story form,11 total including shared optional and conditional items
+引用许可,quotation permission,A05 is separate from aggregate-use consent
+译文可比性,translation comparability,Not established by matching IDs
+试填,pilot,No completed human pilot or measurement validation claimed

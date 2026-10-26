@@ -1,0 +1,17 @@
+name: es · Debatir el estudio
+description: Comunica problemas de traducción o mejoras.
+title: '[es v0.3] '
+labels:
+- method-discussion
+body:
+- type: markdown
+  attributes:
+    value: Las incidencias, los PR y los adjuntos son públicos y se vinculan a tu cuenta de GitHub. Un código de
+      participante no te hace anónimo.
+- type: textarea
+  id: report
+  attributes:
+    label: Debatir el estudio
+    description: Indica el problema, idioma, pregunta y corrección propuesta. No incluyas información privada.
+  validations:
+    required: true

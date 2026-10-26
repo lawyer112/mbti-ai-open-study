@@ -1,0 +1,89 @@
+name: id · Kirim kuesioner
+description: Lampirkan berkas hasil ekspor atau tempelkan laporan lengkap.
+title: '[id v0.3] '
+labels:
+- needs-review
+body:
+- type: markdown
+  attributes:
+    value: 'Survei informal tentang MBTI, kebiasaan sehari-hari memakai AI, pendapat, dan cerita. Ingat 30 hari
+      terakhir. Ini bukan tes kepribadian atau peringkat kemampuan.
+
+
+      Issue, PR, dan lampiran bersifat publik serta terhubung dengan akun GitHub Anda. Kode peserta tidak menjadikan
+      Anda anonim.
+
+
+      Periksa laporan dan hapus informasi yang tidak boleh dipublikasikan.
+
+
+      Unduh data JSON dan laporan Markdown.
+
+
+      Lampirkan berkas atau tempelkan laporan lengkap pada Issue GitHub. PR juga dapat digunakan.
+
+
+      https://lawyer112.github.io/mbti-ai-open-study/survey/index.html?lang=id'
+- type: input
+  id: case-id
+  attributes:
+    label: ID laporan
+    description: Ini kebiasaan dan pendapat yang kamu laporkan sendiri. Izin kutipan ada di A05. Hubungkan kedua
+      bentuk untuk partisipasi yang sama dengan ID laporan.
+  validations:
+    required: true
+- type: input
+  id: schema-version
+  attributes:
+    label: Versi kuesioner
+    description: '0.3'
+    value: '0.3'
+  validations:
+    required: true
+- type: dropdown
+  id: questionnaire-mode
+  attributes:
+    label: Bentuk kuesioner
+    options:
+    - Pilihan singkat
+    - Ceritakan pengalaman
+    - Pilihan singkat + Ceritakan pengalaman
+  validations:
+    required: true
+- type: input
+  id: instrument-language
+  attributes:
+    label: Bahasa
+    value: id
+  validations:
+    required: true
+- type: textarea
+  id: report-files
+  attributes:
+    label: Berkas atau laporan lengkap
+    description: Lampirkan berkas hasil ekspor atau tempelkan laporan lengkap.
+  validations:
+    required: true
+- type: textarea
+  id: amendments
+  attributes:
+    label: Laporan sebelumnya dan koreksi
+    description: Ini kebiasaan dan pendapat yang kamu laporkan sendiri. Izin kutipan ada di A05. Hubungkan kedua
+      bentuk untuk partisipasi yang sama dengan ID laporan.
+  validations:
+    required: false
+- type: checkboxes
+  id: confirmation
+  attributes:
+    label: Konfirmasi partisipasi
+    options:
+    - label: Saya berusia minimal 18 tahun dan berpartisipasi secara sukarela. Saya menceritakan kebiasaan, pengalaman,
+        atau pendapat nyata saya sendiri.
+      required: true
+    - label: Saya memahami bahwa kiriman GitHub bersifat publik dan terhubung dengan akun saya; ID laporan tidak
+        memberikan anonimitas.
+      required: true
+    - label: Saya sudah menghapus informasi pribadi dan rahasia serta berhak membagikan materi ini. Saya mengizinkan
+        statistik dan ringkasan artikel proyek ini, dan memahami bahwa semua salinan publik mungkin tidak dapat
+        ditarik kembali.
+      required: true

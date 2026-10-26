@@ -1,8 +1,10 @@
 # MBTI × AI: What kind of AI companion do you have?
 
+[简体中文](https://lawyer112.github.io/mbti-ai-open-study/) · [English](https://lawyer112.github.io/mbti-ai-open-study/en/) · [日本語](https://lawyer112.github.io/mbti-ai-open-study/ja/) · [한국어](https://lawyer112.github.io/mbti-ai-open-study/ko/) · [Español](https://lawyer112.github.io/mbti-ai-open-study/es/) · [Français](https://lawyer112.github.io/mbti-ai-open-study/fr/) · [Deutsch](https://lawyer112.github.io/mbti-ai-open-study/de/) · [Português](https://lawyer112.github.io/mbti-ai-open-study/pt/) · [Русский](https://lawyer112.github.io/mbti-ai-open-study/ru/) · [العربية](https://lawyer112.github.io/mbti-ai-open-study/ar/) · [हिन्दी](https://lawyer112.github.io/mbti-ai-open-study/hi/) · [Bahasa Indonesia](https://lawyer112.github.io/mbti-ai-open-study/id/)
+
 **Sixteen personality types, the same AI tools: do we use them in different ways?**
 
-[中文](README.md) · [Take the survey](https://lawyer112.github.io/mbti-ai-open-study/survey/index.html) · [Project website](https://lawyer112.github.io/mbti-ai-open-study/)
+[中文](README.md) · [Take the survey](https://lawyer112.github.io/mbti-ai-open-study/survey/index.html?lang=en) · [Project website](https://lawyer112.github.io/mbti-ai-open-study/)
 
 Some people open AI to finish a job quickly. Others want someone to bounce ideas off. Some supply a whole page of context and requirements; others start with “What do you think?” Some love the stream of new ideas. Others are most annoyed when AI confidently makes things up.
 
@@ -36,13 +38,13 @@ These are **questions to explore using real responses**, not findings we already
 
 **Prefer clicking options? Choose the closed-ended form. Prefer sharing an experience? Tell a short story. Either route is enough.**
 
-1. [Open the questionnaire](https://lawyer112.github.io/mbti-ai-open-study/survey/index.html) and answer honestly. An uncertain MBTI type is welcome; there is no need to take a new test.
+1. [Open the questionnaire](https://lawyer112.github.io/mbti-ai-open-study/survey/index.html?lang=en) and answer honestly. An uncertain MBTI type is welcome; there is no need to take a new test.
 2. Review and export your report. The page does not upload automatically; the files stay with you until you submit them.
-3. Attach the files or paste the complete report in a [questionnaire-return Issue](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=01-individual-report.yml). You can also use a pull request.
+3. Attach the files or paste the complete report in a [questionnaire-return Issue](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=01-individual-report-en.yml). You can also use a pull request.
 
 You do not need full chat logs, impressive prompts or proof that you are good at AI. Enjoying it, disliking it, using it occasionally or deciding to do something yourself can all make useful contributions.
 
-**Current status: the project is public, with no statistics from real participants yet. The original questionnaire is being redesigned into a lighter everyday-habits and stories survey, alongside multilingual participation routes.** Old records keep their version and will not be silently pooled with redesigned responses.
+**Current status: the project is public, with no real participant statistics yet. This version provides 12 languages, 19 choice-form items and 11 story-form items, including optional and conditional questions; irrelevant questions are skipped.** Old records keep their version and will not be silently pooled with redesigned responses.
 
 ## What we hope to publish
 
@@ -65,6 +67,6 @@ Participation is for adults aged 18 or older. GitHub submissions are public and 
 
 ## Other ways to help
 
-Point out awkward questions, suggest missing options, review translations, propose interesting comparisons or contribute an [independent study](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=02-study-report.yml). For design ideas, [open a discussion Issue](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=03-research-discussion.yml).
+Point out awkward questions, suggest missing options, review translations, propose interesting comparisons or contribute an [independent study](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=02-study-report-en.yml). For design ideas, [open a discussion Issue](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=03-research-discussion-en.yml).
 
 Project byline: **lawyer112**. AI assists with wording, translation and implementation; experiences must come from participants themselves, and test records never count as survey data. Detailed methods, versions and handling rules remain in the [design guide](QUESTIONNAIRE_DESIGN.en.md) and [data rules](data/README.md). Material-use scope is in [PERMISSIONS.md](PERMISSIONS.md).

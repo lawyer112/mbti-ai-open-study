@@ -1,0 +1,17 @@
+name: en · Discuss the study
+description: Report translation issues or suggest improvements.
+title: '[en v0.3] '
+labels:
+- method-discussion
+body:
+- type: markdown
+  attributes:
+    value: Issues, pull requests and attachments are public and linked to your GitHub account. A report ID does
+      not make you anonymous.
+- type: textarea
+  id: report
+  attributes:
+    label: Discuss the study
+    description: Describe the issue, language, item ID and suggested correction. Do not include private information.
+  validations:
+    required: true

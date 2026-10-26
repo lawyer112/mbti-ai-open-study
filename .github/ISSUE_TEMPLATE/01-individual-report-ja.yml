@@ -1,0 +1,81 @@
+name: ja · 質問票を提出
+description: 書き出したファイルを添付するか、報告書全文を貼り付けてください。
+title: '[ja v0.3] '
+labels:
+- needs-review
+body:
+- type: markdown
+  attributes:
+    value: 'MBTI、日常の AI 利用、評価、実話についての気軽な調査です。過去 30 日を振り返ってください。人格測定や能力順位ではありません。
+
+
+      Issue、PR、添付ファイルは公開され、GitHub アカウントに関連付けられます。参加コードを使っても匿名にはなりません。
+
+
+      報告書を確認し、公開すべきでない情報を削除してください。
+
+
+      JSON データと Markdown 報告書をダウンロードしてください。
+
+
+      GitHub Issue に添付するか全文を貼り付けてください。PR でも提出できます。
+
+
+      https://lawyer112.github.io/mbti-ai-open-study/survey/index.html?lang=ja'
+- type: input
+  id: case-id
+  attributes:
+    label: 報告 ID
+    description: 本人の習慣・経験・考えの自己申告です。引用許可は A05。同じ参加の両形式を報告 ID で結びます。
+  validations:
+    required: true
+- type: input
+  id: schema-version
+  attributes:
+    label: 質問票の版
+    description: '0.3'
+    value: '0.3'
+  validations:
+    required: true
+- type: dropdown
+  id: questionnaire-mode
+  attributes:
+    label: 回答形式
+    options:
+    - 選んで回答
+    - 経験を語る
+    - 選んで回答 + 経験を語る
+  validations:
+    required: true
+- type: input
+  id: instrument-language
+  attributes:
+    label: 言語
+    value: ja
+  validations:
+    required: true
+- type: textarea
+  id: report-files
+  attributes:
+    label: ファイルまたは報告書全文
+    description: 書き出したファイルを添付するか、報告書全文を貼り付けてください。
+  validations:
+    required: true
+- type: textarea
+  id: amendments
+  attributes:
+    label: 過去の報告と訂正
+    description: 本人の習慣・経験・考えの自己申告です。引用許可は A05。同じ参加の両形式を報告 ID で結びます。
+  validations:
+    required: false
+- type: checkboxes
+  id: confirmation
+  attributes:
+    label: 参加確認
+    options:
+    - label: 私は 18 歳以上で自発的に参加し、自分の実際の習慣、経験、考えを回答します。
+      required: true
+    - label: GitHub への投稿が公開され、アカウントに関連付けられることを理解しています。報告 ID は匿名性を保証しません。
+      required: true
+    - label: 私的情報や機密を除去し、提出する権利があります。本プロジェクトの統計と記事での要約利用を認め、公開された複製を完全には回収できない場合があることを理解しています。
+      required: true

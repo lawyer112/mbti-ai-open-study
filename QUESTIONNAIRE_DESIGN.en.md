@@ -1,39 +1,31 @@
-# Questionnaire design and workflow
+# How the forms work
 
-[中文](QUESTIONNAIRE_DESIGN.md) · [Complete protocol](protocol/20261026-mbti-ai-use-protocol/en.qmd)
+[中文 / English](QUESTIONNAIRE_DESIGN.md) · [Why this survey exists](protocol/20261026-mbti-ai-use-protocol/en.qmd)
 
-## Completing and returning a form
+## How the forms work
 
-Open the [online questionnaire](https://lawyer112.github.io/mbti-ai-open-study/survey/index.html), or download survey/index.html and open it in a browser. Choose one form and consistently recall your most recent real task that ended or was paused within the past 30 days. The pilot is for recent users aged 18 or older who understand the Chinese instrument.
+Think about the past 30 days. Quick choices contain 19 items and the story form 11, with 7 shared items. Totals include optional and conditional items; only applicable questions appear. One form is enough; use the same report ID to add the other. Uncertain MBTI skips the source question. Recent nonusers answer why they have not used AI, without inventing an experience. The final one-sentence reflection is optional. Choices describe uses, conversation habits and opinions; stories add context. Each item’s purpose can be opened, and that exposure is recorded. Actual completion time still needs human pilot feedback.
 
-Answers stay in the current page. Save draft downloads a local draft; Load draft restores it later. Once complete, inspect and export JSON and Markdown, attach them to a [questionnaire-return Issue](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=01-individual-report.yml), or submit them through a pull request under submissions/individual/. Do not return the blank HTML or an unconfirmed draft. The page does not upload answers automatically. Redact attachments before public submission; a participant code does not guarantee anonymity.
+## What we will do with responses
 
-## Purposes of the two forms
+First report valid counts and option percentages for each item, then explore distributions by MBTI, type source, frequency and experience. Multiple-choice percentages may exceed 100%. Missing, inapplicable, uncertain and explicit absence remain distinct. Satisfaction is a self-report, and checking frequency is not checking quality. Code stories for uses, conversation habits, benefits, complaints and exceptions, preserving opposing accounts; quote verbatim only with A05 permission. Do not double-count both forms, an Issue and its PR, or corrections from one person, or treat an independent study as one participant.
 
-The closed-ended form has 28 core process items and 49 items overall; the narrative form has 13 open-ended questions and 34 items overall. Totals include shared background, optional and conditional fields. Closed-ended responses support distributional comparisons. Narratives explore processes and reasons. Shared themes do not establish measurement equivalence.
+## What we cannot conclude
 
-| Theme | Closed-ended items | Narrative items |
-| --- | --- | --- |
-| Initiation and planning | C01 to C03 | T01 to T02 |
-| Initial expression | C04 to C08 | T03 |
-| Iteration and difficulty | C09 to C13 | T04 to T06 |
-| Verification and adoption | C14 to C17 | T07 to T09 |
-| Outcomes and experience | C18 to C28 | T10 to T13 |
+This volunteer internet sample describes contributors, not all people in the 16 types. It cannot establish personality causation or superior work ability. Small samples do not justify forced rankings or significance claims. The forms are not equivalent scales; the 12 translations have not undergone native-speaker cognitive interviews or cross-cultural measurement validation. Keep instrument language, switching history and the language of each answer; report languages and versions separately before considering any justified pooling. Keep old v0.2 single-task reports separate from v0.3 everyday-habit records.
 
-Each item has an explanation that can be expanded individually or through the global purpose switch. Explanations are collapsed by default, and exposed item IDs are recorded as method information. The [closed-ended text](survey/choice-questionnaire.md) and [narrative text](survey/text-questionnaire.md), both in Chinese, display all purposes for review or manual response. Rationales prescribe no type-specific answer. Personality questions follow process recall to reduce stereotype cues, without claiming that this eliminates bias.
+## Taking part and sharing
 
-## Conditional questions and linked forms
+Participation is voluntary for adults aged 18 or older who understand their chosen language, including recent nonusers. Complete the online form or download the standalone HTML for offline use, inspect and export JSON data and a Markdown report, then return them through an Issue or PR. The form does not upload answers automatically. Readable Markdown forms are also available; retain item IDs, confirmations, version and purpose-exposure records. GitHub submissions are public and linked to accounts; a report ID is not anonymity. Remove private, client, employer-confidential and credential information. Aggregate-use consent and quotation permission are separate; do not redistribute individual data freely without separate authorization. Request withdrawal at the original submission; later analyses exclude it, but downloaded or forked copies may remain.
 
-C16 is answered only when C15 reports an error; C20 only when C19 supplies a time band; R03 only when R02 reports AI-assisted preparation. Mutually exclusive options cannot be combined with other answers. All currently applicable required items and the three participation confirmations must be completed before formal export. Unknown or inapplicable experiences can be reported honestly.
+[Markdown: choices](survey/en/choice-questionnaire.md) · [Markdown: stories](survey/en/text-questionnaire.md)
 
-One form is sufficient. If adding the other form, retain case_id and viewing order, and explain corrections to shared information. A new task gets a new case ID while retaining the participant code. Each response export contains only its own form; a saved draft retains progress in both.
+Item mapping: A01–A04 background; Q01–Q02 uses; Q03–Q07 conversation and checking; Q08–Q12 views and nonuse; S01–S04 stories; A05–A07 quotation, AI disclosure and optional reflection. Every item purpose appears in the full forms above.
 
-## Questionnaire versus experiment
+Uncertain A01 skips A02. A03 = 0 days skips A04, Q01–Q10 and S01–S03, routing to Q11/S04; other answers skip Q11/S04. Q09 no-complaint is exclusive. A07 is optional. Switching language retains answers but resets participation confirmations.
 
-This stage fixes the questions while collecting accounts of different real tasks. It studies associations in self-reported behavior. Common tasks with independent scoring belong to a later study; estimating AI gains also requires AI and no-AI conditions. That experiment has not been implemented.
+Editable sources: `scripts/survey_items_v03.py`, `survey/locales/`, `survey/app.js`, `survey/page.template.html`.
 
-The first 20 to 30 volunteers help identify comprehension problems, missing options, completion time, and submission difficulties. They do not guarantee comparisons among 16 types. Freeze methods and plan the sample before formal comparisons. The English overview and protocol are complete, but an English instrument would require its own meaning and comparability checks rather than automatic equivalence.
+Generation: `python scripts/build_questionnaires.py`.
 
-## Maintenance
-
-scripts/questionnaire_items.py is the instrument source; scripts/build_questionnaires.py generates HTML and both readable questionnaires. Publication uses a manually triggered workflow; the check workflow only checks. Changes to items, references, or conclusions require synchronized bilingual protocol updates and fresh review. See [contribution rules](CONTRIBUTING.md) and [data/README.md](data/README.md) for participation and data handling.
+Instrument v0.3; guide 0.4.0. Meaning changes require a version increase, synchronized languages and fresh review.

@@ -1,0 +1,87 @@
+---
+title: 'MBTI × AI: 당신의 AI 파트너는 어떤 모습인가요?'
+lang: ko
+toc: false
+format:
+  html:
+    include-in-header:
+      text: '<link rel="canonical" href="https://lawyer112.github.io/mbti-ai-open-study/ko/index.html">
+
+        <link rel="alternate" hreflang="zh-CN" href="https://lawyer112.github.io/mbti-ai-open-study/index.html">
+
+        <link rel="alternate" hreflang="en" href="https://lawyer112.github.io/mbti-ai-open-study/en/index.html">
+
+        <link rel="alternate" hreflang="ja" href="https://lawyer112.github.io/mbti-ai-open-study/ja/index.html">
+
+        <link rel="alternate" hreflang="ko" href="https://lawyer112.github.io/mbti-ai-open-study/ko/index.html">
+
+        <link rel="alternate" hreflang="es" href="https://lawyer112.github.io/mbti-ai-open-study/es/index.html">
+
+        <link rel="alternate" hreflang="fr" href="https://lawyer112.github.io/mbti-ai-open-study/fr/index.html">
+
+        <link rel="alternate" hreflang="de" href="https://lawyer112.github.io/mbti-ai-open-study/de/index.html">
+
+        <link rel="alternate" hreflang="pt" href="https://lawyer112.github.io/mbti-ai-open-study/pt/index.html">
+
+        <link rel="alternate" hreflang="ru" href="https://lawyer112.github.io/mbti-ai-open-study/ru/index.html">
+
+        <link rel="alternate" hreflang="ar" href="https://lawyer112.github.io/mbti-ai-open-study/ar/index.html">
+
+        <link rel="alternate" hreflang="hi" href="https://lawyer112.github.io/mbti-ai-open-study/hi/index.html">
+
+        <link rel="alternate" hreflang="id" href="https://lawyer112.github.io/mbti-ai-open-study/id/index.html">'
+---
+
+::: {.article-links}
+[简体中文](../index.qmd) · [English](../en/index.qmd) · [日本語](../ja/index.qmd) · [한국어](../ko/index.qmd) · [Español](../es/index.qmd) · [Français](../fr/index.qmd) · [Deutsch](../de/index.qmd) · [Português](../pt/index.qmd) · [Русский](../ru/index.qmd) · [العربية](../ar/index.qmd) · [हिन्दी](../hi/index.qmd) · [Bahasa Indonesia](../id/index.qmd)
+:::
+
+일을 빨리 끝내려고 AI를 여는 사람도, 토론 상대를 찾는 사람도 있습니다. 배경을 길게 설명하는 사람, “어떻게 생각해?” 한마디만 하는 사람. 아이디어가 좋다는 사람도, 자신 있게 틀리는 답이 싫다는 사람도 있죠. 같은 AI가 왜 이렇게 다른 동료가 될까요?
+
+**이것은 MBTI × AI에 관한 가벼운 조사입니다. 실제 일상 습관, 평가, 경험을 모아 무엇에 쓰는지, 어떻게 대화하는지, 무엇이 좋고 싫은지 살펴봅니다. 스스로 밝힌 유형 간의 경향과 같은 유형 안의 다양성을 함께 봅니다. 미리 정한 우승 유형은 없으며 AI 실력을 증명할 필요도 없습니다.**
+
+**[가볍게 선택하기 / 경험 나누기](../survey/index.html?lang=ko)** · [GitHub로 제출](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=01-individual-report-ko.yml)
+
+## 이 조사를 시작한 이유
+
+**당신에게 AI는 무엇에 가장 가깝나요?**
+
+일을 처리하는 도구 / 업무 보조 / 언제든 질문할 선생님 …
+
+**보통 어떻게 대화를 시작하나요?**
+
+짧게 바로 요청 / 배경·요구·제약부터 설명 / 단계별로 나누어 질문 …
+
+**AI의 어떤 점이 가장 불만인가요?**
+
+자신 있게 틀린 말 / 질문에 맞지 않는 답 / 장황하거나 요점을 놓침 …
+
+## 함께 만드는 AI 관계 도감
+
+실제 응답이 모이면 “16가지 성격 유형과 AI 관계 도감”을 만들어 가고 싶습니다. 사용 습관 도표, 호감과 불만의 분포, 인용을 허락받은 실제 이야기, 계속 갱신하는 관찰 글이 목표입니다. 유효 응답 수와 유형별 인원을 밝히고 데이터가 없는 유형은 비워 둡니다. 작은 차이와 많은 예외도 흥미롭습니다. 이는 계획이며 현재 참여자 통계 결과는 없습니다.
+
+## 설문은 어떻게 구성되나요
+
+지난 30일을 돌아봅니다. 선택형은 19문항, 이야기형은 11문항이며 7문항을 공유합니다. 선택·조건 문항을 포함한 수로, 해당하는 질문만 표시됩니다. 하나만 작성해도 되고 추가할 때는 같은 보고서 ID를 씁니다. MBTI가 불확실하면 출처 질문을 건너뛰고 최근 미사용자는 사용하지 않은 이유를 답합니다. 경험을 만들 필요가 없습니다. 마지막 한 문장은 선택 사항입니다. 선택형은 용도·대화·평가를, 이야기형은 맥락을 다룹니다. 질문 목적은 펼쳐 볼 수 있고 열람 기록을 남깁니다. 실제 소요 시간은 사람들의 시험 응답으로 확인할 예정입니다.
+
+## 참여와 공유 방법
+
+저는 만 18세 이상이며 자발적으로 참여합니다. 제 실제 습관, 경험 또는 생각을 작성합니다.
+
+1. 보고서를 검토하고 공개하면 안 되는 정보를 삭제하세요.
+2. JSON 데이터와 Markdown 보고서를 다운로드하세요.
+3. GitHub Issue에 파일을 첨부하거나 전체 보고서를 붙여 넣으세요. PR로도 제출할 수 있습니다.
+
+응답은 자동 업로드되지 않습니다. 페이지를 닫거나 새로 고치기 전에 초안을 저장하세요.
+
+Issue, PR, 첨부 파일은 공개되며 GitHub 계정과 연결됩니다. 참여 코드가 익명성을 보장하지는 않습니다.
+
+[연구 및 참여 안내](../protocol/20261026-mbti-ai-use-protocol/ko.qmd) · [PDF](../protocol/20261026-mbti-ai-use-protocol/ko.pdf) · <a href="../survey/index.html" download="mbti-ai-v0.3.html">HTML ↓</a>
+
+[가볍게 선택하기 · Markdown](../survey/ko/choice-questionnaire.md) · [경험 나누기 · Markdown](../survey/ko/text-questionnaire.md)
+
+## 연구 토론
+
+프로젝트 명의는 lawyer112입니다. Codex가 작성, 번역, 구현, 확인을 도왔지만 원어민이나 독립 연구자의 검증은 아닙니다. 경험은 본인의 것이어야 하며 AI의 글쓰기 도움은 A06에 밝힙니다. 모든 TEST_ONLY 자료는 제외합니다. 실제 응답, 독립 조사, 번역 수정, 설계 의견을 환영합니다. 감사 표기는 본인 선택이며 논문 저자는 실제 기여에 따라 논의합니다.
+
+[독립 조사 제출](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=02-study-report-ko.yml) · [연구 토론](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=03-research-discussion-ko.yml) · [GitHub](https://github.com/lawyer112/mbti-ai-open-study)

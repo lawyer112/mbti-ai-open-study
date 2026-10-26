@@ -1,0 +1,16 @@
+name: ja · 研究について議論
+description: 翻訳上の問題や改善案を共有してください。
+title: '[ja v0.3] '
+labels:
+- method-discussion
+body:
+- type: markdown
+  attributes:
+    value: Issue、PR、添付ファイルは公開され、GitHub アカウントに関連付けられます。参加コードを使っても匿名にはなりません。
+- type: textarea
+  id: report
+  attributes:
+    label: 研究について議論
+    description: 問題、言語、質問番号、修正案を説明してください。私的情報は含めないでください。
+  validations:
+    required: true

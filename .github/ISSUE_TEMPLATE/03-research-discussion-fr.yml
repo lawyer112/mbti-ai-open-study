@@ -1,0 +1,17 @@
+name: fr · Discuter de l’étude
+description: Signalez une traduction problématique ou une amélioration.
+title: '[fr v0.3] '
+labels:
+- method-discussion
+body:
+- type: markdown
+  attributes:
+    value: Les tickets, PR et pièces jointes sont publics et liés à votre compte GitHub. Un code de participant
+      ne rend pas anonyme.
+- type: textarea
+  id: report
+  attributes:
+    label: Discuter de l’étude
+    description: Précisez problème, langue, numéro de question et correction proposée, sans information privée.
+  validations:
+    required: true

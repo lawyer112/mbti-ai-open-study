@@ -1,0 +1,17 @@
+name: id · Diskusikan studi
+description: Laporkan masalah terjemahan atau usulkan perbaikan.
+title: '[id v0.3] '
+labels:
+- method-discussion
+body:
+- type: markdown
+  attributes:
+    value: Issue, PR, dan lampiran bersifat publik serta terhubung dengan akun GitHub Anda. Kode peserta tidak menjadikan
+      Anda anonim.
+- type: textarea
+  id: report
+  attributes:
+    label: Diskusikan studi
+    description: Sebutkan masalah, bahasa, ID pertanyaan, dan usulan koreksi. Jangan sertakan informasi pribadi.
+  validations:
+    required: true

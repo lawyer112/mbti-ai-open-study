@@ -1,0 +1,16 @@
+name: ar · مناقشة المشروع
+description: أبلغ عن مشكلة ترجمة أو اقترح تحسينًا.
+title: '[ar v0.3] '
+labels:
+- method-discussion
+body:
+- type: markdown
+  attributes:
+    value: الطلبات والمرفقات على GitHub علنية ومرتبطة بحسابك. معرّف التقرير لا يجعل مشاركتك مجهولة الهوية.
+- type: textarea
+  id: report
+  attributes:
+    label: مناقشة المشروع
+    description: صف المشكلة واللغة ورقم السؤال والتصحيح المقترح. لا تدرج معلومات خاصة.
+  validations:
+    required: true

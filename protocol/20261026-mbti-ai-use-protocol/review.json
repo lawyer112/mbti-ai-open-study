@@ -1,24 +1,36 @@
 {
-  "reviewer": "Codex (AI-assisted checks, not independent or peer review)",
-  "reviewed_on": "2026-10-26",
+  "reviewer": "Codex (AI-assisted checks; no independent or native-speaker validation)",
+  "reviewed_on": "2026-10-27",
   "checks": {
-    "content": true,
-    "sources": true,
     "bilingual": true,
-    "web_desktop_mobile": true,
+    "content": true,
+    "multilingual": true,
+    "pdf_all_languages": true,
     "pdf_zh_en": true,
-    "public_scope": true
+    "public_scope": true,
+    "sources": true,
+    "web_desktop_mobile": true
   },
-  "notes": "Codex-assisted internal checks only. Sources opened; Chinese/English sections, numbers, item mappings, causal limits and disclosures aligned. Windows Quarto 1.10.19 built searchable 4-page Chinese and 6-page English PDFs; all pages viewed. Mobile table overflow and PDF split cells repaired and rechecked. Five pages checked at 1440/390 px. No participant results or psychometric validation. Public scope excludes outputs, local archives and credentials. Live GitHub verification is recorded separately in VERIFICATION.md. Pandoc zh-CN translation warnings remain; visible Chinese abstract verified.",
+  "notes": "Compared all 12 localized guides and questionnaires for purpose, eligibility, 30-day window, 19/11/7/23 counts, option anchors, negations, skip rules, permission and causal limits. Shared primary sources retained from the verified initial release. Ran 48 mode/user-route export flows across 12 languages, 12 draft roundtrips, language preservation/renewed consent, required/uncertain/exclusive routing, bad-import retention and literal text rendering. No answer-upload network requests in the offline flow. Checked 24 home/guide routes at 390 and 1440 px and internal links. Rendered and visually inspected all 34 PDF pages; repaired duplicate bibliography headings, Arabic range direction/abstract labels and Indonesian reference-heading pagination. Checked diff/public-file list and credential patterns; output fixtures and caches excluded. Quarto zh-CN language warnings persist, but the visible Chinese abstract label and text were verified. No human pilot, native-speaker cognitive interviews, measurement validation or participant findings. Live deployment is recorded separately in VERIFICATION.md.",
   "files_sha256": {
-    "CHANGELOG.md": "8f96a2bc55b5c110be3691d05488853a1478a27afa9c452486ccca5f80cdccde",
-    "en.qmd": "06d847debc2d3a9e0ad8d013487632cfd2295506780afe8acaeef2ed5cff72d4",
-    "evidence.csv": "92054307818507fd114e1c7c539f83380bc62bbd7d312433d333b7cb94d0466e",
-    "glossary.csv": "71e4416a166f172465d51a13d675c454f328a0805b31ee9560f22b5337f5089a",
-    "instrument-lock.json": "2bc51eb8137d7e69f4e22a0efecce33f62edb08548c8fc653038813802851c25",
-    "paper.json": "157e4cad3b447cecc285714b3478be3b3cc81d9fed9cda00375fb179360b4487",
+    "ar.qmd": "31742738071cf134eaffc77d2fce60d899021618474659f3c0ae8dd794b4ba93",
+    "CHANGELOG.md": "364a74eeb25bbb86918d5595b95a86e678010031b9904f36d2f7e89524836324",
+    "de.qmd": "4c4dc9f20e590ed6546a33c1c652c96a55daa18458b1744b51c868606669d7a8",
+    "en.qmd": "ea4d41a279e24007bd56e301ab320e1b1836b40d1c4d15805088c4aacfb33463",
+    "es.qmd": "85507e7929b12c2d9a10ac2595109aa3aa14ed46286cae669d6e45ee9c49341f",
+    "evidence.csv": "0128681c3e1ca2236d5a719b9739070f5ddac11cb72a53f2ace3f8751ff14adb",
+    "fr.qmd": "e7c926d098b9364a07fff8b6fe3eec5d32839fde662537ee7ebc8b38d2670f21",
+    "glossary.csv": "b68b84202e46137fb00834a15a825f086fe92a34f6d7109d53ce0424d37ecf04",
+    "hi.qmd": "a1500920619b85137387736c48124a4810704f84ac02fb186d84d6fe348381b7",
+    "id.qmd": "005e02505269530c691a659fd840107cd850fa6f6befe00d1975520fefd67d3d",
+    "instrument-lock.json": "3b9f25328d87bc5901761555b698b7198d8a44d56b31e14e1d1ad7fd357dc10c",
+    "ja.qmd": "1c6e9a715dfd1cad334d4bdc8ff4362c8dea5837f38629fe28e465b8a49a325f",
+    "ko.qmd": "f186df93518fd0d4d23a4fbed4d568cbefeba680da60f3efce2ba2d0e5d03609",
+    "paper.json": "a981bb2b7f0870df39eef665fa375d5acb9ff56adb09859c0d813f42860a4d76",
+    "pt.qmd": "dddd023968a2ce9fb157ce3313824da4d8122d7734370551a4900fe0b8b1e8cf",
     "references.bib": "9eef322fbaaf60d1fc09a067e053baa4e0c137f81529bd4d2b986cda0cadca7a",
-    "reproduce.md": "63b3edca6c660cf965227160094889f3fb582ca1c9aced22fcbecc0c0c072bcc",
-    "zh.qmd": "7593f426fdd8b480691b113e1a88f62fc93da9a41956818325510c00d53db314"
+    "reproduce.md": "78cdb283944416f827a334c78367bab84eff010e86b5261c1c08ddfbdadc423d",
+    "ru.qmd": "8d5038bc9e426a7d012368c8543bdf36f1f4f35e609050a1a32d95843d16a2a6",
+    "zh.qmd": "3784795e49c0d054d2f37a8b5049bbca1610300d68781f54c89ec894b579d018"
   }
 }

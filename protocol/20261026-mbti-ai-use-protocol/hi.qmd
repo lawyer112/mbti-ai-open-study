@@ -1,0 +1,100 @@
+---
+title: 'MBTI × AI: आपका AI साथी कैसा है?'
+author:
+- lawyer112
+date: '2026-10-26'
+lang: hi
+paper-id: 20261026-mbti-ai-use-protocol
+paper-version: 0.4.0
+article-type: protocol
+bibliography: references.bib
+abstract: MBTI, रोज़मर्रा के AI इस्तेमाल, विचारों और अनुभवों पर अनौपचारिक सर्वेक्षण। पिछले 30 दिनों के बारे में सोचें। यह
+  व्यक्तित्व परीक्षण या क्षमता की रैंकिंग नहीं है।
+format:
+  html:
+    include-in-header:
+      text: '<link rel="canonical" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/hi.html">
+
+        <link rel="alternate" hreflang="zh-CN" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/zh.html">
+
+        <link rel="alternate" hreflang="en" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/en.html">
+
+        <link rel="alternate" hreflang="ja" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/ja.html">
+
+        <link rel="alternate" hreflang="ko" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/ko.html">
+
+        <link rel="alternate" hreflang="es" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/es.html">
+
+        <link rel="alternate" hreflang="fr" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/fr.html">
+
+        <link rel="alternate" hreflang="de" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/de.html">
+
+        <link rel="alternate" hreflang="pt" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/pt.html">
+
+        <link rel="alternate" hreflang="ru" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/ru.html">
+
+        <link rel="alternate" hreflang="ar" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/ar.html">
+
+        <link rel="alternate" hreflang="hi" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/hi.html">
+
+        <link rel="alternate" hreflang="id" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/id.html">'
+abstract-title: सार
+language:
+  toc-title-document: इस पेज पर
+  title-block-author-single: लेखक
+  title-block-published: प्रकाशन तिथि
+---
+
+:::: {.content-visible when-format="html"}
+::: {.article-links}
+[简体中文](zh.qmd) · [English](en.qmd) · [日本語](ja.qmd) · [한국어](ko.qmd) · [Español](es.qmd) · [Français](fr.qmd) · [Deutsch](de.qmd) · [Português](pt.qmd) · [Русский](ru.qmd) · [العربية](ar.qmd) · [हिन्दी](hi.qmd) · [Bahasa Indonesia](id.qmd) · [PDF](hi.pdf) · [झटपट विकल्प / एक कहानी सुनाएँ](../../survey/index.html?lang=hi) · [परियोजना और भागीदारी की जानकारी](../../hi/index.qmd)
+:::
+::::
+
+## यह सर्वेक्षण क्यों {#question}
+
+कोई काम खत्म करने के लिए AI खोलता है, कोई चर्चा का साथी ढूँढता है। कुछ लोग पूरा संदर्भ बताते हैं, कुछ बस पूछते हैं “तुम्हें क्या लगता है?” किसी को नए विचार पसंद हैं, किसी को पूरे विश्वास से दिए गलत जवाब खलते हैं। एक ही तकनीक इतने अलग साथियों जैसी क्यों लगती है?
+
+यह MBTI × AI का सहज सर्वेक्षण है। हम असली रोज़मर्रा की आदतें, राय और कहानियाँ चाहते हैं: AI किसलिए इस्तेमाल होता है, उससे कैसे बात होती है, क्या पसंद और नापसंद है। स्वयं बताए प्रकारों के बीच रुझान और एक ही प्रकार के भीतर विविधता दोनों देखेंगे। कोई विजेता पहले से तय नहीं और अपनी AI क्षमता साबित करना ज़रूरी नहीं।
+
+## मिलकर बनाएँ एक रिश्तों का एटलस {#outputs}
+
+असली जवाब मिलने पर 16 प्रकारों और AI के रिश्तों का एटलस बनाना चाहते हैं: आदतों के चार्ट, तारीफ़ और शिकायतों का वितरण, अनुमति से उद्धृत अनुभव और अपडेट होता अवलोकन लेख। हर बार मान्य जवाबों और प्रत्येक प्रकार के लोगों की संख्या बताएँगे; डेटा न हो तो जगह खाली रहेगी। छोटे अंतर और अपवाद भी दिलचस्प हैं। ये योजनाएँ हैं; अभी प्रतिभागियों के आँकड़े प्रस्तुत नहीं हैं।
+
+## फ़ॉर्म कैसे काम करते हैं {#design}
+
+पिछले 30 दिनों को याद करें। विकल्प वाले फ़ॉर्म में 19 सवाल, कहानी वाले में 11 और 7 साझा सवाल हैं। कुल में वैकल्पिक और शर्त वाले सवाल भी हैं; केवल लागू सवाल दिखते हैं। एक फ़ॉर्म काफ़ी है; दूसरा जोड़ते समय वही रिपोर्ट ID रखें। MBTI अनिश्चित हो तो स्रोत वाला सवाल छूटता है; हाल में इस्तेमाल न करने वाले कारण बताते हैं, अनुभव गढ़ते नहीं। आख़िरी एक वाक्य वैकल्पिक है। विकल्प उपयोग, बातचीत और राय बताते हैं; कहानियाँ संदर्भ देती हैं। हर सवाल का उद्देश्य खोल सकते हैं और यह दर्ज होता है। वास्तविक समय अभी लोगों के परीक्षण से जानना है।
+
+- **आपके बारे में थोड़ा सा** (A01, A02, A03, A04) — MBTI को लेकर अनिश्चित होना भी ठीक है। नया टेस्ट देने की ज़रूरत नहीं।
+- **आपके रोज़मर्रा में AI** (Q01, Q02) — पिछले 30 दिनों के इस्तेमाल के बारे में सोचें, केवल सबसे अच्छे अनुभव के बारे में नहीं।
+- **बातचीत का आपका तरीका** (Q03, Q04, Q05, Q06, Q07) — अपनी आदतों के सबसे क़रीब विकल्प चुनें। कोई एक सही शैली नहीं है।
+- **तारीफ़ और शिकायतें** (Q08, Q09, Q10, Q11, Q12) — पसंद, नापसंद या दोनों साथ हो सकते हैं।
+- **आपकी AI कहानी** (S01, S02, S03, S04) — ऐसे बताएँ जैसे किसी दोस्त को बताते हैं। कुछ वाक्य काफ़ी हैं।
+- **एक आख़िरी बात** (A05, A06, A07) — चुनें कि क्या साझा हो सकता है, फिर जाँचकर निर्यात करें।
+
+## जवाबों का क्या करेंगे {#analysis}
+
+पहले हर सवाल के मान्य जवाबों की संख्या और विकल्प प्रतिशत देंगे, फिर MBTI, स्रोत, आवृत्ति और अनुभव के अनुसार वितरण देखेंगे। बहु-चयन प्रतिशत 100% से अधिक हो सकते हैं। गायब, लागू नहीं, अनिश्चित और स्पष्ट अनुपस्थिति अलग रखेंगे। संतुष्टि स्वयं की राय है; जाँच की आवृत्ति जाँच की गुणवत्ता नहीं। कहानियों को उपयोग, बातचीत, लाभ, शिकायत और अपवाद के आधार पर वर्गीकृत करेंगे तथा विपरीत अनुभव भी रखेंगे। शब्दशः उद्धरण केवल A05 की अनुमति से। एक व्यक्ति के दोनों फ़ॉर्म, Issue और PR या सुधार दो बार नहीं गिनेंगे; स्वतंत्र अध्ययन एक प्रतिभागी नहीं है।
+
+## क्या निष्कर्ष नहीं निकाल सकते {#limitations}
+
+यह स्वैच्छिक इंटरनेट नमूना भाग लेने वालों को बताता है, सभी 16 प्रकारों के लोगों को नहीं। इससे व्यक्तित्व का कारणात्मक असर या बेहतर कार्य क्षमता सिद्ध नहीं होती। छोटे नमूने से जबरन रैंकिंग या सांख्यिकीय सार्थकता नहीं निकालेंगे। दोनों फ़ॉर्म समान पैमाने नहीं; 12 अनुवादों पर मूल भाषियों के संज्ञानात्मक साक्षात्कार या अंतर-सांस्कृतिक मापन सत्यापन नहीं हुए हैं। भाषा, बदलावों और प्रत्येक जवाब की भाषा दर्ज होगी; मिलाने का उचित कारण तय करने से पहले भाषाएँ और संस्करण अलग बताएँगे। पुराने v0.2 एक-कार्य रिकॉर्ड और v0.3 रोज़मर्रा की आदतें अलग रहेंगी।
+
+## व्यक्तित्व लेबल को समझना {#background}
+
+MBTI बातचीत का आरंभ है, यहाँ किया जा रहा व्यक्तित्व परीक्षण नहीं। औपचारिक MBTI, 16Personalities, अन्य टेस्ट, स्वयं का अनुमान और अनिश्चितता अलग हैं। हम व्यावसायिक सवाल नहीं नकल करते और प्रकार के आधार पर लोगों का चयन नहीं करते। शब्द, प्रारूप और क्रम जवाब बदल सकते हैं; अस्पष्टता और छूटे विकल्पों पर सुझाव नए संस्करणों को दिशा देंगे। [@mbti-ethics; @sixteen-framework; @pew-questions]
+
+## भाग लेना और साझा करना {#availability}
+
+चुनी भाषा समझने वाले 18 वर्ष या अधिक उम्र के लोग स्वेच्छा से भाग ले सकते हैं, हाल में इस्तेमाल न किया हो तब भी। ऑनलाइन भरें या स्वतंत्र HTML डाउनलोड करके ऑफलाइन भरें, जाँचें, JSON और Markdown निर्यात करें और Issue या PR से भेजें। अपने आप अपलोड नहीं होता। Markdown फ़ॉर्म में भी सवाल ID, पुष्टियाँ, संस्करण और देखे उद्देश्यों का रिकॉर्ड रखें। GitHub सार्वजनिक और खाते से जुड़ा है; ID गुमनामी नहीं है। निजी, ग्राहक, दफ़्तर के गोपनीय विवरण और प्रवेश संबंधी जानकारी हटाएँ। समेकित उपयोग और उद्धरण की अनुमति अलग हैं; व्यक्तिगत डेटा दोबारा बाँटने के लिए अलग अधिकार चाहिए। मूल जमा स्थान पर वापसी माँगें: बाद के विश्लेषण से हटेगा, लेकिन डाउनलोड या फ़ोर्क की प्रतियाँ रह सकती हैं। [@github-pages; @github-attachments]
+
+[झटपट विकल्प · Markdown](../../survey/hi/choice-questionnaire.md) · [एक कहानी सुनाएँ · Markdown](../../survey/hi/text-questionnaire.md) · [GitHub](https://github.com/lawyer112/mbti-ai-open-study) · [PERMISSIONS.md](https://github.com/lawyer112/mbti-ai-open-study/blob/main/PERMISSIONS.md)
+
+## AI सहायता और लेखक {#ai-use}
+
+परियोजना का नाम: lawyer112। Codex ने लेखन, अनुवाद, कार्यान्वयन और जाँच में मदद की; यह मूल भाषी या स्वतंत्र शोधकर्ता का सत्यापन नहीं है। अनुभव अपने होने चाहिए; AI की लेखन मदद A06 में बताएँ। सभी TEST_ONLY बाहर रखे जाते हैं। जवाब, स्वतंत्र अध्ययन, सुधार और विचार स्वागत योग्य हैं। धन्यवाद में नाम देना स्वैच्छिक है और लेख का लेखकत्व वास्तविक योगदान के अनुसार तय होगा।
+
+## संदर्भ {#references}
+
+::: {#refs}
+:::

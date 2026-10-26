@@ -1,78 +1,16 @@
-name: 提交独立调研 / Submit a study
-description: 提交调研方法、样本与证据。Share an independent survey, interview study or experiment.
-title: '[调研报告 v0.1] '
+name: zh-CN · 提交独立调研
+description: 提交独立研究、方法与证据。
+title: '[zh-CN v0.3] '
+labels:
+- needs-review
 body:
 - type: markdown
   attributes:
-    value: '欢迎分享你开展的调研。可以只有汇总结果，但请明确材料范围。
-
-      此Issue及附件公开可见。请勿上传未获授权的个体数据或私人内容。
-
-
-      English submissions are welcome. Aggregate-only reports are acceptable if clearly marked. Do not upload private
-      or unauthorized participant material.
-
-      '
-- type: input
-  id: research-question
-  attributes:
-    label: 研究问题 / Research question
-    description: 研究AI使用过程中的什么行为或结果？ Which AI-use behavior or outcome did you study?
-  validations:
-    required: true
+    value: Issue、PR 及附件会公开并关联 GitHub 账号；研究代号不等于匿名。
 - type: textarea
-  id: sample
+  id: report
   attributes:
-    label: 样本与招募 / Sample and recruitment
-    description: 说明时间、地区或语言、招募方式、独立人数与记录数、类型分布、纳入排除条件，以及与已有研究的样本重叠情况。 Include dates, region/language, recruitment,
-      participant/record counts, type distribution, eligibility and overlap.
+    label: 提交独立调研
+    description: 说明研究问题、招募方式、参与人数、人格来源、AI 任务和工具、方法、发现、限制与许可。真实数据与假设分开。
   validations:
     required: true
-- type: textarea
-  id: methods
-  attributes:
-    label: 测量与过程 / Measurement and procedure
-    description: 说明人格测量工具与版本、问卷或访谈题目、任务、AI模型、主要指标、对照和随机安排。没有的设计请明确写无。 Describe instruments/versions, questions,
-      tasks, AI models, outcomes, controls and randomization; state none when absent.
-  validations:
-    required: true
-- type: textarea
-  id: results
-  attributes:
-    label: 分析与发现 / Analysis and findings
-    description: 给出分析方法和结果，包括无差异的发现；说明证据能支持和不能支持的结论。 Report methods and findings, including null results, and the
-      limits of supported conclusions.
-  validations:
-    required: true
-- type: textarea
-  id: materials
-  attributes:
-    label: 报告与材料 / Report and materials
-    description: 粘贴报告，或附报告、数据字典、代码与材料链接。若没有个体数据或复现代码，请如实说明。 Attach or link the report, data dictionary, code and
-      materials; explain unavailable participant data or code.
-  validations:
-    required: true
-- type: textarea
-  id: permissions
-  attributes:
-    label: 使用范围 / Permissions and participation
-    description: 说明你是否为作者、参与者同意的研究和公开范围、数据处理方式、如适用的伦理审查情况，以及允许本项目如何使用材料。 State authorship, participant consent,
-      public/research scope, data handling, applicable ethics review and permitted project use.
-  validations:
-    required: true
-- type: textarea
-  id: ai-use
-  attributes:
-    label: AI与关联提交 / AI use and related reports
-    description: 说明AI参与写作、编码或分析的情况；提供已有同一报告的Issue或PR链接，没有填无。 Disclose AI help in writing/coding/analysis and link
-      earlier submissions; write none when absent.
-  validations:
-    required: true
-- type: checkboxes
-  id: confirm
-  attributes:
-    label: 提交确认 / Confirmation
-    options:
-    - label: 我有权公开提交这些材料，已移除未获授权的私人内容，并明确说明本项目的使用范围。 I may share these materials, have removed unauthorized private
-        content, and stated the permitted uses.
-      required: true

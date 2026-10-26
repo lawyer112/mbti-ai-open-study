@@ -1,0 +1,95 @@
+---
+title: MBTI × AI：あなたの AI 相棒はどんな感じ？
+author:
+- lawyer112
+date: '2026-10-26'
+lang: ja
+paper-id: 20261026-mbti-ai-use-protocol
+paper-version: 0.4.0
+article-type: protocol
+bibliography: references.bib
+abstract: MBTI、日常の AI 利用、評価、実話についての気軽な調査です。過去 30 日を振り返ってください。人格測定や能力順位ではありません。
+format:
+  html:
+    include-in-header:
+      text: '<link rel="canonical" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/ja.html">
+
+        <link rel="alternate" hreflang="zh-CN" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/zh.html">
+
+        <link rel="alternate" hreflang="en" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/en.html">
+
+        <link rel="alternate" hreflang="ja" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/ja.html">
+
+        <link rel="alternate" hreflang="ko" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/ko.html">
+
+        <link rel="alternate" hreflang="es" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/es.html">
+
+        <link rel="alternate" hreflang="fr" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/fr.html">
+
+        <link rel="alternate" hreflang="de" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/de.html">
+
+        <link rel="alternate" hreflang="pt" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/pt.html">
+
+        <link rel="alternate" hreflang="ru" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/ru.html">
+
+        <link rel="alternate" hreflang="ar" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/ar.html">
+
+        <link rel="alternate" hreflang="hi" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/hi.html">
+
+        <link rel="alternate" hreflang="id" href="https://lawyer112.github.io/mbti-ai-open-study/protocol/20261026-mbti-ai-use-protocol/id.html">'
+abstract-title: 概要
+---
+
+:::: {.content-visible when-format="html"}
+::: {.article-links}
+[简体中文](zh.qmd) · [English](en.qmd) · [日本語](ja.qmd) · [한국어](ko.qmd) · [Español](es.qmd) · [Français](fr.qmd) · [Deutsch](de.qmd) · [Português](pt.qmd) · [Русский](ru.qmd) · [العربية](ar.qmd) · [हिन्दी](hi.qmd) · [Bahasa Indonesia](id.qmd) · [PDF](ja.pdf) · [選んで回答 / 経験を語る](../../survey/index.html?lang=ja) · [研究・参加案内](../../ja/index.qmd)
+:::
+::::
+
+## この調査を始めた理由 {#question}
+
+仕事を早く終えるために AI を開く人も、議論の相手を求める人もいます。背景を長く説明する人、「どう思う？」と一言だけ聞く人。発想が好きな人も、自信満々の間違いが苦手な人も。同じ AI が、どうしてこれほど違う相棒になるのでしょう。
+
+これは MBTI × AI の気軽な調査です。普段の使い方、評価、実体験を集め、何に使うか、どう話すか、何が好きで何に不満があるかを知りたいと考えています。自己申告のタイプ間の傾向と、同じタイプ内の多様さをどちらも見ます。勝つタイプは決めていません。AI を使いこなせると証明する必要もありません。
+
+## 一緒につくる付き合い方図鑑 {#outputs}
+
+実際の回答が集まったら、「16 タイプと AI の付き合い方図鑑」を少しずつ作ります。使い方の図表、好評と不満の分布、引用許可を得た実話、更新される観察記事が目標です。有効回答数とタイプ別人数を示し、データのないタイプは空欄にします。差が小さいことや例外の多さも大切です。これは計画であり、現在、参加者の統計結果はありません。
+
+## アンケートの仕組み {#design}
+
+過去 30 日を振り返ります。選択式は 19 項目、体験談式は 11 項目で、7 項目を共有します。条件付き・任意項目を含む総数で、該当する質問だけ表示します。片方だけで参加でき、追加する場合は同じレポート ID を使います。MBTI が不明なら判定元の質問を省略し、最近使っていない人はその理由を回答します。体験を作る必要はありません。最後の一文は任意です。選択式は用途・会話・評価、体験談は背景を扱います。各問の目的は開いて読め、閲覧履歴を記録します。所要時間は実際の試行参加で確認します。
+
+- **まずあなたについて** (A01, A02, A03, A04) — MBTI が不確かでも参加できます。新たなテストは不要です。
+- **日常での AI の役割** (Q01, Q02) — 過去 30 日の普段の利用を、成功例だけに限らず考えてください。
+- **どんな話し方が好き？** (Q03, Q04, Q05, Q06, Q07) — 普段の習慣に近いものを選んでください。正解はありません。
+- **好きな点も、不満な点も** (Q08, Q09, Q10, Q11, Q12) — 好き、嫌い、両方の気持ちでも構いません。
+- **あなたの AI 体験談** (S01, S02, S03, S04) — 友達に話すように、数文でも大丈夫です。
+- **最後にひとこと** (A05, A06, A07) — 公開範囲を選んだら、確認して書き出せます。
+
+## 回答をどう整理するか {#analysis}
+
+まず各問の有効人数と選択割合を示し、MBTI、判定元、頻度、経験別に分布を見ます。複数回答の割合は合計 100% を超える場合があります。未回答、非該当、不明、明確な「なし」は分けます。満足度は自己申告で、確認頻度は確認の質を示しません。体験談は用途、会話、利点、不満、例外で整理し、反対の意見も残します。逐語引用は A05 の許可がある場合のみ。同じ人の両形式、Issue と PR、訂正版を重複計上せず、独立調査を参加者 1 人として数えません。
+
+## まだ言えないこと {#limitations}
+
+自発的なネット参加者の回答であり、全 16 タイプの人々を代表しません。性格が使い方を引き起こすことや仕事能力の優劣は示せません。少人数で順位や有意差を無理に出しません。両形式は等価な尺度ではなく、12 言語の訳も母語話者への認知インタビューや文化間の測定検証を受けていません。使用言語、切替履歴、各問の回答時言語を保存し、言語・版別に報告してから統合の妥当性を検討します。旧 v0.2 の単一タスク記録と v0.3 の日常習慣記録は分けます。
+
+## 性格ラベルの扱い {#background}
+
+MBTI は会話の入口であり、ここで性格を再測定するものではありません。正式 MBTI、16Personalities、他のテスト、自己判断、不明を別々に扱います。商用テストの設問を複製せず、タイプで人を選別しません。表現、形式、順番は回答に影響し得るため、分かりにくい表現や不足する選択肢の指摘を受けて版を更新します。 [@mbti-ethics; @sixteen-framework; @pew-questions]
+
+## 参加と共有の方法 {#availability}
+
+選んだ言語を理解する 18 歳以上の方が任意で参加でき、最近の非利用者も歓迎します。オンラインまたは単独 HTML を保存してオフラインで記入し、確認後に JSON と Markdown を出力して Issue または PR で送ります。自動送信はありません。Markdown 版でも、設問 ID、確認、版、目的の閲覧記録を残してください。GitHub 投稿は公開されアカウントに結びつき、ID は匿名性を保証しません。個人・顧客・社内機密・認証情報を削除してください。集計許可と引用許可は別で、個別データの自由な再配布には別途許可が必要です。元の投稿で撤回を申し出ると後の分析から除外しますが、ダウンロードやフォークされた複製の回収は保証できません。 [@github-pages; @github-attachments]
+
+[選んで回答 · Markdown](../../survey/ja/choice-questionnaire.md) · [経験を語る · Markdown](../../survey/ja/text-questionnaire.md) · [GitHub](https://github.com/lawyer112/mbti-ai-open-study) · [PERMISSIONS.md](https://github.com/lawyer112/mbti-ai-open-study/blob/main/PERMISSIONS.md)
+
+## AI の支援と署名 {#ai-use}
+
+プロジェクト署名は lawyer112。Codex が執筆、翻訳、実装、確認を支援しますが、母語話者や独立研究者による検証ではありません。経験は本人のものとし、文章整理への AI 支援は A06 で申告します。TEST_ONLY はすべて除外します。回答、独立調査、翻訳修正、設計案を歓迎します。謝辞への掲載は任意で、論文著者は実際の貢献に基づいて話し合います。
+
+## 参考資料 {#references}
+
+::: {#refs}
+:::

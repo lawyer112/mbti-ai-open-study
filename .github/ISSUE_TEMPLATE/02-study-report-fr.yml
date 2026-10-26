@@ -1,0 +1,18 @@
+name: fr · Soumettre une étude indépendante
+description: Partagez une étude distincte, ses méthodes et ses éléments probants.
+title: '[fr v0.3] '
+labels:
+- needs-review
+body:
+- type: markdown
+  attributes:
+    value: Les tickets, PR et pièces jointes sont publics et liés à votre compte GitHub. Un code de participant
+      ne rend pas anonyme.
+- type: textarea
+  id: report
+  attributes:
+    label: Soumettre une étude indépendante
+    description: Décrivez question, recrutement, effectif, source de personnalité, tâches et outils d’IA, méthodes,
+      résultats, limites et permissions. Séparez données réelles et hypothèses.
+  validations:
+    required: true

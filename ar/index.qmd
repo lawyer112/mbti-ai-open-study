@@ -1,0 +1,88 @@
+---
+title: 'MBTI × الذكاء الاصطناعي: كيف تبدو علاقتك برفيقك الرقمي؟'
+lang: ar
+toc: false
+format:
+  html:
+    include-in-header:
+      text: '<link rel="canonical" href="https://lawyer112.github.io/mbti-ai-open-study/ar/index.html">
+
+        <link rel="alternate" hreflang="zh-CN" href="https://lawyer112.github.io/mbti-ai-open-study/index.html">
+
+        <link rel="alternate" hreflang="en" href="https://lawyer112.github.io/mbti-ai-open-study/en/index.html">
+
+        <link rel="alternate" hreflang="ja" href="https://lawyer112.github.io/mbti-ai-open-study/ja/index.html">
+
+        <link rel="alternate" hreflang="ko" href="https://lawyer112.github.io/mbti-ai-open-study/ko/index.html">
+
+        <link rel="alternate" hreflang="es" href="https://lawyer112.github.io/mbti-ai-open-study/es/index.html">
+
+        <link rel="alternate" hreflang="fr" href="https://lawyer112.github.io/mbti-ai-open-study/fr/index.html">
+
+        <link rel="alternate" hreflang="de" href="https://lawyer112.github.io/mbti-ai-open-study/de/index.html">
+
+        <link rel="alternate" hreflang="pt" href="https://lawyer112.github.io/mbti-ai-open-study/pt/index.html">
+
+        <link rel="alternate" hreflang="ru" href="https://lawyer112.github.io/mbti-ai-open-study/ru/index.html">
+
+        <link rel="alternate" hreflang="ar" href="https://lawyer112.github.io/mbti-ai-open-study/ar/index.html">
+
+        <link rel="alternate" hreflang="hi" href="https://lawyer112.github.io/mbti-ai-open-study/hi/index.html">
+
+        <link rel="alternate" hreflang="id" href="https://lawyer112.github.io/mbti-ai-open-study/id/index.html">'
+dir: rtl
+---
+
+::: {.article-links}
+[简体中文](../index.qmd) · [English](../en/index.qmd) · [日本語](../ja/index.qmd) · [한국어](../ko/index.qmd) · [Español](../es/index.qmd) · [Français](../fr/index.qmd) · [Deutsch](../de/index.qmd) · [Português](../pt/index.qmd) · [Русский](../ru/index.qmd) · [العربية](../ar/index.qmd) · [हिन्दी](../hi/index.qmd) · [Bahasa Indonesia](../id/index.qmd)
+:::
+
+يفتح بعضنا الذكاء الاصطناعي لإنهاء العمل، ويبحث آخرون عن شريك نقاش. هناك من يشرح السياق طويلًا ومن يسأل فقط: «ما رأيك؟». قد نحب أفكاره ونكره أخطاءه الواثقة. كيف تصبح التقنية نفسها رفيقًا مختلفًا لكل شخص؟
+
+**هذا استطلاع خفيف عن MBTI والذكاء الاصطناعي يجمع عادات وآراء وقصصًا حقيقية: فيم نستخدمه، وكيف نحاوره، وما نحبه أو نتذمر منه. ننظر إلى اتجاهات بين الأنواع المبلغ عنها وإلى التنوع داخل كل نوع. لا نوع فائز محدد مسبقًا، ولا تحتاج لإثبات مهارتك.**
+
+**[اختيارات سريعة / احكِ قصة](../survey/index.html?lang=ar)** · [الإرسال عبر GitHub](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=01-individual-report-ar.yml)
+
+## لماذا نجري هذا الاستطلاع
+
+**ما أقرب وصف لدور الذكاء الاصطناعي لديك؟**
+
+أداة لإنجاز المهام / مساعد عمل / معلم متاح للأسئلة …
+
+**كيف تبدأ الحوار عادةً؟**
+
+تعليمات قصيرة ومباشرة / السياق والمتطلبات والقيود أولًا / أقسم المهمة لخطوات وأسأل بالتتابع …
+
+**ما أكثر ما يزعجك في الذكاء الاصطناعي؟**
+
+الخطأ بثقة كبيرة / تفويت سؤالي الحقيقي / الإطالة أو الابتعاد عن الجوهر …
+
+## أطلس نبنيه معًا
+
+عندما تصل إجابات حقيقية نريد بناء أطلس لعلاقة الأنواع الستة عشر بالذكاء الاصطناعي: رسوم للعادات، وتوزيع للإعجاب والشكاوى، وقصص مقتبسة بإذن، ومقال ملاحظات يتطور. نذكر أعداد الإجابات الصالحة والأشخاص لكل نوع؛ ونترك الأنواع بلا بيانات فارغة. الفروق الصغيرة والاستثناءات مهمة أيضًا. هذه خطط، ولا توجد إحصاءات مشاركين منشورة حاليًا.
+
+## كيف تعمل النماذج
+
+فكر في آخر 30 يومًا. نموذج الاختيارات يضم 19 سؤالًا ونموذج القصص 11، منها 7 مشتركة. تشمل الأعداد الأسئلة الاختيارية والمشروطة؛ يظهر المناسب فقط. يكفي نموذج واحد، واستخدم المعرّف نفسه لإضافة الآخر. النوع غير المؤكد يتجاوز سؤال المصدر، ومن لم يستخدم حديثًا يشرح السبب دون اختلاق تجربة. الجملة الأخيرة اختيارية. الاختيارات تصف الاستخدام والحوار والرأي، والقصص تضيف السياق. يمكن عرض هدف كل سؤال ويسجل الاطلاع عليه. الوقت الفعلي يحتاج تجربة بشرية.
+
+## المشاركة والمشاركة العلنية
+
+عمري 18 عامًا على الأقل وأشارك طوعًا. أصف عاداتي أو تجاربي أو آرائي الحقيقية.
+
+1. راجع التقرير واحذف ما لا ينبغي نشره.
+2. نزّل بيانات JSON والتقرير المقروء بصيغة Markdown.
+3. أرفق الملفات أو الصق التقرير كاملًا في Issue على GitHub. يمكن أيضًا تقديم طلب سحب.
+
+لا تُرفع الإجابات تلقائيًا. احفظ مسودة قبل إغلاق الصفحة أو تحديثها.
+
+الطلبات والمرفقات على GitHub علنية ومرتبطة بحسابك. معرّف التقرير لا يجعل مشاركتك مجهولة الهوية.
+
+[دليل المشروع والمشاركة](../protocol/20261026-mbti-ai-use-protocol/ar.qmd) · [PDF](../protocol/20261026-mbti-ai-use-protocol/ar.pdf) · <a href="../survey/index.html" download="mbti-ai-v0.3.html">HTML ↓</a>
+
+[اختيارات سريعة · Markdown](../survey/ar/choice-questionnaire.md) · [احكِ قصة · Markdown](../survey/ar/text-questionnaire.md)
+
+## مناقشة المشروع
+
+توقيع المشروع: lawyer112. يساعد Codex في الكتابة والترجمة والتنفيذ والفحص؛ هذا لا يساوي تحقق ناطق أصلي أو باحث مستقل. التجارب يجب أن تكون شخصية، ومساعدة AI في الكتابة تُذكر في A06. نستبعد كل TEST_ONLY. نرحب بالإجابات والدراسات المستقلة والتصحيحات والأفكار. ذكر المساهم في الشكر اختياري، وتأليف المقال بحسب المساهمة الفعلية.
+
+[تقديم دراسة مستقلة](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=02-study-report-ar.yml) · [مناقشة المشروع](https://github.com/lawyer112/mbti-ai-open-study/issues/new?template=03-research-discussion-ar.yml) · [GitHub](https://github.com/lawyer112/mbti-ai-open-study)

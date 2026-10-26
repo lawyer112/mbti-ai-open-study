@@ -1,0 +1,16 @@
+name: ru · Обсудить исследование
+description: Сообщите об ошибке перевода или предложите улучшение.
+title: '[ru v0.3] '
+labels:
+- method-discussion
+body:
+- type: markdown
+  attributes:
+    value: Issue, PR и вложения публичны и связаны с вашим аккаунтом GitHub. Код участника не обеспечивает анонимность.
+- type: textarea
+  id: report
+  attributes:
+    label: Обсудить исследование
+    description: Укажите проблему, язык, номер вопроса и предлагаемое исправление. Не включайте личную информацию.
+  validations:
+    required: true

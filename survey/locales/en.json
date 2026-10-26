@@ -1,0 +1,393 @@
+{
+  "ui": {
+    "title": "MBTI × AI: What is your AI companion like?",
+    "hero": "What is your AI companion like?",
+    "intro": "A casual survey of how different people use AI, what they enjoy, and what drives them mad. Tell us your everyday habits or one real story.",
+    "language": "Language",
+    "pilot": "Pilot · v0.3",
+    "choice": "Quick choices",
+    "text": "Share a story",
+    "choice_desc": "Pick what sounds like you: uses, chat habits, praise and complaints.",
+    "text_desc": "Tell us about a real experience in your own words. A few sentences are enough.",
+    "save": "Save draft",
+    "load": "Load draft",
+    "new": "Start a new record",
+    "showpurpose": "Show item purposes",
+    "hidepurpose": "Hide item purposes",
+    "previous": "Previous",
+    "next": "Next",
+    "review": "Review and export",
+    "close": "Back to answers",
+    "export_json": "Download data",
+    "export_md": "Download readable report",
+    "copy": "Copy report",
+    "entry": "Before you start",
+    "entrytext": "Think about your habits and opinions over the past 30 days. You do not have to reconstruct a whole work task. People who have not used AI recently are welcome too.",
+    "local_notice": "Answers are not uploaded automatically. Save a draft before closing or refreshing this page.",
+    "footnote": "Either form is enough. There is no ideal way to use AI and no personality score. Language versions will keep improving with feedback.",
+    "home": "Study and participation guide",
+    "return": "Return through GitHub",
+    "required": "Required",
+    "optional": "Optional",
+    "multi": "Multiple choices",
+    "select": "Select an option",
+    "purpose": "Why ask this?",
+    "invalid": "Complete this item. If unsure, select or write that you do not know.",
+    "progress": "{n} / {total} applicable required items completed",
+    "case": "Report ID: {id}. Keep it when adding the other form for this participation.",
+    "switched": "Form changed. Shared fields and other-form answers are retained; export includes only the current form.",
+    "missing": "Complete {n} required items and all three confirmations before exporting.",
+    "ready": "Required items are complete. Check your answers and what you will share before exporting.",
+    "downloaded": "Download started. Exporting does not submit anything to GitHub.",
+    "copied": "Report copied. Paste it into the questionnaire-return Issue.",
+    "copy_failed": "Copy was not allowed. Download the readable report and copy its text.",
+    "saved": "Draft download started. Use Load draft to resume. Drafts may contain private information; store them carefully.",
+    "import_failed": "Cannot load this file. Use an unchanged v0.3 draft saved by this page.",
+    "replace_confirm": "Loading replaces the answers currently on this page. Continue?",
+    "reset_confirm": "Starting a new record clears the current answers. Save a draft first if needed. Continue?",
+    "loaded": "Draft loaded. Review your answers before exporting.",
+    "language_changed": "Language changed; answers and report ID are retained. Please read and confirm participation again in this language.",
+    "version": "Instrument version",
+    "exported": "Export time (not submission time)",
+    "modeorder": "Forms viewed",
+    "purposeviewed": "Item purposes viewed",
+    "consent": "Participation confirmations",
+    "empty": "Not answered",
+    "na": "Not applicable under routing rules",
+    "none": "None",
+    "reportnote": "These are your own reported habits and opinions. Quotation permission is in A05. Link both forms of the same participation by report ID.",
+    "return_steps": [
+      "Inspect the report and remove anything that should not be public.",
+      "Download the JSON data and readable Markdown report.",
+      "Return the files or paste the complete report into the GitHub Issue. A pull request is also possible."
+    ],
+    "privacy": "Issues, pull requests and attachments are public and linked to your GitHub account. A report ID does not make you anonymous.",
+    "legacy": "Continue a saved v0.2 draft",
+    "mdintro": "An informal survey about MBTI, everyday AI habits, opinions and stories. Think about the past 30 days. This is not a personality test or ability ranking.",
+    "mdexposure": "This readable form displays all item purposes. Record that exposure when submitting.",
+    "condition_equal": "Answer only if {id} has been answered with: {label}.",
+    "condition_not_equal": "Answer only if {id} has been answered with something other than: {label}.",
+    "exclusive": "Exclusive options (cannot be combined with any others): {labels}.",
+    "answer": "Answer",
+    "item_count": "{n} items including shared, optional and conditional items. Answer only applicable items.",
+    "code": "Participant code",
+    "case_label": "Report ID",
+    "mode_label": "Questionnaire mode",
+    "files": "Files or complete report",
+    "corrections": "Earlier reports and corrections",
+    "submit_title": "Return a questionnaire",
+    "submit_description": "Attach exported files or paste the complete report.",
+    "study_title": "Submit an independent study",
+    "study_description": "Share a separate study, its methods and evidence.",
+    "study_body": "Describe the research question, recruitment, participant count, personality source, AI tasks/tools, methods, findings, limitations and permissions. Separate real data from hypotheses.",
+    "discussion_title": "Discuss the study",
+    "discussion_description": "Report translation issues or suggest improvements.",
+    "discussion_body": "Describe the issue, language, item ID and suggested correction. Do not include private information."
+  },
+  "groups": {
+    "about": [
+      "A little about you",
+      "An uncertain MBTI type is welcome. No need to take another test."
+    ],
+    "uses": [
+      "How AI fits your day",
+      "Think about everyday use over the past 30 days, not just your best experience."
+    ],
+    "style": [
+      "How you like to chat",
+      "Choose what best matches your habits. There is no correct style."
+    ],
+    "opinions": [
+      "Praise it. Complain about it.",
+      "You can like it, dislike it, or feel both ways."
+    ],
+    "stories": [
+      "Your AI story",
+      "Tell it like you would to a friend. A few sentences are fine."
+    ],
+    "closing": [
+      "One last thought",
+      "Choose what may be shared, then review and export."
+    ]
+  },
+  "consents": [
+    "I am at least 18 and participate voluntarily. I am describing my own real habits, experiences or opinions.",
+    "I understand that GitHub submissions are public and linked to my account; a report ID does not provide anonymity.",
+    "I have removed private and confidential information and may share this material. I permit this project’s statistics and article summaries, and understand that public copies may not be fully retrievable."
+  ],
+  "items": {
+    "A01": {
+      "title": "What MBTI type do you currently report?",
+      "purpose": "Link a reported label with behavior; do not infer type from behavior.",
+      "hint": "",
+      "options": [
+        "ISTJ",
+        "ISFJ",
+        "INFJ",
+        "INTJ",
+        "ISTP",
+        "ISFP",
+        "INFP",
+        "INTP",
+        "ESTP",
+        "ESFP",
+        "ENFP",
+        "ENTP",
+        "ESTJ",
+        "ESFJ",
+        "ENFJ",
+        "ENTJ",
+        "Uncertain"
+      ]
+    },
+    "A02": {
+      "title": "What is the main source of that type?",
+      "purpose": "Distinguish formal MBTI, 16Personalities, other tests and self-judgment rather than treating them as one instrument.",
+      "hint": "",
+      "options": [
+        "Formal MBTI assessment",
+        "16Personalities",
+        "Another online test",
+        "Self-judgment",
+        "Unknown"
+      ]
+    },
+    "A03": {
+      "title": "On roughly how many days did you use generative AI in the past 30 days?",
+      "purpose": "Record recent frequency separately from cumulative experience.",
+      "hint": "",
+      "options": [
+        "0 days; no recent use",
+        "1–3 days",
+        "4–9 days",
+        "10–19 days",
+        "20–30 days",
+        "Cannot recall"
+      ]
+    },
+    "A04": {
+      "title": "How long have you used generative AI?",
+      "purpose": "Record AI experience so that familiarity is not misattributed to personality.",
+      "hint": "",
+      "options": [
+        "Less than 1 month",
+        "1–5 months",
+        "6–11 months",
+        "12–23 months",
+        "24 months or more",
+        "Cannot recall"
+      ]
+    },
+    "A05": {
+      "title": "May the paper quote redacted excerpts from this report verbatim?",
+      "purpose": "Separate aggregate-analysis consent from quotation permission.",
+      "hint": "",
+      "options": [
+        "No; statistics and summaries only",
+        "Yes; redacted excerpts may be quoted verbatim"
+      ]
+    },
+    "A06": {
+      "title": "Did AI help prepare this report?",
+      "purpose": "Record AI assistance transparently.",
+      "hint": "",
+      "options": [
+        "No",
+        "Yes"
+      ]
+    },
+    "Q01": {
+      "title": "What have you mainly used AI for recently?",
+      "purpose": "Compare actual uses; one person can have several.",
+      "hint": "",
+      "options": [
+        "Writing, editing or translating",
+        "Programming or technical problems",
+        "Learning and explaining concepts",
+        "Finding, organizing or analyzing information",
+        "Ideas and creative work",
+        "Planning or help with choices",
+        "Talking about emotions or seeking companionship",
+        "Casual chat and entertainment",
+        "Other uses"
+      ]
+    },
+    "Q02": {
+      "title": "What does AI feel most like to you?",
+      "purpose": "Compare the role people give AI without assigning roles to personality types in advance.",
+      "hint": "",
+      "options": [
+        "A tool for getting things done",
+        "A work assistant",
+        "A teacher available for questions",
+        "A discussion partner",
+        "A creative partner",
+        "Someone to chat with or keep me company",
+        "No fixed role yet"
+      ]
+    },
+    "Q03": {
+      "title": "How do you usually start a conversation?",
+      "purpose": "Compare expression habits without treating longer prompts as greater ability.",
+      "hint": "",
+      "options": [
+        "A short, direct instruction",
+        "Context, requirements and constraints first",
+        "Break it into steps and ask one by one",
+        "Start talking and work out what I need",
+        "It varies a lot by task",
+        "Cannot recall"
+      ]
+    },
+    "Q04": {
+      "title": "When the first reply misses the mark, what do you usually do first?",
+      "purpose": "Observe the first response to an unsatisfactory answer.",
+      "hint": "",
+      "options": [
+        "Add context or requirements",
+        "Rephrase and ask again",
+        "Ask for several different versions",
+        "Switch model or tool",
+        "Handle it myself",
+        "Leave it for now",
+        "This has not happened recently",
+        "Cannot recall"
+      ]
+    },
+    "Q05": {
+      "title": "When asking for advice, what kind of answer do you prefer?",
+      "purpose": "Compare preferences for a usable plan, options, explanation or shared exploration.",
+      "hint": "",
+      "options": [
+        "One ready-to-use plan",
+        "Several options to compare myself",
+        "Reasons and evidence first",
+        "A discussion before an answer takes shape",
+        "It mainly depends on the task"
+      ]
+    },
+    "Q06": {
+      "title": "How do you respond when AI disagrees with you?",
+      "purpose": "Describe responses to disagreement, not rationality or stubbornness.",
+      "hint": "",
+      "options": [
+        "Hear its reasons first",
+        "Check the basis for its claim first",
+        "Restate what I want and ask it to follow my idea",
+        "Decide according to the specific issue",
+        "This has not happened recently",
+        "Cannot recall"
+      ]
+    },
+    "Q07": {
+      "title": "Do you check AI’s answers when important information or judgments are involved?",
+      "purpose": "Describe checking habits; frequency does not establish quality or accuracy.",
+      "hint": "",
+      "options": [
+        "Every time",
+        "Often",
+        "Sometimes",
+        "Rarely",
+        "Never",
+        "I have not used AI for this recently"
+      ]
+    },
+    "Q08": {
+      "title": "What is the biggest benefit AI gives you?",
+      "purpose": "Describe perceived benefits without calling them measured performance gains.",
+      "hint": "",
+      "options": [
+        "Saves time or repetitive work",
+        "Helps me understand unfamiliar things",
+        "Brings ideas or inspiration",
+        "Helps me get started",
+        "Helps me express my thoughts",
+        "Conversation or companionship",
+        "No clear benefit so far",
+        "Another benefit"
+      ]
+    },
+    "Q09": {
+      "title": "What bothers you most about AI?",
+      "purpose": "Include negative experiences and improvement needs, not only praise.",
+      "hint": "",
+      "options": [
+        "Confidently getting things wrong",
+        "Missing my actual question",
+        "Being verbose or missing the point",
+        "Agreeing with me too much",
+        "Forgetting earlier requirements",
+        "Mechanical language or style",
+        "Usage limits, costs or tool capabilities",
+        "Privacy or how information is used",
+        "No clear complaint for now",
+        "Other"
+      ]
+    },
+    "Q10": {
+      "title": "Overall, are you satisfied with your recent AI experience?",
+      "purpose": "Describe satisfaction, separately from trust, accuracy or work ability.",
+      "hint": "",
+      "options": [
+        "Very dissatisfied",
+        "Somewhat dissatisfied",
+        "Neutral",
+        "Somewhat satisfied",
+        "Very satisfied",
+        "Hard to judge"
+      ]
+    },
+    "Q11": {
+      "title": "Why have you not used AI recently?",
+      "purpose": "Include recent nonusers and describe their barriers and choices separately.",
+      "hint": "",
+      "options": [
+        "No current need",
+        "Do not know where to start",
+        "Do not trust its answers much",
+        "Access barriers or cost",
+        "Privacy concerns",
+        "Tried it and disliked it",
+        "Another reason"
+      ]
+    },
+    "Q12": {
+      "title": "Which best describes your current attitude toward AI?",
+      "purpose": "Compare overall attitudes while allowing hope and concern together.",
+      "hint": "",
+      "options": [
+        "Enthusiastic and keen to use it",
+        "Curious and want to explore",
+        "Cautious and waiting to see",
+        "Worried or resistant",
+        "Both hopeful and worried",
+        "No clear opinion yet"
+      ]
+    },
+    "S01": {
+      "title": "Which recent experience with AI stands out to you?",
+      "purpose": "Use real stories to understand uses, needs and results.",
+      "hint": "What were you trying to do, and how did AI help or fail to help? Name the tool if you wish. Remove private details."
+    },
+    "S02": {
+      "title": "How do you usually talk to AI, and what happens when the answer is not what you wanted?",
+      "purpose": "Add context to prompting, follow-up, adjustment and judgment habits.",
+      "hint": "You may give a redacted example or simply describe your habits. Full chat logs are unnecessary."
+    },
+    "S03": {
+      "title": "What do you like most about AI, and what would you most like to complain about?",
+      "purpose": "Retain positive, negative and mixed opinions and their reasons.",
+      "hint": "You may answer just one side. No strong likes or complaints is also a valid answer."
+    },
+    "S04": {
+      "title": "Why have you not used AI recently? What might make you want to try?",
+      "purpose": "Understand nonusers without treating nonuse as failed use.",
+      "hint": "No need, not knowing how, disliking it or other reasons are all welcome. Trying it later is not required."
+    },
+    "A07": {
+      "title": "In one sentence, how would you describe your relationship with AI?",
+      "purpose": "Collect participants’ own words for optional quotation with permission.",
+      "hint": "Optional. Describe your feelings; this is an expression, not a new personality assessment."
+    }
+  }
+}
